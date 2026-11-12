@@ -1,0 +1,7823 @@
+/*---------------------*/
+/*!
+ *  Font Awesome 4.3.0 by @davegandy - http://fontawesome.io - @fontawesome
+ *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
+ */
+/* FONT PATH
+ * -------------------------- */
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('assets/fonts/fontawesome-webfont.eot') format('embedded-opentype'), url('assets/fonts/fontawesome-webfont.woff') format('woff'), url('assets/fonts/fontawesome-webfont.ttf') format('truetype'), url('assets/fonts/fontawesome-webfont.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.wux-ui-fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transform: translate(0, 0); }
+
+/* makes the font 33% larger relative to the icon container */
+.wux-ui-fa-lg {
+  font-size: 1.33333em;
+  line-height: 0.75em;
+  vertical-align: -15%; }
+
+.wux-ui-fa-2x {
+  font-size: 2em; }
+
+.wux-ui-fa-3x {
+  font-size: 3em; }
+
+.wux-ui-fa-4x {
+  font-size: 4em; }
+
+.wux-ui-fa-5x {
+  font-size: 5em; }
+
+.wux-ui-fa-fw {
+  width: 1.28571em;
+  text-align: center; }
+
+.wux-ui-fa-ul {
+  padding-left: 0;
+  margin-left: 2.14286em;
+  list-style-type: none; }
+
+.wux-ui-fa-ul > li {
+  position: relative; }
+
+.wux-ui-fa-li {
+  position: absolute;
+  left: -2.14286em;
+  width: 2.14286em;
+  top: 0.14286em;
+  text-align: center; }
+
+.wux-ui-fa-li.wux-ui-fa-lg {
+  left: -1.85714em; }
+
+.wux-ui-fa-border {
+  padding: 0.2em 0.25em 0.15em;
+  border: solid 0.08em #eeeeee;
+  border-radius: 0.1em; }
+
+.wux-ui-fa.pull-left {
+  margin-right: 0.3em; }
+
+.wux-ui-fa.pull-right {
+  margin-left: 0.3em; }
+
+.wux-ui-fa-spin {
+  -webkit-animation: fa-spin 2s infinite linear;
+  animation: fa-spin 2s infinite linear; }
+
+.wux-ui-fa-pulse {
+  -webkit-animation: fa-spin 1s infinite steps(8);
+  animation: fa-spin 1s infinite steps(8); }
+
+@-webkit-keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg); } }
+
+@keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg); } }
+
+.wux-ui-fa-rotate-90 {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg); }
+
+.wux-ui-fa-rotate-180 {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg); }
+
+.wux-ui-fa-rotate-270 {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+  -webkit-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  transform: rotate(270deg); }
+
+.wux-ui-fa-flip-horizontal {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1);
+  -webkit-transform: scale(-1, 1);
+  -ms-transform: scale(-1, 1);
+  transform: scale(-1, 1); }
+
+.wux-ui-fa-flip-vertical {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1);
+  -webkit-transform: scale(1, -1);
+  -ms-transform: scale(1, -1);
+  transform: scale(1, -1); }
+
+:root .wux-ui-fa-rotate-90, :root .wux-ui-fa-rotate-180, :root .wux-ui-fa-rotate-270, :root .wux-ui-fa-flip-horizontal, :root .wux-ui-fa-flip-vertical {
+  filter: none; }
+
+.wux-ui-fa-stack {
+  position: relative;
+  display: inline-block;
+  width: 2em;
+  height: 2em;
+  line-height: 2em;
+  vertical-align: middle; }
+
+.wux-ui-fa-stack-1x, .wux-ui-fa-stack-2x {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: center; }
+
+.wux-ui-fa-stack-1x {
+  line-height: inherit; }
+
+.wux-ui-fa-stack-2x {
+  font-size: 2em; }
+
+.wux-ui-fa-inverse {
+  color: #ffffff; }
+
+/* Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
+   readers do not read off random characters that represent icons */
+.wux-ui-fa-glass:before {
+  content: "\f000"; }
+
+.wux-ui-fa-music:before {
+  content: "\f001"; }
+
+.wux-ui-fa-search:before {
+  content: "\f002"; }
+
+.wux-ui-fa-envelope-o:before {
+  content: "\f003"; }
+
+.wux-ui-fa-heart:before {
+  content: "\f004"; }
+
+.wux-ui-fa-star:before {
+  content: "\f005"; }
+
+.wux-ui-fa-star-o:before {
+  content: "\f006"; }
+
+.wux-ui-fa-user:before {
+  content: "\f007"; }
+
+.wux-ui-fa-film:before {
+  content: "\f008"; }
+
+.wux-ui-fa-th-large:before {
+  content: "\f009"; }
+
+.wux-ui-fa-th:before {
+  content: "\f00a"; }
+
+.wux-ui-fa-th-list:before {
+  content: "\f00b"; }
+
+.wux-ui-fa-check:before {
+  content: "\f00c"; }
+
+.wux-ui-fa-remove:before, .wux-ui-fa-close:before, .wux-ui-fa-times:before {
+  content: "\f00d"; }
+
+.wux-ui-fa-search-plus:before {
+  content: "\f00e"; }
+
+.wux-ui-fa-search-minus:before {
+  content: "\f010"; }
+
+.wux-ui-fa-power-off:before {
+  content: "\f011"; }
+
+.wux-ui-fa-signal:before {
+  content: "\f012"; }
+
+.wux-ui-fa-gear:before, .wux-ui-fa-cog:before {
+  content: "\f013"; }
+
+.wux-ui-fa-trash-o:before {
+  content: "\f014"; }
+
+.wux-ui-fa-home:before {
+  content: "\f015"; }
+
+.wux-ui-fa-file-o:before {
+  content: "\f016"; }
+
+.wux-ui-fa-clock-o:before {
+  content: "\f017"; }
+
+.wux-ui-fa-road:before {
+  content: "\f018"; }
+
+.wux-ui-fa-download:before {
+  content: "\f019"; }
+
+.wux-ui-fa-arrow-circle-o-down:before {
+  content: "\f01a"; }
+
+.wux-ui-fa-arrow-circle-o-up:before {
+  content: "\f01b"; }
+
+.wux-ui-fa-inbox:before {
+  content: "\f01c"; }
+
+.wux-ui-fa-play-circle-o:before {
+  content: "\f01d"; }
+
+.wux-ui-fa-rotate-right:before, .wux-ui-fa-repeat:before {
+  content: "\f01e"; }
+
+.wux-ui-fa-refresh:before {
+  content: "\f021"; }
+
+.wux-ui-fa-list-alt:before {
+  content: "\f022"; }
+
+.wux-ui-fa-lock:before {
+  content: "\f023"; }
+
+.wux-ui-fa-flag:before {
+  content: "\f024"; }
+
+.wux-ui-fa-headphones:before {
+  content: "\f025"; }
+
+.wux-ui-fa-volume-off:before {
+  content: "\f026"; }
+
+.wux-ui-fa-volume-down:before {
+  content: "\f027"; }
+
+.wux-ui-fa-volume-up:before {
+  content: "\f028"; }
+
+.wux-ui-fa-qrcode:before {
+  content: "\f029"; }
+
+.wux-ui-fa-barcode:before {
+  content: "\f02a"; }
+
+.wux-ui-fa-tag:before {
+  content: "\f02b"; }
+
+.wux-ui-fa-tags:before {
+  content: "\f02c"; }
+
+.wux-ui-fa-book:before {
+  content: "\f02d"; }
+
+.wux-ui-fa-bookmark:before {
+  content: "\f02e"; }
+
+.wux-ui-fa-print:before {
+  content: "\f02f"; }
+
+.wux-ui-fa-camera:before {
+  content: "\f030"; }
+
+.wux-ui-fa-font:before {
+  content: "\f031"; }
+
+.wux-ui-fa-bold:before {
+  content: "\f032"; }
+
+.wux-ui-fa-italic:before {
+  content: "\f033"; }
+
+.wux-ui-fa-text-height:before {
+  content: "\f034"; }
+
+.wux-ui-fa-text-width:before {
+  content: "\f035"; }
+
+.wux-ui-fa-align-left:before {
+  content: "\f036"; }
+
+.wux-ui-fa-align-center:before {
+  content: "\f037"; }
+
+.wux-ui-fa-align-right:before {
+  content: "\f038"; }
+
+.wux-ui-fa-align-justify:before {
+  content: "\f039"; }
+
+.wux-ui-fa-list:before {
+  content: "\f03a"; }
+
+.wux-ui-fa-dedent:before, .wux-ui-fa-outdent:before {
+  content: "\f03b"; }
+
+.wux-ui-fa-indent:before {
+  content: "\f03c"; }
+
+.wux-ui-fa-video-camera:before {
+  content: "\f03d"; }
+
+.wux-ui-fa-photo:before, .wux-ui-fa-image:before, .wux-ui-fa-picture-o:before {
+  content: "\f03e"; }
+
+.wux-ui-fa-pencil:before {
+  content: "\f040"; }
+
+.wux-ui-fa-map-marker:before {
+  content: "\f041"; }
+
+.wux-ui-fa-adjust:before {
+  content: "\f042"; }
+
+.wux-ui-fa-tint:before {
+  content: "\f043"; }
+
+.wux-ui-fa-edit:before, .wux-ui-fa-pencil-square-o:before {
+  content: "\f044"; }
+
+.wux-ui-fa-share-square-o:before {
+  content: "\f045"; }
+
+.wux-ui-fa-check-square-o:before {
+  content: "\f046"; }
+
+.wux-ui-fa-arrows:before {
+  content: "\f047"; }
+
+.wux-ui-fa-step-backward:before {
+  content: "\f048"; }
+
+.wux-ui-fa-fast-backward:before {
+  content: "\f049"; }
+
+.wux-ui-fa-backward:before {
+  content: "\f04a"; }
+
+.wux-ui-fa-play:before {
+  content: "\f04b"; }
+
+.wux-ui-fa-pause:before {
+  content: "\f04c"; }
+
+.wux-ui-fa-stop:before {
+  content: "\f04d"; }
+
+.wux-ui-fa-forward:before {
+  content: "\f04e"; }
+
+.wux-ui-fa-fast-forward:before {
+  content: "\f050"; }
+
+.wux-ui-fa-step-forward:before {
+  content: "\f051"; }
+
+.wux-ui-fa-eject:before {
+  content: "\f052"; }
+
+.wux-ui-fa-chevron-left:before {
+  content: "\f053"; }
+
+.wux-ui-fa-chevron-right:before {
+  content: "\f054"; }
+
+.wux-ui-fa-plus-circle:before {
+  content: "\f055"; }
+
+.wux-ui-fa-minus-circle:before {
+  content: "\f056"; }
+
+.wux-ui-fa-times-circle:before {
+  content: "\f057"; }
+
+.wux-ui-fa-check-circle:before {
+  content: "\f058"; }
+
+.wux-ui-fa-question-circle:before {
+  content: "\f059"; }
+
+.wux-ui-fa-info-circle:before {
+  content: "\f05a"; }
+
+.wux-ui-fa-crosshairs:before {
+  content: "\f05b"; }
+
+.wux-ui-fa-times-circle-o:before {
+  content: "\f05c"; }
+
+.wux-ui-fa-check-circle-o:before {
+  content: "\f05d"; }
+
+.wux-ui-fa-ban:before {
+  content: "\f05e"; }
+
+.wux-ui-fa-arrow-left:before {
+  content: "\f060"; }
+
+.wux-ui-fa-arrow-right:before {
+  content: "\f061"; }
+
+.wux-ui-fa-arrow-up:before {
+  content: "\f062"; }
+
+.wux-ui-fa-arrow-down:before {
+  content: "\f063"; }
+
+.wux-ui-fa-mail-forward:before, .wux-ui-fa-share:before {
+  content: "\f064"; }
+
+.wux-ui-fa-expand:before {
+  content: "\f065"; }
+
+.wux-ui-fa-compress:before {
+  content: "\f066"; }
+
+.wux-ui-fa-plus:before {
+  content: "\f067"; }
+
+.wux-ui-fa-minus:before {
+  content: "\f068";
+  vertical-align: middle; }
+
+.wux-ui-fa-asterisk:before {
+  content: "\f069"; }
+
+.wux-ui-fa-exclamation-circle:before {
+  content: "\f06a"; }
+
+.wux-ui-fa-gift:before {
+  content: "\f06b"; }
+
+.wux-ui-fa-leaf:before {
+  content: "\f06c"; }
+
+.wux-ui-fa-fire:before {
+  content: "\f06d"; }
+
+.wux-ui-fa-eye:before {
+  content: "\f06e"; }
+
+.wux-ui-fa-eye-slash:before {
+  content: "\f070"; }
+
+.wux-ui-fa-warning:before, .wux-ui-fa-exclamation-triangle:before {
+  content: "\f071"; }
+
+.wux-ui-fa-plane:before {
+  content: "\f072"; }
+
+.wux-ui-fa-calendar:before {
+  content: "\f073"; }
+
+.wux-ui-fa-random:before {
+  content: "\f074"; }
+
+.wux-ui-fa-comment:before {
+  content: "\f075"; }
+
+.wux-ui-fa-magnet:before {
+  content: "\f076"; }
+
+.wux-ui-fa-chevron-up:before {
+  content: "\f077"; }
+
+.wux-ui-fa-chevron-down:before {
+  content: "\f078"; }
+
+.wux-ui-fa-retweet:before {
+  content: "\f079"; }
+
+.wux-ui-fa-shopping-cart:before {
+  content: "\f07a"; }
+
+.wux-ui-fa-folder:before {
+  content: "\f07b"; }
+
+.wux-ui-fa-folder-open:before {
+  content: "\f07c"; }
+
+.wux-ui-fa-arrows-v:before {
+  content: "\f07d"; }
+
+.wux-ui-fa-arrows-h:before {
+  content: "\f07e"; }
+
+.wux-ui-fa-bar-chart-o:before, .wux-ui-fa-bar-chart:before {
+  content: "\f080"; }
+
+.wux-ui-fa-twitter-square:before {
+  content: "\f081"; }
+
+.wux-ui-fa-facebook-square:before {
+  content: "\f082"; }
+
+.wux-ui-fa-camera-retro:before {
+  content: "\f083"; }
+
+.wux-ui-fa-key:before {
+  content: "\f084"; }
+
+.wux-ui-fa-gears:before, .wux-ui-fa-cogs:before {
+  content: "\f085"; }
+
+.wux-ui-fa-comments:before {
+  content: "\f086"; }
+
+.wux-ui-fa-thumbs-o-up:before {
+  content: "\f087"; }
+
+.wux-ui-fa-thumbs-o-down:before {
+  content: "\f088"; }
+
+.wux-ui-fa-star-half:before {
+  content: "\f089"; }
+
+.wux-ui-fa-heart-o:before {
+  content: "\f08a"; }
+
+.wux-ui-fa-sign-out:before {
+  content: "\f08b"; }
+
+.wux-ui-fa-linkedin-square:before {
+  content: "\f08c"; }
+
+.wux-ui-fa-thumb-tack:before {
+  content: "\f08d"; }
+
+.wux-ui-fa-external-link:before {
+  content: "\f08e"; }
+
+.wux-ui-fa-sign-in:before {
+  content: "\f090"; }
+
+.wux-ui-fa-trophy:before {
+  content: "\f091"; }
+
+.wux-ui-fa-github-square:before {
+  content: "\f092"; }
+
+.wux-ui-fa-upload:before {
+  content: "\f093"; }
+
+.wux-ui-fa-lemon-o:before {
+  content: "\f094"; }
+
+.wux-ui-fa-phone:before {
+  content: "\f095"; }
+
+.wux-ui-fa-square-o:before {
+  content: "\f096"; }
+
+.wux-ui-fa-bookmark-o:before {
+  content: "\f097"; }
+
+.wux-ui-fa-phone-square:before {
+  content: "\f098"; }
+
+.wux-ui-fa-twitter:before {
+  content: "\f099"; }
+
+.wux-ui-fa-facebook-f:before, .wux-ui-fa-facebook:before {
+  content: "\f09a"; }
+
+.wux-ui-fa-github:before {
+  content: "\f09b"; }
+
+.wux-ui-fa-unlock:before {
+  content: "\f09c"; }
+
+.wux-ui-fa-credit-card:before {
+  content: "\f09d"; }
+
+.wux-ui-fa-rss:before {
+  content: "\f09e"; }
+
+.wux-ui-fa-hdd-o:before {
+  content: "\f0a0"; }
+
+.wux-ui-fa-bullhorn:before {
+  content: "\f0a1"; }
+
+.wux-ui-fa-bell:before {
+  content: "\f0f3"; }
+
+.wux-ui-fa-certificate:before {
+  content: "\f0a3"; }
+
+.wux-ui-fa-hand-o-right:before {
+  content: "\f0a4"; }
+
+.wux-ui-fa-hand-o-left:before {
+  content: "\f0a5"; }
+
+.wux-ui-fa-hand-o-up:before {
+  content: "\f0a6"; }
+
+.wux-ui-fa-hand-o-down:before {
+  content: "\f0a7"; }
+
+.wux-ui-fa-arrow-circle-left:before {
+  content: "\f0a8"; }
+
+.wux-ui-fa-arrow-circle-right:before {
+  content: "\f0a9"; }
+
+.wux-ui-fa-arrow-circle-up:before {
+  content: "\f0aa"; }
+
+.wux-ui-fa-arrow-circle-down:before {
+  content: "\f0ab"; }
+
+.wux-ui-fa-globe:before {
+  content: "\f0ac"; }
+
+.wux-ui-fa-wrench:before {
+  content: "\f0ad"; }
+
+.wux-ui-fa-tasks:before {
+  content: "\f0ae"; }
+
+.wux-ui-fa-filter:before {
+  content: "\f0b0"; }
+
+.wux-ui-fa-briefcase:before {
+  content: "\f0b1"; }
+
+.wux-ui-fa-arrows-alt:before {
+  content: "\f0b2"; }
+
+.wux-ui-fa-group:before, .wux-ui-fa-users:before {
+  content: "\f0c0"; }
+
+.wux-ui-fa-chain:before, .wux-ui-fa-link:before {
+  content: "\f0c1"; }
+
+.wux-ui-fa-cloud:before {
+  content: "\f0c2"; }
+
+.wux-ui-fa-flask:before {
+  content: "\f0c3"; }
+
+.wux-ui-fa-cut:before, .wux-ui-fa-scissors:before {
+  content: "\f0c4"; }
+
+.wux-ui-fa-copy:before, .wux-ui-fa-files-o:before {
+  content: "\f0c5"; }
+
+.wux-ui-fa-paperclip:before {
+  content: "\f0c6"; }
+
+.wux-ui-fa-save:before, .wux-ui-fa-floppy-o:before {
+  content: "\f0c7"; }
+
+.wux-ui-fa-square:before {
+  content: "\f0c8"; }
+
+.wux-ui-fa-navicon:before, .wux-ui-fa-reorder:before, .wux-ui-fa-bars:before {
+  content: "\f0c9"; }
+
+.wux-ui-fa-list-ul:before {
+  content: "\f0ca"; }
+
+.wux-ui-fa-list-ol:before {
+  content: "\f0cb"; }
+
+.wux-ui-fa-strikethrough:before {
+  content: "\f0cc"; }
+
+.wux-ui-fa-underline:before {
+  content: "\f0cd"; }
+
+.wux-ui-fa-table:before {
+  content: "\f0ce"; }
+
+.wux-ui-fa-magic:before {
+  content: "\f0d0"; }
+
+.wux-ui-fa-truck:before {
+  content: "\f0d1"; }
+
+.wux-ui-fa-pinterest:before {
+  content: "\f0d2"; }
+
+.wux-ui-fa-pinterest-square:before {
+  content: "\f0d3"; }
+
+.wux-ui-fa-google-plus-square:before {
+  content: "\f0d4"; }
+
+.wux-ui-fa-google-plus:before {
+  content: "\f0d5"; }
+
+.wux-ui-fa-money:before {
+  content: "\f0d6"; }
+
+.wux-ui-fa-caret-down:before {
+  content: "\f0d7"; }
+
+.wux-ui-fa-caret-up:before {
+  content: "\f0d8"; }
+
+.wux-ui-fa-caret-left:before {
+  content: "\f0d9"; }
+
+.wux-ui-fa-caret-right:before {
+  content: "\f0da"; }
+
+.wux-ui-fa-columns:before {
+  content: "\f0db"; }
+
+.wux-ui-fa-unsorted:before, .wux-ui-fa-sort:before {
+  content: "\f0dc"; }
+
+.wux-ui-fa-sort-down:before, .wux-ui-fa-sort-desc:before {
+  content: "\f0dd"; }
+
+.wux-ui-fa-sort-up:before, .wux-ui-fa-sort-asc:before {
+  content: "\f0de"; }
+
+.wux-ui-fa-envelope:before {
+  content: "\f0e0"; }
+
+.wux-ui-fa-linkedin:before {
+  content: "\f0e1"; }
+
+.wux-ui-fa-rotate-left:before, .wux-ui-fa-undo:before {
+  content: "\f0e2"; }
+
+.wux-ui-fa-legal:before, .wux-ui-fa-gavel:before {
+  content: "\f0e3"; }
+
+.wux-ui-fa-dashboard:before, .wux-ui-fa-tachometer:before {
+  content: "\f0e4"; }
+
+.wux-ui-fa-comment-o:before {
+  content: "\f0e5"; }
+
+.wux-ui-fa-comments-o:before {
+  content: "\f0e6"; }
+
+.wux-ui-fa-flash:before, .wux-ui-fa-bolt:before {
+  content: "\f0e7"; }
+
+.wux-ui-fa-sitemap:before {
+  content: "\f0e8"; }
+
+.wux-ui-fa-umbrella:before {
+  content: "\f0e9"; }
+
+.wux-ui-fa-paste:before, .wux-ui-fa-clipboard:before {
+  content: "\f0ea"; }
+
+.wux-ui-fa-lightbulb-o:before {
+  content: "\f0eb"; }
+
+.wux-ui-fa-exchange:before {
+  content: "\f0ec"; }
+
+.wux-ui-fa-cloud-download:before {
+  content: "\f0ed"; }
+
+.wux-ui-fa-cloud-upload:before {
+  content: "\f0ee"; }
+
+.wux-ui-fa-user-md:before {
+  content: "\f0f0"; }
+
+.wux-ui-fa-stethoscope:before {
+  content: "\f0f1"; }
+
+.wux-ui-fa-suitcase:before {
+  content: "\f0f2"; }
+
+.wux-ui-fa-bell-o:before {
+  content: "\f0a2"; }
+
+.wux-ui-fa-coffee:before {
+  content: "\f0f4"; }
+
+.wux-ui-fa-cutlery:before {
+  content: "\f0f5"; }
+
+.wux-ui-fa-file-text-o:before {
+  content: "\f0f6"; }
+
+.wux-ui-fa-building-o:before {
+  content: "\f0f7"; }
+
+.wux-ui-fa-hospital-o:before {
+  content: "\f0f8"; }
+
+.wux-ui-fa-ambulance:before {
+  content: "\f0f9"; }
+
+.wux-ui-fa-medkit:before {
+  content: "\f0fa"; }
+
+.wux-ui-fa-fighter-jet:before {
+  content: "\f0fb"; }
+
+.wux-ui-fa-beer:before {
+  content: "\f0fc"; }
+
+.wux-ui-fa-h-square:before {
+  content: "\f0fd"; }
+
+.wux-ui-fa-plus-square:before {
+  content: "\f0fe"; }
+
+.wux-ui-fa-angle-double-left:before {
+  content: "\f100"; }
+
+.wux-ui-fa-angle-double-right:before {
+  content: "\f101"; }
+
+.wux-ui-fa-angle-double-up:before {
+  content: "\f102"; }
+
+.wux-ui-fa-angle-double-down:before {
+  content: "\f103"; }
+
+.wux-ui-fa-angle-left:before {
+  content: "\f104"; }
+
+.wux-ui-fa-angle-right:before {
+  content: "\f105"; }
+
+.wux-ui-fa-angle-up:before {
+  content: "\f106"; }
+
+.wux-ui-fa-angle-down:before {
+  content: "\f107"; }
+
+.wux-ui-fa-desktop:before {
+  content: "\f108"; }
+
+.wux-ui-fa-laptop:before {
+  content: "\f109"; }
+
+.wux-ui-fa-tablet:before {
+  content: "\f10a"; }
+
+.wux-ui-fa-mobile-phone:before, .wux-ui-fa-mobile:before {
+  content: "\f10b"; }
+
+.wux-ui-fa-circle-o:before {
+  content: "\f10c"; }
+
+.wux-ui-fa-quote-left:before {
+  content: "\f10d"; }
+
+.wux-ui-fa-quote-right:before {
+  content: "\f10e"; }
+
+.wux-ui-fa-spinner:before {
+  content: "\f110"; }
+
+.wux-ui-fa-circle:before {
+  content: "\f111"; }
+
+.wux-ui-fa-mail-reply:before, .wux-ui-fa-reply:before {
+  content: "\f112"; }
+
+.wux-ui-fa-github-alt:before {
+  content: "\f113"; }
+
+.wux-ui-fa-folder-o:before {
+  content: "\f114"; }
+
+.wux-ui-fa-folder-open-o:before {
+  content: "\f115"; }
+
+.wux-ui-fa-smile-o:before {
+  content: "\f118"; }
+
+.wux-ui-fa-frown-o:before {
+  content: "\f119"; }
+
+.wux-ui-fa-meh-o:before {
+  content: "\f11a"; }
+
+.wux-ui-fa-gamepad:before {
+  content: "\f11b"; }
+
+.wux-ui-fa-keyboard-o:before {
+  content: "\f11c"; }
+
+.wux-ui-fa-flag-o:before {
+  content: "\f11d"; }
+
+.wux-ui-fa-flag-checkered:before {
+  content: "\f11e"; }
+
+.wux-ui-fa-terminal:before {
+  content: "\f120"; }
+
+.wux-ui-fa-code:before {
+  content: "\f121"; }
+
+.wux-ui-fa-mail-reply-all:before, .wux-ui-fa-reply-all:before {
+  content: "\f122"; }
+
+.wux-ui-fa-star-half-empty:before, .wux-ui-fa-star-half-full:before, .wux-ui-fa-star-half-o:before {
+  content: "\f123"; }
+
+.wux-ui-fa-location-arrow:before {
+  content: "\f124"; }
+
+.wux-ui-fa-crop:before {
+  content: "\f125"; }
+
+.wux-ui-fa-code-fork:before {
+  content: "\f126"; }
+
+.wux-ui-fa-unlink:before, .wux-ui-fa-chain-broken:before {
+  content: "\f127"; }
+
+.wux-ui-fa-question:before {
+  content: "\f128"; }
+
+.wux-ui-fa-info:before {
+  content: "\f129"; }
+
+.wux-ui-fa-exclamation:before {
+  content: "\f12a"; }
+
+.wux-ui-fa-superscript:before {
+  content: "\f12b"; }
+
+.wux-ui-fa-subscript:before {
+  content: "\f12c"; }
+
+.wux-ui-fa-eraser:before {
+  content: "\f12d"; }
+
+.wux-ui-fa-puzzle-piece:before {
+  content: "\f12e"; }
+
+.wux-ui-fa-microphone:before {
+  content: "\f130"; }
+
+.wux-ui-fa-microphone-slash:before {
+  content: "\f131"; }
+
+.wux-ui-fa-shield:before {
+  content: "\f132"; }
+
+.wux-ui-fa-calendar-o:before {
+  content: "\f133"; }
+
+.wux-ui-fa-fire-extinguisher:before {
+  content: "\f134"; }
+
+.wux-ui-fa-rocket:before {
+  content: "\f135"; }
+
+.wux-ui-fa-maxcdn:before {
+  content: "\f136"; }
+
+.wux-ui-fa-chevron-circle-left:before {
+  content: "\f137"; }
+
+.wux-ui-fa-chevron-circle-right:before {
+  content: "\f138"; }
+
+.wux-ui-fa-chevron-circle-up:before {
+  content: "\f139"; }
+
+.wux-ui-fa-chevron-circle-down:before {
+  content: "\f13a"; }
+
+.wux-ui-fa-html5:before {
+  content: "\f13b"; }
+
+.wux-ui-fa-css3:before {
+  content: "\f13c"; }
+
+.wux-ui-fa-anchor:before {
+  content: "\f13d"; }
+
+.wux-ui-fa-unlock-alt:before {
+  content: "\f13e"; }
+
+.wux-ui-fa-bullseye:before {
+  content: "\f140"; }
+
+.wux-ui-fa-ellipsis-h:before {
+  content: "\f141"; }
+
+.wux-ui-fa-ellipsis-v:before {
+  content: "\f142"; }
+
+.wux-ui-fa-rss-square:before {
+  content: "\f143"; }
+
+.wux-ui-fa-play-circle:before {
+  content: "\f144"; }
+
+.wux-ui-fa-ticket:before {
+  content: "\f145"; }
+
+.wux-ui-fa-minus-square:before {
+  content: "\f146"; }
+
+.wux-ui-fa-minus-square-o:before {
+  content: "\f147"; }
+
+.wux-ui-fa-level-up:before {
+  content: "\f148"; }
+
+.wux-ui-fa-level-down:before {
+  content: "\f149"; }
+
+.wux-ui-fa-check-square:before {
+  content: "\f14a"; }
+
+.wux-ui-fa-pencil-square:before {
+  content: "\f14b"; }
+
+.wux-ui-fa-external-link-square:before {
+  content: "\f14c"; }
+
+.wux-ui-fa-share-square:before {
+  content: "\f14d"; }
+
+.wux-ui-fa-compass:before {
+  content: "\f14e"; }
+
+.wux-ui-fa-toggle-down:before, .wux-ui-fa-caret-square-o-down:before {
+  content: "\f150"; }
+
+.wux-ui-fa-toggle-up:before, .wux-ui-fa-caret-square-o-up:before {
+  content: "\f151"; }
+
+.wux-ui-fa-toggle-right:before, .wux-ui-fa-caret-square-o-right:before {
+  content: "\f152"; }
+
+.wux-ui-fa-euro:before, .wux-ui-fa-eur:before {
+  content: "\f153"; }
+
+.wux-ui-fa-gbp:before {
+  content: "\f154"; }
+
+.wux-ui-fa-dollar:before, .wux-ui-fa-usd:before {
+  content: "\f155"; }
+
+.wux-ui-fa-rupee:before, .wux-ui-fa-inr:before {
+  content: "\f156"; }
+
+.wux-ui-fa-cny:before, .wux-ui-fa-rmb:before, .wux-ui-fa-yen:before, .wux-ui-fa-jpy:before {
+  content: "\f157"; }
+
+.wux-ui-fa-ruble:before, .wux-ui-fa-rouble:before, .wux-ui-fa-rub:before {
+  content: "\f158"; }
+
+.wux-ui-fa-won:before, .wux-ui-fa-krw:before {
+  content: "\f159"; }
+
+.wux-ui-fa-bitcoin:before, .wux-ui-fa-btc:before {
+  content: "\f15a"; }
+
+.wux-ui-fa-file:before {
+  content: "\f15b"; }
+
+.wux-ui-fa-file-text:before {
+  content: "\f15c"; }
+
+.wux-ui-fa-sort-alpha-asc:before {
+  content: "\f15d"; }
+
+.wux-ui-fa-sort-alpha-desc:before {
+  content: "\f15e"; }
+
+.wux-ui-fa-sort-amount-asc:before {
+  content: "\f160"; }
+
+.wux-ui-fa-sort-amount-desc:before {
+  content: "\f161"; }
+
+.wux-ui-fa-sort-numeric-asc:before {
+  content: "\f162"; }
+
+.wux-ui-fa-sort-numeric-desc:before {
+  content: "\f163"; }
+
+.wux-ui-fa-thumbs-up:before {
+  content: "\f164"; }
+
+.wux-ui-fa-thumbs-down:before {
+  content: "\f165"; }
+
+.wux-ui-fa-youtube-square:before {
+  content: "\f166"; }
+
+.wux-ui-fa-youtube:before {
+  content: "\f167"; }
+
+.wux-ui-fa-xing:before {
+  content: "\f168"; }
+
+.wux-ui-fa-xing-square:before {
+  content: "\f169"; }
+
+.wux-ui-fa-youtube-play:before {
+  content: "\f16a"; }
+
+.wux-ui-fa-dropbox:before {
+  content: "\f16b"; }
+
+.wux-ui-fa-stack-overflow:before {
+  content: "\f16c"; }
+
+.wux-ui-fa-instagram:before {
+  content: "\f16d"; }
+
+.wux-ui-fa-flickr:before {
+  content: "\f16e"; }
+
+.wux-ui-fa-adn:before {
+  content: "\f170"; }
+
+.wux-ui-fa-bitbucket:before {
+  content: "\f171"; }
+
+.wux-ui-fa-bitbucket-square:before {
+  content: "\f172"; }
+
+.wux-ui-fa-tumblr:before {
+  content: "\f173"; }
+
+.wux-ui-fa-tumblr-square:before {
+  content: "\f174"; }
+
+.wux-ui-fa-long-arrow-down:before {
+  content: "\f175"; }
+
+.wux-ui-fa-long-arrow-up:before {
+  content: "\f176"; }
+
+.wux-ui-fa-long-arrow-left:before {
+  content: "\f177"; }
+
+.wux-ui-fa-long-arrow-right:before {
+  content: "\f178"; }
+
+.wux-ui-fa-apple:before {
+  content: "\f179"; }
+
+.wux-ui-fa-windows:before {
+  content: "\f17a"; }
+
+.wux-ui-fa-android:before {
+  content: "\f17b"; }
+
+.wux-ui-fa-linux:before {
+  content: "\f17c"; }
+
+.wux-ui-fa-dribbble:before {
+  content: "\f17d"; }
+
+.wux-ui-fa-skype:before {
+  content: "\f17e"; }
+
+.wux-ui-fa-foursquare:before {
+  content: "\f180"; }
+
+.wux-ui-fa-trello:before {
+  content: "\f181"; }
+
+.wux-ui-fa-female:before {
+  content: "\f182"; }
+
+.wux-ui-fa-male:before {
+  content: "\f183"; }
+
+.wux-ui-fa-gittip:before, .wux-ui-fa-gratipay:before {
+  content: "\f184"; }
+
+.wux-ui-fa-sun-o:before {
+  content: "\f185"; }
+
+.wux-ui-fa-moon-o:before {
+  content: "\f186"; }
+
+.wux-ui-fa-archive:before {
+  content: "\f187"; }
+
+.wux-ui-fa-bug:before {
+  content: "\f188"; }
+
+.wux-ui-fa-vk:before {
+  content: "\f189"; }
+
+.wux-ui-fa-weibo:before {
+  content: "\f18a"; }
+
+.wux-ui-fa-renren:before {
+  content: "\f18b"; }
+
+.wux-ui-fa-pagelines:before {
+  content: "\f18c"; }
+
+.wux-ui-fa-stack-exchange:before {
+  content: "\f18d"; }
+
+.wux-ui-fa-arrow-circle-o-right:before {
+  content: "\f18e"; }
+
+.wux-ui-fa-arrow-circle-o-left:before {
+  content: "\f190"; }
+
+.wux-ui-fa-toggle-left:before, .wux-ui-fa-caret-square-o-left:before {
+  content: "\f191"; }
+
+.wux-ui-fa-dot-circle-o:before {
+  content: "\f192"; }
+
+.wux-ui-fa-wheelchair:before {
+  content: "\f193"; }
+
+.wux-ui-fa-vimeo-square:before {
+  content: "\f194"; }
+
+.wux-ui-fa-turkish-lira:before, .wux-ui-fa-try:before {
+  content: "\f195"; }
+
+.wux-ui-fa-plus-square-o:before {
+  content: "\f196"; }
+
+.wux-ui-fa-space-shuttle:before {
+  content: "\f197"; }
+
+.wux-ui-fa-slack:before {
+  content: "\f198"; }
+
+.wux-ui-fa-envelope-square:before {
+  content: "\f199"; }
+
+.wux-ui-fa-wordpress:before {
+  content: "\f19a"; }
+
+.wux-ui-fa-openid:before {
+  content: "\f19b"; }
+
+.wux-ui-fa-institution:before, .wux-ui-fa-bank:before, .wux-ui-fa-university:before {
+  content: "\f19c"; }
+
+.wux-ui-fa-mortar-board:before, .wux-ui-fa-graduation-cap:before {
+  content: "\f19d"; }
+
+.wux-ui-fa-yahoo:before {
+  content: "\f19e"; }
+
+.wux-ui-fa-google:before {
+  content: "\f1a0"; }
+
+.wux-ui-fa-reddit:before {
+  content: "\f1a1"; }
+
+.wux-ui-fa-reddit-square:before {
+  content: "\f1a2"; }
+
+.wux-ui-fa-stumbleupon-circle:before {
+  content: "\f1a3"; }
+
+.wux-ui-fa-stumbleupon:before {
+  content: "\f1a4"; }
+
+.wux-ui-fa-delicious:before {
+  content: "\f1a5"; }
+
+.wux-ui-fa-digg:before {
+  content: "\f1a6"; }
+
+.wux-ui-fa-pied-piper:before {
+  content: "\f1a7"; }
+
+.wux-ui-fa-pied-piper-alt:before {
+  content: "\f1a8"; }
+
+.wux-ui-fa-drupal:before {
+  content: "\f1a9"; }
+
+.wux-ui-fa-joomla:before {
+  content: "\f1aa"; }
+
+.wux-ui-fa-language:before {
+  content: "\f1ab"; }
+
+.wux-ui-fa-fax:before {
+  content: "\f1ac"; }
+
+.wux-ui-fa-building:before {
+  content: "\f1ad"; }
+
+.wux-ui-fa-child:before {
+  content: "\f1ae"; }
+
+.wux-ui-fa-paw:before {
+  content: "\f1b0"; }
+
+.wux-ui-fa-spoon:before {
+  content: "\f1b1"; }
+
+.wux-ui-fa-cube:before {
+  content: "\f1b2"; }
+
+.wux-ui-fa-cubes:before {
+  content: "\f1b3"; }
+
+.wux-ui-fa-behance:before {
+  content: "\f1b4"; }
+
+.wux-ui-fa-behance-square:before {
+  content: "\f1b5"; }
+
+.wux-ui-fa-steam:before {
+  content: "\f1b6"; }
+
+.wux-ui-fa-steam-square:before {
+  content: "\f1b7"; }
+
+.wux-ui-fa-recycle:before {
+  content: "\f1b8"; }
+
+.wux-ui-fa-automobile:before, .wux-ui-fa-car:before {
+  content: "\f1b9"; }
+
+.wux-ui-fa-cab:before, .wux-ui-fa-taxi:before {
+  content: "\f1ba"; }
+
+.wux-ui-fa-tree:before {
+  content: "\f1bb"; }
+
+.wux-ui-fa-spotify:before {
+  content: "\f1bc"; }
+
+.wux-ui-fa-deviantart:before {
+  content: "\f1bd"; }
+
+.wux-ui-fa-soundcloud:before {
+  content: "\f1be"; }
+
+.wux-ui-fa-database:before {
+  content: "\f1c0"; }
+
+.wux-ui-fa-file-pdf-o:before {
+  content: "\f1c1"; }
+
+.wux-ui-fa-file-word-o:before {
+  content: "\f1c2"; }
+
+.wux-ui-fa-file-excel-o:before {
+  content: "\f1c3"; }
+
+.wux-ui-fa-file-powerpoint-o:before {
+  content: "\f1c4"; }
+
+.wux-ui-fa-file-photo-o:before, .wux-ui-fa-file-picture-o:before, .wux-ui-fa-file-image-o:before {
+  content: "\f1c5"; }
+
+.wux-ui-fa-file-zip-o:before, .wux-ui-fa-file-archive-o:before {
+  content: "\f1c6"; }
+
+.wux-ui-fa-file-sound-o:before, .wux-ui-fa-file-audio-o:before {
+  content: "\f1c7"; }
+
+.wux-ui-fa-file-movie-o:before, .wux-ui-fa-file-video-o:before {
+  content: "\f1c8"; }
+
+.wux-ui-fa-file-code-o:before {
+  content: "\f1c9"; }
+
+.wux-ui-fa-vine:before {
+  content: "\f1ca"; }
+
+.wux-ui-fa-codepen:before {
+  content: "\f1cb"; }
+
+.wux-ui-fa-jsfiddle:before {
+  content: "\f1cc"; }
+
+.wux-ui-fa-life-bouy:before, .wux-ui-fa-life-buoy:before, .wux-ui-fa-life-saver:before, .wux-ui-fa-support:before, .wux-ui-fa-life-ring:before {
+  content: "\f1cd"; }
+
+.wux-ui-fa-circle-o-notch:before {
+  content: "\f1ce"; }
+
+.wux-ui-fa-ra:before, .wux-ui-fa-rebel:before {
+  content: "\f1d0"; }
+
+.wux-ui-fa-ge:before, .wux-ui-fa-empire:before {
+  content: "\f1d1"; }
+
+.wux-ui-fa-git-square:before {
+  content: "\f1d2"; }
+
+.wux-ui-fa-git:before {
+  content: "\f1d3"; }
+
+.wux-ui-fa-hacker-news:before {
+  content: "\f1d4"; }
+
+.wux-ui-fa-tencent-weibo:before {
+  content: "\f1d5"; }
+
+.wux-ui-fa-qq:before {
+  content: "\f1d6"; }
+
+.wux-ui-fa-wechat:before, .wux-ui-fa-weixin:before {
+  content: "\f1d7"; }
+
+.wux-ui-fa-send:before, .wux-ui-fa-paper-plane:before {
+  content: "\f1d8"; }
+
+.wux-ui-fa-send-o:before, .wux-ui-fa-paper-plane-o:before {
+  content: "\f1d9"; }
+
+.wux-ui-fa-history:before {
+  content: "\f1da"; }
+
+.wux-ui-fa-genderless:before, .wux-ui-fa-circle-thin:before {
+  content: "\f1db"; }
+
+.wux-ui-fa-header:before {
+  content: "\f1dc"; }
+
+.wux-ui-fa-paragraph:before {
+  content: "\f1dd"; }
+
+.wux-ui-fa-sliders:before {
+  content: "\f1de"; }
+
+.wux-ui-fa-share-alt:before {
+  content: "\f1e0"; }
+
+.wux-ui-fa-share-alt-square:before {
+  content: "\f1e1"; }
+
+.wux-ui-fa-bomb:before {
+  content: "\f1e2"; }
+
+.wux-ui-fa-soccer-ball-o:before, .wux-ui-fa-futbol-o:before {
+  content: "\f1e3"; }
+
+.wux-ui-fa-tty:before {
+  content: "\f1e4"; }
+
+.wux-ui-fa-binoculars:before {
+  content: "\f1e5"; }
+
+.wux-ui-fa-plug:before {
+  content: "\f1e6"; }
+
+.wux-ui-fa-slideshare:before {
+  content: "\f1e7"; }
+
+.wux-ui-fa-twitch:before {
+  content: "\f1e8"; }
+
+.wux-ui-fa-yelp:before {
+  content: "\f1e9"; }
+
+.wux-ui-fa-newspaper-o:before {
+  content: "\f1ea"; }
+
+.wux-ui-fa-wifi:before {
+  content: "\f1eb"; }
+
+.wux-ui-fa-calculator:before {
+  content: "\f1ec"; }
+
+.wux-ui-fa-paypal:before {
+  content: "\f1ed"; }
+
+.wux-ui-fa-google-wallet:before {
+  content: "\f1ee"; }
+
+.wux-ui-fa-cc-visa:before {
+  content: "\f1f0"; }
+
+.wux-ui-fa-cc-mastercard:before {
+  content: "\f1f1"; }
+
+.wux-ui-fa-cc-discover:before {
+  content: "\f1f2"; }
+
+.wux-ui-fa-cc-amex:before {
+  content: "\f1f3"; }
+
+.wux-ui-fa-cc-paypal:before {
+  content: "\f1f4"; }
+
+.wux-ui-fa-cc-stripe:before {
+  content: "\f1f5"; }
+
+.wux-ui-fa-bell-slash:before {
+  content: "\f1f6"; }
+
+.wux-ui-fa-bell-slash-o:before {
+  content: "\f1f7"; }
+
+.wux-ui-fa-trash:before {
+  content: "\f1f8"; }
+
+.wux-ui-fa-copyright:before {
+  content: "\f1f9"; }
+
+.wux-ui-fa-at:before {
+  content: "\f1fa"; }
+
+.wux-ui-fa-eyedropper:before {
+  content: "\f1fb"; }
+
+.wux-ui-fa-paint-brush:before {
+  content: "\f1fc"; }
+
+.wux-ui-fa-birthday-cake:before {
+  content: "\f1fd"; }
+
+.wux-ui-fa-area-chart:before {
+  content: "\f1fe"; }
+
+.wux-ui-fa-pie-chart:before {
+  content: "\f200"; }
+
+.wux-ui-fa-line-chart:before {
+  content: "\f201"; }
+
+.wux-ui-fa-lastfm:before {
+  content: "\f202"; }
+
+.wux-ui-fa-lastfm-square:before {
+  content: "\f203"; }
+
+.wux-ui-fa-toggle-off:before {
+  content: "\f204"; }
+
+.wux-ui-fa-toggle-on:before {
+  content: "\f205"; }
+
+.wux-ui-fa-bicycle:before {
+  content: "\f206"; }
+
+.wux-ui-fa-bus:before {
+  content: "\f207"; }
+
+.wux-ui-fa-ioxhost:before {
+  content: "\f208"; }
+
+.wux-ui-fa-angellist:before {
+  content: "\f209"; }
+
+.wux-ui-fa-cc:before {
+  content: "\f20a"; }
+
+.wux-ui-fa-shekel:before, .wux-ui-fa-sheqel:before, .wux-ui-fa-ils:before {
+  content: "\f20b"; }
+
+.wux-ui-fa-meanpath:before {
+  content: "\f20c"; }
+
+.wux-ui-fa-buysellads:before {
+  content: "\f20d"; }
+
+.wux-ui-fa-connectdevelop:before {
+  content: "\f20e"; }
+
+.wux-ui-fa-dashcube:before {
+  content: "\f210"; }
+
+.wux-ui-fa-forumbee:before {
+  content: "\f211"; }
+
+.wux-ui-fa-leanpub:before {
+  content: "\f212"; }
+
+.wux-ui-fa-sellsy:before {
+  content: "\f213"; }
+
+.wux-ui-fa-shirtsinbulk:before {
+  content: "\f214"; }
+
+.wux-ui-fa-simplybuilt:before {
+  content: "\f215"; }
+
+.wux-ui-fa-skyatlas:before {
+  content: "\f216"; }
+
+.wux-ui-fa-cart-plus:before {
+  content: "\f217"; }
+
+.wux-ui-fa-cart-arrow-down:before {
+  content: "\f218"; }
+
+.wux-ui-fa-diamond:before {
+  content: "\f219"; }
+
+.wux-ui-fa-ship:before {
+  content: "\f21a"; }
+
+.wux-ui-fa-user-secret:before {
+  content: "\f21b"; }
+
+.wux-ui-fa-motorcycle:before {
+  content: "\f21c"; }
+
+.wux-ui-fa-street-view:before {
+  content: "\f21d"; }
+
+.wux-ui-fa-heartbeat:before {
+  content: "\f21e"; }
+
+.wux-ui-fa-venus:before {
+  content: "\f221"; }
+
+.wux-ui-fa-mars:before {
+  content: "\f222"; }
+
+.wux-ui-fa-mercury:before {
+  content: "\f223"; }
+
+.wux-ui-fa-transgender:before {
+  content: "\f224"; }
+
+.wux-ui-fa-transgender-alt:before {
+  content: "\f225"; }
+
+.wux-ui-fa-venus-double:before {
+  content: "\f226"; }
+
+.wux-ui-fa-mars-double:before {
+  content: "\f227"; }
+
+.wux-ui-fa-venus-mars:before {
+  content: "\f228"; }
+
+.wux-ui-fa-mars-stroke:before {
+  content: "\f229"; }
+
+.wux-ui-fa-mars-stroke-v:before {
+  content: "\f22a"; }
+
+.wux-ui-fa-mars-stroke-h:before {
+  content: "\f22b"; }
+
+.wux-ui-fa-neuter:before {
+  content: "\f22c"; }
+
+.wux-ui-fa-facebook-official:before {
+  content: "\f230"; }
+
+.wux-ui-fa-pinterest-p:before {
+  content: "\f231"; }
+
+.wux-ui-fa-whatsapp:before {
+  content: "\f232"; }
+
+.wux-ui-fa-server:before {
+  content: "\f233"; }
+
+.wux-ui-fa-user-plus:before {
+  content: "\f234"; }
+
+.wux-ui-fa-user-times:before {
+  content: "\f235"; }
+
+.wux-ui-fa-hotel:before, .wux-ui-fa-bed:before {
+  content: "\f236"; }
+
+.wux-ui-fa-viacoin:before {
+  content: "\f237"; }
+
+.wux-ui-fa-train:before {
+  content: "\f238"; }
+
+.wux-ui-fa-subway:before {
+  content: "\f239"; }
+
+.wux-ui-fa-medium:before {
+  content: "\f23a"; }
+
+.wux-ui-fa-sorting-asc:before {
+  content: '\f160'; }
+
+.wux-ui-fa-sorting-desc:before {
+  content: '\f161'; }
+
+.wux-ui-fa-alpha-sorting-a-z:before {
+  content: '\f15d'; }
+
+.wux-ui-fa-alpha-sorting-z-a:before {
+  content: '\f15e'; }
+
+.wux-ui-fa-num-sorting-1-2:before {
+  content: '\f162'; }
+
+.wux-ui-fa-num-sorting-2-1:before {
+  content: '\f163'; }
+
+/**
+ * Font 3DS
+ */
+@font-face {
+  font-family: 'DSFontIcon';
+  font-style: normal;
+  font-weight: normal;
+  src: url('assets/fonts/3ds_fonticon.eot') format('embedded-opentype'), url('assets/fonts/3ds_fonticon.woff') format('woff'), url('assets/fonts/3ds_fonticon.woff2') format('woff2'), url('assets/fonts/3ds_fonticon.ttf') format('truetype'), url('assets/fonts/3ds_fonticon.svg') format('svg');
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.wux-ui-3ds {
+  display: inline-block;
+  font: normal normal normal 14px/1 DSFontIcon;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transform: translate(0, 0); }
+
+/* makes the font 33% larger relative to the icon container */
+.wux-ui-3ds-lg {
+  font-size: 1.33333em;
+  vertical-align: -15%; }
+
+.wux-ui-3ds-2x {
+  font-size: 2em; }
+
+.wux-ui-3ds-3x {
+  font-size: 3em; }
+
+.wux-ui-3ds-4x {
+  font-size: 4em; }
+
+.wux-ui-3ds-5x {
+  font-size: 5em; }
+
+.wux-ui-3ds-fw {
+  width: 1.28571em;
+  text-align: center; }
+
+.wux-ui-3ds-ul {
+  padding-left: 0;
+  margin-left: 2.14286em;
+  list-style-type: none; }
+
+.wux-ui-3ds-ul > li {
+  position: relative; }
+
+.wux-ui-3ds-li {
+  position: absolute;
+  left: -2.14286em;
+  width: 2.14286em;
+  top: 0.14286em;
+  text-align: center; }
+
+.wux-ui-3ds-li.wux-ui-3ds-lg {
+  left: -1.85714em; }
+
+.wux-ui-3ds-border {
+  padding: 0.2em 0.25em 0.15em;
+  border: solid 0.08em #eeeeee;
+  border-radius: 0.1em; }
+
+.pull-right {
+  float: right; }
+
+.pull-left {
+  float: left; }
+
+.wux-ui-3ds.pull-left {
+  margin-right: 0.3em; }
+
+.wux-ui-3ds.pull-right {
+  margin-left: 0.3em; }
+
+.wux-ui-3ds-spin {
+  -webkit-animation: fa-spin 2s infinite linear;
+  animation: fa-spin 2s infinite linear; }
+
+.wux-ui-3ds-pulse {
+  -webkit-animation: fa-spin 1s infinite steps(8);
+  animation: fa-spin 1s infinite steps(8); }
+
+@-webkit-keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg); } }
+
+@keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg); } }
+
+.wux-ui-3ds-rotate-90 {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg); }
+
+.wux-ui-3ds-rotate-180 {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg); }
+
+.wux-ui-3ds-rotate-270 {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+  -webkit-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  transform: rotate(270deg); }
+
+.wux-ui-3ds-flip-horizontal {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1);
+  -webkit-transform: scale(-1, 1);
+  -ms-transform: scale(-1, 1);
+  transform: scale(-1, 1); }
+
+.wux-ui-3ds-flip-vertical {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1);
+  -webkit-transform: scale(1, -1);
+  -ms-transform: scale(1, -1);
+  transform: scale(1, -1); }
+
+:root .wux-ui-3ds-rotate-90, :root .wux-ui-3ds-rotate-180, :root .wux-ui-3ds-rotate-270, :root .wux-ui-3ds-flip-horizontal, :root .wux-ui-3ds-flip-vertical {
+  filter: none; }
+
+.wux-ui-3ds-stack {
+  position: relative;
+  display: inline-block;
+  width: 2em;
+  height: 2em;
+  line-height: 2em;
+  vertical-align: middle; }
+
+.wux-ui-3ds-stack-1x, .wux-ui-3ds-stack-2x {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: center; }
+
+.wux-ui-3ds-stack-1x {
+  line-height: inherit; }
+
+.wux-ui-3ds-stack-2x {
+  font-size: 2em; }
+
+.wux-ui-3ds-inverse {
+  color: #ffffff; }
+
+.wux-ui-3ds-topbar-user:before {
+  content: '\e239'; }
+
+.wux-ui-3ds-topbar-users:before {
+  content: '\e240'; }
+
+.wux-ui-3ds-topbar-home:before {
+  content: '\e241'; }
+
+.wux-ui-3ds-topbar-share:before {
+  content: '\e242'; }
+
+.wux-ui-3ds-component:before {
+  content: '\e056'; }
+
+.wux-ui-3ds-topbar-notification:before {
+  content: '\e243'; }
+
+.wux-ui-3ds-topbar-cloud:before {
+  content: '\e244'; }
+
+.wux-ui-3ds-topbar-cloud-off:before {
+  content: '\e1e5'; }
+
+.wux-ui-3ds-topbar-cloud-key:before {
+  content: '\e05c'; }
+
+.wux-ui-3ds-topbar-comment:before {
+  content: '\e946'; }
+
+.wux-ui-3ds-topbar-chat:before {
+  content: '\e245'; }
+
+.wux-ui-3ds-topbar-chat-add:before {
+  content: '\e873'; }
+
+.wux-ui-3ds-topbar-chat-delete:before {
+  content: '\e874'; }
+
+.wux-ui-3ds-topbar-tag:before {
+  content: '\e246'; }
+
+.wux-ui-3ds-topbar-tag-active:before {
+  content: '\e247'; }
+
+.wux-ui-3ds-i-question:before {
+  content: '\e124'; }
+
+.wux-ui-3ds-topbar-info:before {
+  content: '\e904'; }
+
+.wux-ui-3ds-6w-who:before {
+  content: '\e201'; }
+
+.wux-ui-3ds-6w-when:before {
+  content: '\e202'; }
+
+.wux-ui-3ds-6w-what:before {
+  content: '\e203'; }
+
+.wux-ui-3ds-6w-where:before {
+  content: '\e204'; }
+
+.wux-ui-3ds-6w-why:before {
+  content: '\e205'; }
+
+.wux-ui-3ds-6w-how:before {
+  content: '\e206'; }
+
+.wux-ui-3ds-compass-social:before {
+  content: '\e282'; }
+
+.wux-ui-3ds-compass-3d:before {
+  content: '\e283'; }
+
+.wux-ui-3ds-compass-simulation:before {
+  content: '\e284'; }
+
+.wux-ui-3ds-compass-intelligence:before {
+  content: '\e285'; }
+
+.wux-ui-3ds-compass-services:before {
+  content: '\e286'; }
+
+.wux-ui-3ds-compass-services-add:before {
+  content: '\e0c7'; }
+
+.wux-ui-3ds-compass-services-delete:before {
+  content: '\e0c8'; }
+
+.wux-ui-3ds-compass-play:before {
+  content: '\e703'; }
+
+.wux-ui-3ds-power:before {
+  content: '\e324'; }
+
+.wux-ui-3ds-power-off:before {
+  content: '\e1e6'; }
+
+.wux-ui-3ds-login:before {
+  content: '\e102'; }
+
+.wux-ui-3ds-logout:before {
+  content: '\e103'; }
+
+.wux-ui-3ds-key:before {
+  content: '\e104'; }
+
+.wux-ui-3ds-key-credential:before {
+  content: '\e482'; }
+
+.wux-ui-3ds-key-credential-add:before {
+  content: '\e483'; }
+
+.wux-ui-3ds-key-credential-delete:before {
+  content: '\e484'; }
+
+.wux-ui-3ds-vcard:before {
+  content: '\e106'; }
+
+.wux-ui-3ds-fingerprint:before {
+  content: '\e457'; }
+
+.wux-ui-3ds-barcode:before {
+  content: '\e660'; }
+
+.wux-ui-3ds-barcode-ok:before {
+  content: '\e55c'; }
+
+.wux-ui-3ds-barcode-scanner:before {
+  content: '\e4c8'; }
+
+.wux-ui-3ds-chart-pie:before {
+  content: '\e185'; }
+
+.wux-ui-3ds-chart-line:before {
+  content: '\e186'; }
+
+.wux-ui-3ds-chart-line-add:before {
+  content: '\e3e8'; }
+
+.wux-ui-3ds-chart-line-delete:before {
+  content: '\e3e9'; }
+
+.wux-ui-3ds-chart-line-bar-combine:before {
+  content: '\e758'; }
+
+.wux-ui-3ds-chart-line-single:before {
+  content: '\e302'; }
+
+.wux-ui-3ds-chart-line-single-clock:before {
+  content: '\e55d'; }
+
+.wux-ui-3ds-chart-line-control:before {
+  content: '\e905'; }
+
+.wux-ui-3ds-chart-spline:before {
+  content: '\e363'; }
+
+.wux-ui-3ds-chart-time-series-zoomable:before {
+  content: '\e364'; }
+
+.wux-ui-3ds-chart-bar:before {
+  content: '\e187'; }
+
+.wux-ui-3ds-chart-bar-growing-up:before {
+  content: '\e827'; }
+
+.wux-ui-3ds-chart-bar-stacked:before {
+  content: '\e365'; }
+
+.wux-ui-3ds-chart-bar-stacked-full:before {
+  content: '\e759'; }
+
+.wux-ui-3ds-chart-bar-negative:before {
+  content: '\e366'; }
+
+.wux-ui-3ds-chart-bar-radial:before {
+  content: '\e1e7'; }
+
+.wux-ui-3ds-chart-area:before {
+  content: '\e188'; }
+
+.wux-ui-3ds-chart-area-stacked:before {
+  content: '\e367'; }
+
+.wux-ui-3ds-chart-area-stacked-full:before {
+  content: '\e760'; }
+
+.wux-ui-3ds-chart-area-negative:before {
+  content: '\e368'; }
+
+.wux-ui-3ds-chart-area-range:before {
+  content: '\e369'; }
+
+.wux-ui-3ds-chart-column-range:before {
+  content: '\e370'; }
+
+.wux-ui-3ds-chart-column-negative:before {
+  content: '\e371'; }
+
+.wux-ui-3ds-chart-donut:before {
+  content: '\e372'; }
+
+.wux-ui-3ds-chart-donut-half:before {
+  content: '\e373'; }
+
+.wux-ui-3ds-chart-scatter-plot:before {
+  content: '\e374'; }
+
+.wux-ui-3ds-chart-bubble:before {
+  content: '\e375'; }
+
+.wux-ui-3ds-chart-polygon:before {
+  content: '\e376'; }
+
+.wux-ui-3ds-chart-gauge-solid:before {
+  content: '\e377'; }
+
+.wux-ui-3ds-chart-gauge-angular:before {
+  content: '\e378'; }
+
+.wux-ui-3ds-chart-map-heat:before {
+  content: '\e379'; }
+
+.wux-ui-3ds-chart-map-tree:before {
+  content: '\e380'; }
+
+.wux-ui-3ds-chart-map-tree-add:before {
+  content: '\e0c9'; }
+
+.wux-ui-3ds-chart-map-tree-delete:before {
+  content: '\e0ca'; }
+
+.wux-ui-3ds-chart-pyramid:before {
+  content: '\e381'; }
+
+.wux-ui-3ds-chart-funnel:before {
+  content: '\e382'; }
+
+.wux-ui-3ds-chart-thumbnail-graph:before {
+  content: '\e422'; }
+
+.wux-ui-3ds-chart-thumbnail-graph-move:before {
+  content: '\e797'; }
+
+.wux-ui-3ds-chart-box-whisker:before {
+  content: '\e906'; }
+
+.wux-ui-3ds-chart-pro-cap:before {
+  content: '\e907'; }
+
+.wux-ui-3ds-chart-qq-plot:before {
+  content: '\e908'; }
+
+.wux-ui-3ds-chart-box-cox-transformation:before {
+  content: '\e909'; }
+
+.wux-ui-3ds-chart-gantt:before {
+  content: '\e0cb'; }
+
+.wux-ui-3ds-chart-timeline:before {
+  content: '\e1ca'; }
+
+.wux-ui-3ds-chart-schedule:before {
+  content: '\e1e8'; }
+
+.wux-ui-3ds-chart-schedule-off:before {
+  content: '\e1e9'; }
+
+.wux-ui-3ds-chart-schedule-filter:before {
+  content: '\e1ea'; }
+
+.wux-ui-3ds-chart-schedule-brush:before {
+  content: '\e1eb'; }
+
+.wux-ui-3ds-chart-kanban:before {
+  content: '\e0cc'; }
+
+.wux-ui-3ds-chart-kanban-flash:before {
+  content: '\e1ec'; }
+
+.wux-ui-3ds-graph-linear:before {
+  content: '\e590'; }
+
+.wux-ui-3ds-graph-chord:before {
+  content: '\e591'; }
+
+.wux-ui-3ds-graph-polar:before {
+  content: '\e761'; }
+
+.wux-ui-3ds-graph-polar-area:before {
+  content: '\e1ed'; }
+
+.wux-ui-3ds-graph-windrose:before {
+  content: '\e762'; }
+
+.wux-ui-3ds-graph-sankey:before {
+  content: '\e947'; }
+
+.wux-ui-3ds-graph-egraph:before {
+  content: '\e592'; }
+
+.wux-ui-3ds-graph-egraph-down:before {
+  content: '\e593'; }
+
+.wux-ui-3ds-graph-egraph-list:before {
+  content: '\e594'; }
+
+.wux-ui-3ds-graph-phase-diagram:before {
+  content: '\e3ea'; }
+
+.wux-ui-3ds-legend:before {
+  content: '\e361'; }
+
+.wux-ui-3ds-legend-eye:before {
+  content: '\e362'; }
+
+.wux-ui-3ds-axis-x:before {
+  content: '\e828'; }
+
+.wux-ui-3ds-axis-y:before {
+  content: '\e829'; }
+
+.wux-ui-3ds-download:before {
+  content: '\e036'; }
+
+.wux-ui-3ds-download-block:before {
+  content: '\e4c9'; }
+
+.wux-ui-3ds-download-ok:before {
+  content: '\e55e'; }
+
+.wux-ui-3ds-upload:before {
+  content: '\e037'; }
+
+.wux-ui-3ds-cloud-download:before {
+  content: '\e038'; }
+
+.wux-ui-3ds-cloud-upload:before {
+  content: '\e039'; }
+
+.wux-ui-3ds-cloud:before {
+  content: '\e040'; }
+
+.wux-ui-3ds-cloud-off:before {
+  content: '\e1ee'; }
+
+.wux-ui-3ds-cloud-reset:before {
+  content: '\e55f'; }
+
+.wux-ui-3ds-sync:before {
+  content: '\e345'; }
+
+.wux-ui-3ds-floppy:before {
+  content: '\e041'; }
+
+.wux-ui-3ds-floppy-new:before {
+  content: '\e948'; }
+
+.wux-ui-3ds-floppy-add:before {
+  content: '\e2c7'; }
+
+.wux-ui-3ds-flloppy-delete:before {
+  content: '\e2c8'; }
+
+.wux-ui-3ds-database:before {
+  content: '\e042'; }
+
+.wux-ui-3ds-database-save:before {
+  content: '\e458'; }
+
+.wux-ui-3ds-database-import:before {
+  content: '\e459'; }
+
+.wux-ui-3ds-database-export:before {
+  content: '\e460'; }
+
+.wux-ui-3ds-database-new:before {
+  content: '\e423'; }
+
+.wux-ui-3ds-database-add:before {
+  content: '\e424'; }
+
+.wux-ui-3ds-database-delete:before {
+  content: '\e425'; }
+
+.wux-ui-3ds-database-cog:before {
+  content: '\e426'; }
+
+.wux-ui-3ds-database-hourglass:before {
+  content: '\e830'; }
+
+.wux-ui-3ds-database-refresh:before {
+  content: '\e831'; }
+
+.wux-ui-3ds-database-history:before {
+  content: '\e48e'; }
+
+.wux-ui-3ds-database-infinity:before {
+  content: '\e11b'; }
+
+.wux-ui-3ds-database-info:before {
+  content: '\e35a'; }
+
+.wux-ui-3ds-database-sort:before {
+  content: '\e4ca'; }
+
+.wux-ui-3ds-database-camera:before {
+  content: '\e5dd'; }
+
+.wux-ui-3ds-database-doc:before {
+  content: '\e5de'; }
+
+.wux-ui-3ds-database-pipeline:before {
+  content: '\e5df'; }
+
+.wux-ui-3ds-database-table:before {
+  content: '\e5e0'; }
+
+.wux-ui-3ds-database-migration:before {
+  content: '\e05d'; }
+
+.wux-ui-3ds-drive:before {
+  content: '\e043'; }
+
+.wux-ui-3ds-drive-add:before {
+  content: '\e595'; }
+
+.wux-ui-3ds-drive-remove:before {
+  content: '\e596'; }
+
+.wux-ui-3ds-drive-delete:before {
+  content: '\e597'; }
+
+.wux-ui-3ds-install:before {
+  content: '\e044'; }
+
+.wux-ui-3ds-cut:before {
+  content: '\e068'; }
+
+.wux-ui-3ds-copy:before {
+  content: '\e069'; }
+
+.wux-ui-3ds-copy-code:before {
+  content: '\e5e1'; }
+
+.wux-ui-3ds-paste:before {
+  content: '\e070'; }
+
+.wux-ui-3ds-paste-plain-text:before {
+  content: '\e311'; }
+
+.wux-ui-3ds-clipboard:before {
+  content: '\e071'; }
+
+.wux-ui-3ds-clipboard-add:before {
+  content: '\e519'; }
+
+.wux-ui-3ds-clipboard-delete:before {
+  content: '\e520'; }
+
+.wux-ui-3ds-bin:before {
+  content: '\e798'; }
+
+.wux-ui-3ds-trash:before {
+  content: '\e072'; }
+
+.wux-ui-3ds-trash-hourglass:before {
+  content: '\e4cb'; }
+
+.wux-ui-3ds-trash-recycle:before {
+  content: '\e763'; }
+
+.wux-ui-3ds-recycle:before {
+  content: '\e661'; }
+
+.wux-ui-3ds-recycle-left:before {
+  content: '\e11c'; }
+
+.wux-ui-3ds-recycle-right:before {
+  content: '\e11d'; }
+
+.wux-ui-3ds-clear:before {
+  content: '\e016'; }
+
+.wux-ui-3ds-move-to:before {
+  content: '\e573'; }
+
+.wux-ui-3ds-move-from:before {
+  content: '\e2c9'; }
+
+.wux-ui-3ds-duplicate:before {
+  content: '\e343'; }
+
+.wux-ui-3ds-select-on:before {
+  content: '\e127'; }
+
+.wux-ui-3ds-select-on-cog:before {
+  content: '\e949'; }
+
+.wux-ui-3ds-select-off:before {
+  content: '\e128'; }
+
+.wux-ui-3ds-select-all:before {
+  content: '\e129'; }
+
+.wux-ui-3ds-select-none:before {
+  content: '\e130'; }
+
+.wux-ui-3ds-select-inverted:before {
+  content: '\e950'; }
+
+.wux-ui-3ds-select-all-checkboxes:before {
+  content: '\e704'; }
+
+.wux-ui-3ds-select-mix-checkboxes:before {
+  content: '\e56a'; }
+
+.wux-ui-3ds-select-none-checkboxes:before {
+  content: '\e705'; }
+
+.wux-ui-3ds-multiselect:before {
+  content: '\e1ef'; }
+
+.wux-ui-3ds-multiselect-pencil:before {
+  content: '\e1f0'; }
+
+.wux-ui-3ds-drag-drop:before {
+  content: '\e178'; }
+
+.wux-ui-3ds-drag-grip:before {
+  content: '\e485'; }
+
+.wux-ui-3ds-replace:before {
+  content: '\e179'; }
+
+.wux-ui-3ds-exchange:before {
+  content: '\e532'; }
+
+.wux-ui-3ds-exchange-add:before {
+  content: '\e533'; }
+
+.wux-ui-3ds-exchange-delete:before {
+  content: '\e534'; }
+
+.wux-ui-3ds-exchange-minus:before {
+  content: '\e11e'; }
+
+.wux-ui-3ds-exchange-cog:before {
+  content: '\e11f'; }
+
+.wux-ui-3ds-swap-left:before {
+  content: '\e19e'; }
+
+.wux-ui-3ds-swap-right:before {
+  content: '\e19f'; }
+
+.wux-ui-3ds-open:before {
+  content: '\e383'; }
+
+.wux-ui-3ds-open-menu-dot:before {
+  content: '\e05e'; }
+
+.wux-ui-3ds-open-cog:before {
+  content: '\e05f'; }
+
+.wux-ui-3ds-open-flash:before {
+  content: '\e06a'; }
+
+.wux-ui-3ds-open-eye:before {
+  content: '\e06b'; }
+
+.wux-ui-3ds-insert:before {
+  content: '\e606'; }
+
+.wux-ui-3ds-import:before {
+  content: '\e079'; }
+
+.wux-ui-3ds-import-multiple:before {
+  content: '\e427'; }
+
+.wux-ui-3ds-export:before {
+  content: '\e080'; }
+
+.wux-ui-3ds-export-multiple:before {
+  content: '\e428'; }
+
+.wux-ui-3ds-export-to-csv:before {
+  content: '\e621'; }
+
+.wux-ui-3ds-export-to-v5:before {
+  content: '\e799'; }
+
+.wux-ui-3ds-export-to-pdf:before {
+  content: '\e12a'; }
+
+.wux-ui-3ds-publish:before {
+  content: '\e081'; }
+
+.wux-ui-3ds-publish-to-3dswym:before {
+  content: '\e12b'; }
+
+.wux-ui-3ds-publish-to-3dswym-new:before {
+  content: '\e12c'; }
+
+.wux-ui-3ds-run:before {
+  content: '\e576'; }
+
+.wux-ui-3ds-compute:before {
+  content: '\e795'; }
+
+.wux-ui-3ds-lock:before {
+  content: '\e025'; }
+
+.wux-ui-3ds-lock-open:before {
+  content: '\e026'; }
+
+.wux-ui-3ds-lock-user:before {
+  content: '\e227'; }
+
+.wux-ui-3ds-lock-open-user:before {
+  content: '\e228'; }
+
+.wux-ui-3ds-lock-download:before {
+  content: '\e2ca'; }
+
+.wux-ui-3ds-block:before {
+  content: '\e108'; }
+
+.wux-ui-3ds-block-hourglass:before {
+  content: '\e4cc'; }
+
+.wux-ui-3ds-ignore:before {
+  content: '\e535'; }
+
+.wux-ui-3ds-ignore-off:before {
+  content: '\e56b'; }
+
+.wux-ui-3ds-plus:before {
+  content: '\e017'; }
+
+.wux-ui-3ds-minus:before {
+  content: '\e018'; }
+
+.wux-ui-3ds-remove:before {
+  content: '\e910'; }
+
+.wux-ui-3ds-new-create:before {
+  content: '\e000'; }
+
+.wux-ui-3ds-undo:before {
+  content: '\e329'; }
+
+.wux-ui-3ds-redo:before {
+  content: '\e330'; }
+
+.wux-ui-3ds-compare-on:before {
+  content: '\e429'; }
+
+.wux-ui-3ds-compare-off:before {
+  content: '\e430'; }
+
+.wux-ui-3ds-compare-add:before {
+  content: '\e431'; }
+
+.wux-ui-3ds-compare-delete:before {
+  content: '\e432'; }
+
+.wux-ui-3ds-group:before {
+  content: '\e662'; }
+
+.wux-ui-3ds-group-add:before {
+  content: '\e468'; }
+
+.wux-ui-3ds-group-delete:before {
+  content: '\e469'; }
+
+.wux-ui-3ds-group-play:before {
+  content: '\e5e2'; }
+
+.wux-ui-3ds-group-x-value:before {
+  content: '\e5e3'; }
+
+.wux-ui-3ds-chevron-down:before {
+  content: '\e139'; }
+
+.wux-ui-3ds-chevron-left:before {
+  content: '\e140'; }
+
+.wux-ui-3ds-chevron-right:before {
+  content: '\e141'; }
+
+.wux-ui-3ds-chevron-up:before {
+  content: '\e142'; }
+
+.wux-ui-3ds-double-chevron-down:before {
+  content: '\e384'; }
+
+.wux-ui-3ds-double-chevron-left:before {
+  content: '\e385'; }
+
+.wux-ui-3ds-double-chevron-right:before {
+  content: '\e386'; }
+
+.wux-ui-3ds-double-chevron-up:before {
+  content: '\e387'; }
+
+.wux-ui-3ds-down:before {
+  content: '\e143'; }
+
+.wux-ui-3ds-left:before {
+  content: '\e144'; }
+
+.wux-ui-3ds-left-add:before {
+  content: '\e12d'; }
+
+.wux-ui-3ds-left-minus:before {
+  content: '\e12e'; }
+
+.wux-ui-3ds-right:before {
+  content: '\e145'; }
+
+.wux-ui-3ds-right-add:before {
+  content: '\e12f'; }
+
+.wux-ui-3ds-right-minus:before {
+  content: '\e13a'; }
+
+.wux-ui-3ds-up:before {
+  content: '\e146'; }
+
+.wux-ui-3ds-down-left:before {
+  content: '\e832'; }
+
+.wux-ui-3ds-down-right:before {
+  content: '\e833'; }
+
+.wux-ui-3ds-up-left:before {
+  content: '\e834'; }
+
+.wux-ui-3ds-up-right:before {
+  content: '\e835'; }
+
+.wux-ui-3ds-double-arrow-horizontal:before {
+  content: '\e38f'; }
+
+.wux-ui-3ds-double-arrow-diagonal:before {
+  content: '\e3eb'; }
+
+.wux-ui-3ds-circular-down:before {
+  content: '\e39a'; }
+
+.wux-ui-3ds-circular-left:before {
+  content: '\e39b'; }
+
+.wux-ui-3ds-circular-right:before {
+  content: '\e39c'; }
+
+.wux-ui-3ds-circular-up:before {
+  content: '\e39d'; }
+
+.wux-ui-3ds-move-to-bottom:before {
+  content: '\e409'; }
+
+.wux-ui-3ds-move-to-start:before {
+  content: '\e410'; }
+
+.wux-ui-3ds-move-to-end:before {
+  content: '\e411'; }
+
+.wux-ui-3ds-move-to-top:before {
+  content: '\e412'; }
+
+.wux-ui-3ds-move-from-start:before {
+  content: '\e56c'; }
+
+.wux-ui-3ds-move-from-end:before {
+  content: '\e56d'; }
+
+.wux-ui-3ds-down-right-constrained:before {
+  content: '\e836'; }
+
+.wux-ui-3ds-down-right-constrained-low:before {
+  content: '\e1a0'; }
+
+.wux-ui-3ds-down-right-constrained-up:before {
+  content: '\e1a1'; }
+
+.wux-ui-3ds-up-right-constrained:before {
+  content: '\e837'; }
+
+.wux-ui-3ds-up-right-constrained-low:before {
+  content: '\e1a2'; }
+
+.wux-ui-3ds-up-right-constrained-up:before {
+  content: '\e1a3'; }
+
+.wux-ui-3ds-up-down-constrained:before {
+  content: '\e875'; }
+
+.wux-ui-3ds-up-down-reduced:before {
+  content: '\e1f1'; }
+
+.wux-ui-3ds-up-down-reduced-dashed:before {
+  content: '\e39e'; }
+
+.wux-ui-3ds-expand-down:before {
+  content: '\e147'; }
+
+.wux-ui-3ds-expand-left:before {
+  content: '\e148'; }
+
+.wux-ui-3ds-expand-right:before {
+  content: '\e149'; }
+
+.wux-ui-3ds-expand-up:before {
+  content: '\e150'; }
+
+.wux-ui-3ds-arrow-combo-vertical:before {
+  content: '\e136'; }
+
+.wux-ui-3ds-arrow-combo-vertical-constrained:before {
+  content: '\e1a4'; }
+
+.wux-ui-3ds-arrow-down-vertical-constrained-low:before {
+  content: '\e1a5'; }
+
+.wux-ui-3ds-arrow-up-vertical-constrained-up:before {
+  content: '\e1a6'; }
+
+.wux-ui-3ds-arrow-combo-horizontal:before {
+  content: '\e137'; }
+
+.wux-ui-3ds-arrow-double-combo:before {
+  content: '\e138'; }
+
+.wux-ui-3ds-view-tag-cloud:before {
+  content: '\e207'; }
+
+.wux-ui-3ds-view-small-thb:before {
+  content: '\e209'; }
+
+.wux-ui-3ds-view-big-thb:before {
+  content: '\e210'; }
+
+.wux-ui-3ds-view-imagewall-thb:before {
+  content: '\e211'; }
+
+.wux-ui-3ds-view-small-tile:before {
+  content: '\e212'; }
+
+.wux-ui-3ds-view-big-tile:before {
+  content: '\e213'; }
+
+.wux-ui-3ds-view-textual-tile:before {
+  content: '\e1a7'; }
+
+.wux-ui-3ds-view-list:before {
+  content: '\e214'; }
+
+.wux-ui-3ds-view-mixed:before {
+  content: '\e0cd'; }
+
+.wux-ui-3ds-view-3dswym-large:before {
+  content: '\e1a8'; }
+
+.wux-ui-3ds-zoom-in:before {
+  content: '\e252'; }
+
+.wux-ui-3ds-zoom-out:before {
+  content: '\e253'; }
+
+.wux-ui-3ds-zoom-in-out:before {
+  content: '\e56e'; }
+
+.wux-ui-3ds-zoom-fit:before {
+  content: '\e275'; }
+
+.wux-ui-3ds-zoom-selected:before {
+  content: '\e276'; }
+
+.wux-ui-3ds-zoom-area:before {
+  content: '\e1cb'; }
+
+.wux-ui-3ds-zoom-reset:before {
+  content: '\e1cc'; }
+
+.wux-ui-3ds-zoom-sync:before {
+  content: '\e56f'; }
+
+.wux-ui-3ds-eye:before {
+  content: '\e027'; }
+
+.wux-ui-3ds-eye-off:before {
+  content: '\e028'; }
+
+.wux-ui-3ds-eye-partial:before {
+  content: '\e876'; }
+
+.wux-ui-3ds-eye-add:before {
+  content: '\e340'; }
+
+.wux-ui-3ds-eye-delete:before {
+  content: '\e341'; }
+
+.wux-ui-3ds-eye-cog:before {
+  content: '\e560'; }
+
+.wux-ui-3ds-eye-windowed:before {
+  content: '\e764'; }
+
+.wux-ui-3ds-eye-isolated:before {
+  content: '\e2cb'; }
+
+.wux-ui-3ds-eye-panoptic:before {
+  content: '\e571'; }
+
+.wux-ui-3ds-rotate-cw:before {
+  content: '\e359'; }
+
+.wux-ui-3ds-rotate-ccw:before {
+  content: '\e360'; }
+
+.wux-ui-3ds-aspect-ratio:before {
+  content: '\e663'; }
+
+.wux-ui-3ds-aspect-ratio-camera:before {
+  content: '\e4f5'; }
+
+.wux-ui-3ds-canvas:before {
+  content: '\e572'; }
+
+.wux-ui-3ds-view-embedded:before {
+  content: '\e800'; }
+
+.wux-ui-3ds-view-pan:before {
+  content: '\e1cd'; }
+
+.wux-ui-3ds-eye-pan:before {
+  content: '\e4f6'; }
+
+.wux-ui-3ds-pan-navigate:before {
+  content: '\e57a'; }
+
+.wux-ui-3ds-side-panel:before {
+  content: '\e620'; }
+
+.wux-ui-3ds-bottom-panel:before {
+  content: '\e653'; }
+
+.wux-ui-3ds-window-split-vertical:before {
+  content: '\e838'; }
+
+.wux-ui-3ds-window-split-horizontal:before {
+  content: '\e839'; }
+
+.wux-ui-3ds-window:before {
+  content: '\e57b'; }
+
+.wux-ui-3ds-window-add:before {
+  content: '\e57c'; }
+
+.wux-ui-3ds-window-delete:before {
+  content: '\e57d'; }
+
+.wux-ui-3ds-window-favorite:before {
+  content: '\e840'; }
+
+.wux-ui-3ds-display-layout-vertical-33:before {
+  content: '\e877'; }
+
+.wux-ui-3ds-display-layout-vertical-50:before {
+  content: '\e878'; }
+
+.wux-ui-3ds-display-layout-vertical-66:before {
+  content: '\e879'; }
+
+.wux-ui-3ds-navigation-skeleton:before {
+  content: '\e4cd'; }
+
+.wux-ui-3ds-ui-comp-input-multivalue:before {
+  content: '\e57e'; }
+
+.wux-ui-3ds-ui-navigation-eye:before {
+  content: '\e57f'; }
+
+.wux-ui-3ds-doc:before {
+  content: '\e051'; }
+
+.wux-ui-3ds-doc-add:before {
+  content: '\e308'; }
+
+.wux-ui-3ds-doc-delete:before {
+  content: '\e309'; }
+
+.wux-ui-3ds-doc-link:before {
+  content: '\e622'; }
+
+.wux-ui-3ds-doc-select:before {
+  content: '\e801'; }
+
+.wux-ui-3ds-doc-upload:before {
+  content: '\e880'; }
+
+.wux-ui-3ds-doc-update:before {
+  content: '\e881'; }
+
+.wux-ui-3ds-doc-insert:before {
+  content: '\e911'; }
+
+.wux-ui-3ds-doc-user:before {
+  content: '\e951'; }
+
+.wux-ui-3ds-doc-eye:before {
+  content: '\e48f'; }
+
+.wux-ui-3ds-doc-eye-off:before {
+  content: '\e49a'; }
+
+.wux-ui-3ds-doc-template:before {
+  content: '\e58a'; }
+
+.wux-ui-3ds-doc-bookmark:before {
+  content: '\e58b'; }
+
+.wux-ui-3ds-doc-bookmark-template:before {
+  content: '\e58c'; }
+
+.wux-ui-3ds-docs:before {
+  content: '\e052'; }
+
+.wux-ui-3ds-docs-add:before {
+  content: '\e433'; }
+
+.wux-ui-3ds-docs-delete:before {
+  content: '\e434'; }
+
+.wux-ui-3ds-docs-user:before {
+  content: '\e726'; }
+
+.wux-ui-3ds-docs-text-shield:before {
+  content: '\e39f'; }
+
+.wux-ui-3ds-docs-duplicate:before {
+  content: '\e841'; }
+
+.wux-ui-3ds-doc-landscape:before {
+  content: '\e053'; }
+
+.wux-ui-3ds-doc-log:before {
+  content: '\e054'; }
+
+.wux-ui-3ds-doc-log-filter:before {
+  content: '\e49b'; }
+
+.wux-ui-3ds-doc-log-history:before {
+  content: '\e58d'; }
+
+.wux-ui-3ds-doc-text:before {
+  content: '\e623'; }
+
+.wux-ui-3ds-doc-text-add:before {
+  content: '\e624'; }
+
+.wux-ui-3ds-doc-text-delete:before {
+  content: '\e625'; }
+
+.wux-ui-3ds-doc-text-upload:before {
+  content: '\e626'; }
+
+.wux-ui-3ds-doc-text-lock:before {
+  content: '\e727'; }
+
+.wux-ui-3ds-doc-text-clock:before {
+  content: '\e3a0'; }
+
+.wux-ui-3ds-doc-text-shield:before {
+  content: '\e728'; }
+
+.wux-ui-3ds-doc-text-shield-user:before {
+  content: '\e3a1'; }
+
+.wux-ui-3ds-doc-text-shield-template:before {
+  content: '\e3a2'; }
+
+.wux-ui-3ds-doc-text-request:before {
+  content: '\e842'; }
+
+.wux-ui-3ds-doc-text-magic-wand:before {
+  content: '\e4ce'; }
+
+.wux-ui-3ds-doc-text-step:before {
+  content: '\e06c'; }
+
+.wux-ui-3ds-doc-text-xml:before {
+  content: '\e0ce'; }
+
+.wux-ui-3ds-doc-text-json:before {
+  content: '\e2cc'; }
+
+.wux-ui-3ds-doc-text-banknotes:before {
+  content: '\e3ec'; }
+
+.wux-ui-3ds-doc-text-banknotes-add:before {
+  content: '\e2cd'; }
+
+.wux-ui-3ds-doc-image-delete:before {
+  content: '\e843'; }
+
+.wux-ui-3ds-newspaper:before {
+  content: '\e055'; }
+
+.wux-ui-3ds-report:before {
+  content: '\e802'; }
+
+.wux-ui-3ds-report-pro-cap:before {
+  content: '\e912'; }
+
+.wux-ui-3ds-survey:before {
+  content: '\e249'; }
+
+.wux-ui-3ds-survey-add:before {
+  content: '\e765'; }
+
+.wux-ui-3ds-survey-delete:before {
+  content: '\e766'; }
+
+.wux-ui-3ds-survey-list:before {
+  content: '\e577'; }
+
+.wux-ui-3ds-doc-quotation:before {
+  content: '\e844'; }
+
+.wux-ui-3ds-doc-quotation-request:before {
+  content: '\e845'; }
+
+.wux-ui-3ds-doc-draft:before {
+  content: '\e13b'; }
+
+.wux-ui-3ds-doc-draft-floppy:before {
+  content: '\e13c'; }
+
+.wux-ui-3ds-doc-dataset:before {
+  content: '\e13d'; }
+
+.wux-ui-3ds-doc-technical-request:before {
+  content: '\e4cf'; }
+
+.wux-ui-3ds-doc-excel:before {
+  content: '\e953'; }
+
+.wux-ui-3ds-doc-powerpoint:before {
+  content: '\e954'; }
+
+.wux-ui-3ds-doc-pdf:before {
+  content: '\e0cf'; }
+
+.wux-ui-3ds-book-open:before {
+  content: '\e057'; }
+
+.wux-ui-3ds-book-add:before {
+  content: '\e058'; }
+
+.wux-ui-3ds-book-delete:before {
+  content: '\e059'; }
+
+.wux-ui-3ds-book-locked:before {
+  content: '\e060'; }
+
+.wux-ui-3ds-book-history:before {
+  content: '\e3a3'; }
+
+.wux-ui-3ds-book-template:before {
+  content: '\e58e'; }
+
+.wux-ui-3ds-book-closed:before {
+  content: '\e729'; }
+
+.wux-ui-3ds-book-chapter:before {
+  content: '\e49c'; }
+
+.wux-ui-3ds-book-chapter-add:before {
+  content: '\e4d0'; }
+
+.wux-ui-3ds-book-chapter-delete:before {
+  content: '\e4d1'; }
+
+.wux-ui-3ds-book-chapter-insert:before {
+  content: '\e49d'; }
+
+.wux-ui-3ds-folder:before {
+  content: '\e061'; }
+
+.wux-ui-3ds-folder-shared:before {
+  content: '\e062'; }
+
+.wux-ui-3ds-folder-add:before {
+  content: '\e063'; }
+
+.wux-ui-3ds-folder-delete:before {
+  content: '\e064'; }
+
+.wux-ui-3ds-folder-locked:before {
+  content: '\e065'; }
+
+.wux-ui-3ds-folder-opening:before {
+  content: '\e435'; }
+
+.wux-ui-3ds-folder-upload:before {
+  content: '\e882'; }
+
+.wux-ui-3ds-folder-update:before {
+  content: '\e913'; }
+
+.wux-ui-3ds-folder-run:before {
+  content: '\e1f2'; }
+
+.wux-ui-3ds-folder-open:before {
+  content: '\e310'; }
+
+.wux-ui-3ds-folder-zipped:before {
+  content: '\e767'; }
+
+.wux-ui-3ds-folder-zipped-download:before {
+  content: '\e768'; }
+
+.wux-ui-3ds-folder-requirement-specification:before {
+  content: '\e06d'; }
+
+.wux-ui-3ds-folder-requirement-specification-add:before {
+  content: '\e1f3'; }
+
+.wux-ui-3ds-folder-requirement-specification-delete:before {
+  content: '\e1f4'; }
+
+.wux-ui-3ds-folder-requirement-specification-open:before {
+  content: '\e1f5'; }
+
+.wux-ui-3ds-folder-requirement-specification-insert:before {
+  content: '\e49e'; }
+
+.wux-ui-3ds-archive:before {
+  content: '\e066'; }
+
+.wux-ui-3ds-box:before {
+  content: '\e067'; }
+
+.wux-ui-3ds-box-status-ok:before {
+  content: '\e13e'; }
+
+.wux-ui-3ds-library:before {
+  content: '\e358'; }
+
+.wux-ui-3ds-library-add:before {
+  content: '\e769'; }
+
+.wux-ui-3ds-library-delete:before {
+  content: '\e770'; }
+
+.wux-ui-3ds-library-lined:before {
+  content: '\e3ed'; }
+
+.wux-ui-3ds-library-class:before {
+  content: '\e521'; }
+
+.wux-ui-3ds-library-class-add:before {
+  content: '\e771'; }
+
+.wux-ui-3ds-library-class-delete:before {
+  content: '\e772'; }
+
+.wux-ui-3ds-library-class-filled:before {
+  content: '\e3ee'; }
+
+.wux-ui-3ds-library-books:before {
+  content: '\e607'; }
+
+.wux-ui-3ds-presentation-slide:before {
+  content: '\e664'; }
+
+.wux-ui-3ds-presentation-slide-add:before {
+  content: '\e2ce'; }
+
+.wux-ui-3ds-presentation-slide-delete:before {
+  content: '\e2cf'; }
+
+.wux-ui-3ds-presentation-slide-play:before {
+  content: '\e955'; }
+
+.wux-ui-3ds-presentation-slide-ok:before {
+  content: '\e956'; }
+
+.wux-ui-3ds-presentation-slide-layout:before {
+  content: '\e665'; }
+
+.wux-ui-3ds-presentation-slides:before {
+  content: '\e666'; }
+
+.wux-ui-3ds-presentation-slides-play:before {
+  content: '\e957'; }
+
+.wux-ui-3ds-presentation-slides-ok:before {
+  content: '\e958'; }
+
+.wux-ui-3ds-presentation-slides-animated:before {
+  content: '\e667'; }
+
+.wux-ui-3ds-presentation-slides-animated-collection:before {
+  content: '\e13f'; }
+
+.wux-ui-3ds-text:before {
+  content: '\e077'; }
+
+.wux-ui-3ds-feather:before {
+  content: '\e074'; }
+
+.wux-ui-3ds-brush:before {
+  content: '\e075'; }
+
+.wux-ui-3ds-brush-block:before {
+  content: '\e608'; }
+
+.wux-ui-3ds-brush-ok:before {
+  content: '\e609'; }
+
+.wux-ui-3ds-brush-favorite:before {
+  content: '\e610'; }
+
+.wux-ui-3ds-brush-large:before {
+  content: '\e883'; }
+
+.wux-ui-3ds-highlighter:before {
+  content: '\e436'; }
+
+.wux-ui-3ds-highlighter-off:before {
+  content: '\e486'; }
+
+.wux-ui-3ds-swatches:before {
+  content: '\e668'; }
+
+.wux-ui-3ds-palette:before {
+  content: '\e076'; }
+
+.wux-ui-3ds-paint-can-fill:before {
+  content: '\e06e'; }
+
+.wux-ui-3ds-pipette:before {
+  content: '\e487'; }
+
+.wux-ui-3ds-eraser:before {
+  content: '\e884'; }
+
+.wux-ui-3ds-pen:before {
+  content: '\e1f6'; }
+
+.wux-ui-3ds-pen-cog:before {
+  content: '\e1f7'; }
+
+.wux-ui-3ds-pen-lines:before {
+  content: '\e914'; }
+
+.wux-ui-3ds-text-bold:before {
+  content: '\e313'; }
+
+.wux-ui-3ds-text-italic:before {
+  content: '\e314'; }
+
+.wux-ui-3ds-text-underline:before {
+  content: '\e315'; }
+
+.wux-ui-3ds-text-double-underline:before {
+  content: '\e730'; }
+
+.wux-ui-3ds-text-strikethrough:before {
+  content: '\e316'; }
+
+.wux-ui-3ds-text-overline:before {
+  content: '\e731'; }
+
+.wux-ui-3ds-text-subscript:before {
+  content: '\e317'; }
+
+.wux-ui-3ds-text-superscript:before {
+  content: '\e318'; }
+
+.wux-ui-3ds-text-special-character:before {
+  content: '\e319'; }
+
+.wux-ui-3ds-at-symbol:before {
+  content: '\e2d0'; }
+
+.wux-ui-3ds-number-sign:before {
+  content: '\e461'; }
+
+.wux-ui-3ds-section-sign:before {
+  content: '\e732'; }
+
+.wux-ui-3ds-pilcrow:before {
+  content: '\e733'; }
+
+.wux-ui-3ds-backspace:before {
+  content: '\e0b6'; }
+
+.wux-ui-3ds-text-h1:before {
+  content: '\e289'; }
+
+.wux-ui-3ds-text-h2:before {
+  content: '\e290'; }
+
+.wux-ui-3ds-text-h3:before {
+  content: '\e291'; }
+
+.wux-ui-3ds-text-h4:before {
+  content: '\e292'; }
+
+.wux-ui-3ds-text-formatted:before {
+  content: '\e293'; }
+
+.wux-ui-3ds-text-formatted-off:before {
+  content: '\e320'; }
+
+.wux-ui-3ds-text-footnote:before {
+  content: '\e959'; }
+
+.wux-ui-3ds-required:before {
+  content: '\e105'; }
+
+.wux-ui-3ds-text-monospaced:before {
+  content: '\e960'; }
+
+.wux-ui-3ds-text-note:before {
+  content: '\e961'; }
+
+.wux-ui-3ds-link:before {
+  content: '\e023'; }
+
+.wux-ui-3ds-link-add:before {
+  content: '\e734'; }
+
+.wux-ui-3ds-link-delete:before {
+  content: '\e735'; }
+
+.wux-ui-3ds-link-off:before {
+  content: '\e288'; }
+
+.wux-ui-3ds-link-ok:before {
+  content: '\e1a9'; }
+
+.wux-ui-3ds-link-network:before {
+  content: '\e2d1'; }
+
+.wux-ui-3ds-link-doc:before {
+  content: '\e2d2'; }
+
+.wux-ui-3ds-link-broken:before {
+  content: '\e58f'; }
+
+.wux-ui-3ds-text-caption:before {
+  content: '\e294'; }
+
+.wux-ui-3ds-text-quote:before {
+  content: '\e295'; }
+
+.wux-ui-3ds-spell-check:before {
+  content: '\e321'; }
+
+.wux-ui-3ds-language:before {
+  content: '\e126'; }
+
+.wux-ui-3ds-case-sensitive:before {
+  content: '\e669'; }
+
+.wux-ui-3ds-case-sensitive-off:before {
+  content: '\e670'; }
+
+.wux-ui-3ds-rename:before {
+  content: '\e773'; }
+
+.wux-ui-3ds-font-size-increase:before {
+  content: '\e962'; }
+
+.wux-ui-3ds-font-size-decrease:before {
+  content: '\e963'; }
+
+.wux-ui-3ds-numeric-keypad:before {
+  content: '\e0b7'; }
+
+.wux-ui-3ds-code:before {
+  content: '\e078'; }
+
+.wux-ui-3ds-code-search:before {
+  content: '\e803'; }
+
+.wux-ui-3ds-code-eye:before {
+  content: '\e0d0'; }
+
+.wux-ui-3ds-code-eye-off:before {
+  content: '\e0d1'; }
+
+.wux-ui-3ds-bug:before {
+  content: '\e355'; }
+
+.wux-ui-3ds-picture-wrapping-left:before {
+  content: '\e388'; }
+
+.wux-ui-3ds-picture-wrapping-right:before {
+  content: '\e389'; }
+
+.wux-ui-3ds-picture-line-break:before {
+  content: '\e736'; }
+
+.wux-ui-3ds-picture-inline-small:before {
+  content: '\e390'; }
+
+.wux-ui-3ds-picture-inline-large:before {
+  content: '\e391'; }
+
+.wux-ui-3ds-picture-fit-to-frame:before {
+  content: '\e671'; }
+
+.wux-ui-3ds-picture-fill-to-frame:before {
+  content: '\e672'; }
+
+.wux-ui-3ds-picture-favorite:before {
+  content: '\e392'; }
+
+.wux-ui-3ds-picture-roll:before {
+  content: '\e413'; }
+
+.wux-ui-3ds-media-gallery:before {
+  content: '\e470'; }
+
+.wux-ui-3ds-media-annotation:before {
+  content: '\e14a'; }
+
+.wux-ui-3ds-annotation:before {
+  content: '\e676'; }
+
+.wux-ui-3ds-annotation-eye:before {
+  content: '\e2d3'; }
+
+.wux-ui-3ds-annotation-eye-off:before {
+  content: '\e2d4'; }
+
+.wux-ui-3ds-label:before {
+  content: '\e35b'; }
+
+.wux-ui-3ds-label-add:before {
+  content: '\e35c'; }
+
+.wux-ui-3ds-label-delete:before {
+  content: '\e35d'; }
+
+.wux-ui-3ds-text-wrap:before {
+  content: '\e59a'; }
+
+.wux-ui-3ds-text-wrapping-ok:before {
+  content: '\e804'; }
+
+.wux-ui-3ds-text-wrapping-off:before {
+  content: '\e805'; }
+
+.wux-ui-3ds-text-align-left:before {
+  content: '\e673'; }
+
+.wux-ui-3ds-text-align-center:before {
+  content: '\e674'; }
+
+.wux-ui-3ds-text-align-right:before {
+  content: '\e675'; }
+
+.wux-ui-3ds-text-justify-left:before {
+  content: '\e964'; }
+
+.wux-ui-3ds-text-justify-center:before {
+  content: '\e965'; }
+
+.wux-ui-3ds-text-justify-right:before {
+  content: '\e966'; }
+
+.wux-ui-3ds-text-justify-all:before {
+  content: '\e967'; }
+
+.wux-ui-3ds-text-vertical-align-top:before {
+  content: '\e968'; }
+
+.wux-ui-3ds-text-vertical-align-middle:before {
+  content: '\e969'; }
+
+.wux-ui-3ds-text-vertical-align-bottom:before {
+  content: '\e970'; }
+
+.wux-ui-3ds-indentation-increase:before {
+  content: '\e296'; }
+
+.wux-ui-3ds-indentation-decrease:before {
+  content: '\e297'; }
+
+.wux-ui-3ds-horizontal-line:before {
+  content: '\e322'; }
+
+.wux-ui-3ds-line-move:before {
+  content: '\e706'; }
+
+.wux-ui-3ds-text-reorder:before {
+  content: '\e846'; }
+
+.wux-ui-3ds-table:before {
+  content: '\e298'; }
+
+.wux-ui-3ds-table-play:before {
+  content: '\e49f'; }
+
+.wux-ui-3ds-table-database:before {
+  content: '\e5e4'; }
+
+.wux-ui-3ds-table-header:before {
+  content: '\e971'; }
+
+.wux-ui-3ds-table-footer:before {
+  content: '\e972'; }
+
+.wux-ui-3ds-table-no-header:before {
+  content: '\e4d2'; }
+
+.wux-ui-3ds-table-vertical:before {
+  content: '\e737'; }
+
+.wux-ui-3ds-table-double-entry:before {
+  content: '\e5e5'; }
+
+.wux-ui-3ds-table-double-entry-database:before {
+  content: '\e5e6'; }
+
+.wux-ui-3ds-table-column-add:before {
+  content: '\e738'; }
+
+.wux-ui-3ds-table-column-delete:before {
+  content: '\e739'; }
+
+.wux-ui-3ds-table-column-eye:before {
+  content: '\e1f8'; }
+
+.wux-ui-3ds-table-column-eye-off:before {
+  content: '\e1f9'; }
+
+.wux-ui-3ds-table-column-insert-before:before {
+  content: '\e973'; }
+
+.wux-ui-3ds-table-column-insert-after:before {
+  content: '\e974'; }
+
+.wux-ui-3ds-table-column-size:before {
+  content: '\e806'; }
+
+.wux-ui-3ds-table-column-size-all:before {
+  content: '\e807'; }
+
+.wux-ui-3ds-table-column-group-left:before {
+  content: '\e5e7'; }
+
+.wux-ui-3ds-table-column-group-right:before {
+  content: '\e5e8'; }
+
+.wux-ui-3ds-table-row-add:before {
+  content: '\e740'; }
+
+.wux-ui-3ds-table-row-delete:before {
+  content: '\e741'; }
+
+.wux-ui-3ds-table-row-eye:before {
+  content: '\e1fa'; }
+
+.wux-ui-3ds-table-row-eye-off:before {
+  content: '\e1fb'; }
+
+.wux-ui-3ds-table-row-insert-above:before {
+  content: '\e774'; }
+
+.wux-ui-3ds-table-row-insert-below:before {
+  content: '\e775'; }
+
+.wux-ui-3ds-table-row-group-top:before {
+  content: '\e5e9'; }
+
+.wux-ui-3ds-table-cell-merge:before {
+  content: '\e975'; }
+
+.wux-ui-3ds-table-cell-unmerge:before {
+  content: '\e976'; }
+
+.wux-ui-3ds-table-column-row:before {
+  content: '\e299'; }
+
+.wux-ui-3ds-table-row-column:before {
+  content: '\e300'; }
+
+.wux-ui-3ds-table-cell-border-top:before {
+  content: '\e5ea'; }
+
+.wux-ui-3ds-table-cell-border-bottom:before {
+  content: '\e5eb'; }
+
+.wux-ui-3ds-table-cell-border-left:before {
+  content: '\e5ec'; }
+
+.wux-ui-3ds-table-cell-border-right:before {
+  content: '\e5ed'; }
+
+.wux-ui-3ds-table-cell-border-all:before {
+  content: '\e5ee'; }
+
+.wux-ui-3ds-table-cell-border-none:before {
+  content: '\e5ef'; }
+
+.wux-ui-3ds-table-cell-border-inside:before {
+  content: '\e5f0'; }
+
+.wux-ui-3ds-table-cell-border-inside-h:before {
+  content: '\e5f1'; }
+
+.wux-ui-3ds-table-cell-border-inside-v:before {
+  content: '\e5f2'; }
+
+.wux-ui-3ds-table-cell-border-outside:before {
+  content: '\e5f3'; }
+
+.wux-ui-3ds-cell-border-0:before {
+  content: '\e14b'; }
+
+.wux-ui-3ds-cell-border-1:before {
+  content: '\e14c'; }
+
+.wux-ui-3ds-cell-border-2:before {
+  content: '\e14d'; }
+
+.wux-ui-3ds-cell-border-3:before {
+  content: '\e14e'; }
+
+.wux-ui-3ds-split:before {
+  content: '\e155'; }
+
+.wux-ui-3ds-split-3:before {
+  content: '\e915'; }
+
+.wux-ui-3ds-merge:before {
+  content: '\e156'; }
+
+.wux-ui-3ds-list:before {
+  content: '\e170'; }
+
+.wux-ui-3ds-list-add:before {
+  content: '\e171'; }
+
+.wux-ui-3ds-list-delete:before {
+  content: '\e172'; }
+
+.wux-ui-3ds-list-ok:before {
+  content: '\e346'; }
+
+.wux-ui-3ds-list-filter:before {
+  content: '\e627'; }
+
+.wux-ui-3ds-list-user:before {
+  content: '\e2d5'; }
+
+.wux-ui-3ds-list-row-insert:before {
+  content: '\e885'; }
+
+.wux-ui-3ds-list-ordered:before {
+  content: '\e301'; }
+
+.wux-ui-3ds-list-test:before {
+  content: '\e488'; }
+
+.wux-ui-3ds-list-test-add:before {
+  content: '\e598'; }
+
+.wux-ui-3ds-list-test-delete:before {
+  content: '\e599'; }
+
+.wux-ui-3ds-list-test-eye:before {
+  content: '\e59b'; }
+
+.wux-ui-3ds-list-test-eye-off:before {
+  content: '\e59c'; }
+
+.wux-ui-3ds-help:before {
+  content: '\e019'; }
+
+.wux-ui-3ds-info:before {
+  content: '\e020'; }
+
+.wux-ui-3ds-info-open-in-a-new-window:before {
+  content: '\e0b8'; }
+
+.wux-ui-3ds-attention:before {
+  content: '\e117'; }
+
+.wux-ui-3ds-alert:before {
+  content: '\e118'; }
+
+.wux-ui-3ds-error:before {
+  content: '\e1ce'; }
+
+.wux-ui-3ds-globe:before {
+  content: '\e096'; }
+
+.wux-ui-3ds-globe-location:before {
+  content: '\e847'; }
+
+.wux-ui-3ds-target:before {
+  content: '\e097'; }
+
+.wux-ui-3ds-target-add:before {
+  content: '\e600'; }
+
+.wux-ui-3ds-target-delete:before {
+  content: '\e601'; }
+
+.wux-ui-3ds-target-constrained:before {
+  content: '\e848'; }
+
+.wux-ui-3ds-target-constrained-low:before {
+  content: '\e1aa'; }
+
+.wux-ui-3ds-target-constrained-up:before {
+  content: '\e1ab'; }
+
+.wux-ui-3ds-location:before {
+  content: '\e098'; }
+
+.wux-ui-3ds-location-dotted:before {
+  content: '\e2d6'; }
+
+.wux-ui-3ds-location-home:before {
+  content: '\e611'; }
+
+.wux-ui-3ds-location-factory:before {
+  content: '\e14f'; }
+
+.wux-ui-3ds-location-warehouse:before {
+  content: '\e15a'; }
+
+.wux-ui-3ds-flag-finish:before {
+  content: '\e628'; }
+
+.wux-ui-3ds-nav-move-to:before {
+  content: '\e06f'; }
+
+.wux-ui-3ds-kilometer-marker:before {
+  content: '\e1ac'; }
+
+.wux-ui-3ds-signpost:before {
+  content: '\e1ad'; }
+
+.wux-ui-3ds-signposts:before {
+  content: '\e1ae'; }
+
+.wux-ui-3ds-road-sign-turn-right:before {
+  content: '\e2d7'; }
+
+.wux-ui-3ds-road-sign-turn-left:before {
+  content: '\e2d8'; }
+
+.wux-ui-3ds-road-sign-u-turn-right:before {
+  content: '\e2d9'; }
+
+.wux-ui-3ds-road-sign-u-turn-left:before {
+  content: '\e2da'; }
+
+.wux-ui-3ds-map:before {
+  content: '\e099'; }
+
+.wux-ui-3ds-map-navigation:before {
+  content: '\e256'; }
+
+.wux-ui-3ds-map-ground:before {
+  content: '\e07a'; }
+
+.wux-ui-3ds-map-elevation:before {
+  content: '\e07b'; }
+
+.wux-ui-3ds-mountains:before {
+  content: '\e1af'; }
+
+.wux-ui-3ds-slope-angle:before {
+  content: '\e1b0'; }
+
+.wux-ui-3ds-slope-negative-grade:before {
+  content: '\e2db'; }
+
+.wux-ui-3ds-slope-positive-grade:before {
+  content: '\e2dc'; }
+
+.wux-ui-3ds-compass:before {
+  content: '\e100'; }
+
+.wux-ui-3ds-ruler-simple-vertical:before {
+  content: '\e3a4'; }
+
+.wux-ui-3ds-ruler-vertical:before {
+  content: '\e1b1'; }
+
+.wux-ui-3ds-ruler-horizontal:before {
+  content: '\e1b2'; }
+
+.wux-ui-3ds-ruler-curvilinear:before {
+  content: '\e1b3'; }
+
+.wux-ui-3ds-factory:before {
+  content: '\e356'; }
+
+.wux-ui-3ds-factory-eye-off:before {
+  content: '\e977'; }
+
+.wux-ui-3ds-manufacture:before {
+  content: '\e15b'; }
+
+.wux-ui-3ds-building-office:before {
+  content: '\e357'; }
+
+.wux-ui-3ds-building-office-trolley:before {
+  content: '\e3ef'; }
+
+.wux-ui-3ds-warehouse:before {
+  content: '\e07c'; }
+
+.wux-ui-3ds-indoor:before {
+  content: '\e4d3'; }
+
+.wux-ui-3ds-outdoor:before {
+  content: '\e4d4'; }
+
+.wux-ui-3ds-logo-3ds-company:before {
+  content: '\e224'; }
+
+.wux-ui-3ds-logo-3ds-compass:before {
+  content: '\e335'; }
+
+.wux-ui-3ds-logo-3dspace:before {
+  content: '\e223'; }
+
+.wux-ui-3ds-logo-3dspace-add:before {
+  content: '\e742'; }
+
+.wux-ui-3ds-logo-3dspace-delete:before {
+  content: '\e743'; }
+
+.wux-ui-3ds-logo-3dspace-locked:before {
+  content: '\e744'; }
+
+.wux-ui-3ds-logo-3dspace-ok:before {
+  content: '\e745'; }
+
+.wux-ui-3ds-logo-3dspace-clock:before {
+  content: '\e746'; }
+
+.wux-ui-3ds-logo-3dspace-cog:before {
+  content: '\e747'; }
+
+.wux-ui-3ds-logo-3dspace-key:before {
+  content: '\e07d'; }
+
+.wux-ui-3ds-logo-3dswym:before {
+  content: '\e916'; }
+
+.wux-ui-3ds-logo-3dswym-add:before {
+  content: '\e917'; }
+
+.wux-ui-3ds-3dswym-cog:before {
+  content: '\e307'; }
+
+.wux-ui-3ds-logo-3dswym-change:before {
+  content: '\e4a0'; }
+
+.wux-ui-3ds-logo-business-experience:before {
+  content: '\e0d2'; }
+
+.wux-ui-3ds-logo-business-experience-add:before {
+  content: '\e0d3'; }
+
+.wux-ui-3ds-logo-business-experience-delete:before {
+  content: '\e0d4'; }
+
+.wux-ui-3ds-logo-homebyme:before {
+  content: '\e3f0'; }
+
+.wux-ui-3ds-logo-generative-ai:before {
+  content: '\e4f7'; }
+
+.wux-ui-3ds-app-collaboration-and-approval:before {
+  content: '\e437'; }
+
+.wux-ui-3ds-app-3dsketch:before {
+  content: '\e629'; }
+
+.wux-ui-3ds-app-3dstory:before {
+  content: '\e630'; }
+
+.wux-ui-3ds-app-3dmarkup:before {
+  content: '\e677'; }
+
+.wux-ui-3ds-app-whiteboard:before {
+  content: '\e849'; }
+
+.wux-ui-3ds-app-3dlean:before {
+  content: '\e5db'; }
+
+.wux-ui-3ds-app-3dlean-construction:before {
+  content: '\e5dc'; }
+
+.wux-ui-3ds-logo-twitter:before {
+  content: '\e215'; }
+
+.wux-ui-3ds-logo-facebook:before {
+  content: '\e216'; }
+
+.wux-ui-3ds-logo-instagram:before {
+  content: '\e3f1'; }
+
+.wux-ui-3ds-logo-google:before {
+  content: '\e707'; }
+
+.wux-ui-3ds-logo-gplus:before {
+  content: '\e217'; }
+
+.wux-ui-3ds-logo-linkedin:before {
+  content: '\e218'; }
+
+.wux-ui-3ds-logo-dropbox:before {
+  content: '\e219'; }
+
+.wux-ui-3ds-logo-gdrive:before {
+  content: '\e220'; }
+
+.wux-ui-3ds-logo-onedrive:before {
+  content: '\e221'; }
+
+.wux-ui-3ds-logo-box:before {
+  content: '\e222'; }
+
+.wux-ui-3ds-logo-youtube:before {
+  content: '\e332'; }
+
+.wux-ui-3ds-logo-flickr:before {
+  content: '\e333'; }
+
+.wux-ui-3ds-logo-skype:before {
+  content: '\e334'; }
+
+.wux-ui-3ds-logo-android:before {
+  content: '\e471'; }
+
+.wux-ui-3ds-logo-apple:before {
+  content: '\e472'; }
+
+.wux-ui-3ds-logo-windows:before {
+  content: '\e473'; }
+
+.wux-ui-3ds-logo-linux:before {
+  content: '\e1cf'; }
+
+.wux-ui-3ds-logo-python:before {
+  content: '\e0d5'; }
+
+.wux-ui-3ds-logo-rdf:before {
+  content: '\e5f4'; }
+
+.wux-ui-3ds-logo-rdf-add:before {
+  content: '\e5f5'; }
+
+.wux-ui-3ds-logo-rdf-delete:before {
+  content: '\e5f6'; }
+
+.wux-ui-3ds-logo-rdf-group:before {
+  content: '\e5f7'; }
+
+.wux-ui-3ds-logo-rdf-group-add:before {
+  content: '\e5f8'; }
+
+.wux-ui-3ds-logo-rdf-group-delete:before {
+  content: '\e5f9'; }
+
+.wux-ui-3ds-logo-gltf:before {
+  content: '\e5fa'; }
+
+.wux-ui-3ds-math-equal:before {
+  content: '\e978'; }
+
+.wux-ui-3ds-math-inequal:before {
+  content: '\e2dd'; }
+
+.wux-ui-3ds-math-approximation:before {
+  content: '\e393'; }
+
+.wux-ui-3ds-math-approximation-eye:before {
+  content: '\e776'; }
+
+.wux-ui-3ds-math-approximation-eye-off:before {
+  content: '\e777'; }
+
+.wux-ui-3ds-math-less-than:before {
+  content: '\e1fc'; }
+
+.wux-ui-3ds-math-less-than-equal:before {
+  content: '\e1fd'; }
+
+.wux-ui-3ds-math-greater-than:before {
+  content: '\e1fe'; }
+
+.wux-ui-3ds-math-greater-than-equal:before {
+  content: '\e1ff'; }
+
+.wux-ui-3ds-math-x-value:before {
+  content: '\e394'; }
+
+.wux-ui-3ds-math-x-value-more-less:before {
+  content: '\e395'; }
+
+.wux-ui-3ds-math-x-value-new:before {
+  content: '\e631'; }
+
+.wux-ui-3ds-math-x-value-insert:before {
+  content: '\e632'; }
+
+.wux-ui-3ds-math-x-value-add:before {
+  content: '\e15c'; }
+
+.wux-ui-3ds-math-x-value-delete:before {
+  content: '\e15d'; }
+
+.wux-ui-3ds-math-x-value-up:before {
+  content: '\e15e'; }
+
+.wux-ui-3ds-math-x-value-down:before {
+  content: '\e15f'; }
+
+.wux-ui-3ds-math-x-value-import-to:before {
+  content: '\e2de'; }
+
+.wux-ui-3ds-math-percentage:before {
+  content: '\e396'; }
+
+.wux-ui-3ds-math-more-less:before {
+  content: '\e0b9'; }
+
+.wux-ui-3ds-math-summation:before {
+  content: '\e0d6'; }
+
+.wux-ui-3ds-math-function:before {
+  content: '\e0d7'; }
+
+.wux-ui-3ds-math-null-sign:before {
+  content: '\e20a'; }
+
+.wux-ui-3ds-math-union:before {
+  content: '\e2df'; }
+
+.wux-ui-3ds-stat-mean:before {
+  content: '\e536'; }
+
+.wux-ui-3ds-stat-standard-deviation:before {
+  content: '\e537'; }
+
+.wux-ui-3ds-stat-quartile-1:before {
+  content: '\e538'; }
+
+.wux-ui-3ds-stat-quartile-2:before {
+  content: '\e539'; }
+
+.wux-ui-3ds-stat-quartile-3:before {
+  content: '\e540'; }
+
+.wux-ui-3ds-stat-median:before {
+  content: '\e541'; }
+
+.wux-ui-3ds-stat-outlier:before {
+  content: '\e542'; }
+
+.wux-ui-3ds-stat-kurtosis:before {
+  content: '\e20b'; }
+
+.wux-ui-3ds-stat-skewness:before {
+  content: '\e20c'; }
+
+.wux-ui-3ds-sound:before {
+  content: '\e161'; }
+
+.wux-ui-3ds-sound-off:before {
+  content: '\e331'; }
+
+.wux-ui-3ds-sound-volume-1:before {
+  content: '\e979'; }
+
+.wux-ui-3ds-sound-volume-2:before {
+  content: '\e980'; }
+
+.wux-ui-3ds-sound-volume-3:before {
+  content: '\e981'; }
+
+.wux-ui-3ds-play:before {
+  content: '\e162'; }
+
+.wux-ui-3ds-play-flash:before {
+  content: '\e678'; }
+
+.wux-ui-3ds-play-flash-off:before {
+  content: '\e679'; }
+
+.wux-ui-3ds-resume:before {
+  content: '\e462'; }
+
+.wux-ui-3ds-stop:before {
+  content: '\e163'; }
+
+.wux-ui-3ds-pause:before {
+  content: '\e164'; }
+
+.wux-ui-3ds-record:before {
+  content: '\e165'; }
+
+.wux-ui-3ds-to-end:before {
+  content: '\e166'; }
+
+.wux-ui-3ds-to-start:before {
+  content: '\e167'; }
+
+.wux-ui-3ds-fast-forward:before {
+  content: '\e168'; }
+
+.wux-ui-3ds-fast-backward:before {
+  content: '\e169'; }
+
+.wux-ui-3ds-play-next:before {
+  content: '\e578'; }
+
+.wux-ui-3ds-play-previous:before {
+  content: '\e579'; }
+
+.wux-ui-3ds-play-once:before {
+  content: '\e580'; }
+
+.wux-ui-3ds-play-loop:before {
+  content: '\e581'; }
+
+.wux-ui-3ds-play-bounce:before {
+  content: '\e582'; }
+
+.wux-ui-3ds-play-shuffle:before {
+  content: '\e918'; }
+
+.wux-ui-3ds-media-controller:before {
+  content: '\e1b4'; }
+
+.wux-ui-3ds-media-controller-eye:before {
+  content: '\e1b5'; }
+
+.wux-ui-3ds-media-controller-eye-off:before {
+  content: '\e1b6'; }
+
+.wux-ui-3ds-comment:before {
+  content: '\e082'; }
+
+.wux-ui-3ds-comment-add:before {
+  content: '\e748'; }
+
+.wux-ui-3ds-comment-delete:before {
+  content: '\e749'; }
+
+.wux-ui-3ds-comment-ok:before {
+  content: '\e750'; }
+
+.wux-ui-3ds-comment-insert:before {
+  content: '\e4a1'; }
+
+.wux-ui-3ds-comment-attach:before {
+  content: '\e59d'; }
+
+.wux-ui-3ds-comment-question:before {
+  content: '\e16a'; }
+
+.wux-ui-3ds-comment-question-add:before {
+  content: '\e4d5'; }
+
+.wux-ui-3ds-comment-question-delete:before {
+  content: '\e4d6'; }
+
+.wux-ui-3ds-comment-question-user:before {
+  content: '\e3f2'; }
+
+.wux-ui-3ds-comment-list-user:before {
+  content: '\e3f3'; }
+
+.wux-ui-3ds-comment-check:before {
+  content: '\e4a2'; }
+
+.wux-ui-3ds-chat:before {
+  content: '\e083'; }
+
+.wux-ui-3ds-chat-add:before {
+  content: '\e982'; }
+
+.wux-ui-3ds-chat-delete:before {
+  content: '\e983'; }
+
+.wux-ui-3ds-send:before {
+  content: '\e323'; }
+
+.wux-ui-3ds-message-broadcast:before {
+  content: '\e886'; }
+
+.wux-ui-3ds-bell:before {
+  content: '\e084'; }
+
+.wux-ui-3ds-bell-add:before {
+  content: '\e543'; }
+
+.wux-ui-3ds-bell-delete:before {
+  content: '\e544'; }
+
+.wux-ui-3ds-bell-off:before {
+  content: '\e250'; }
+
+.wux-ui-3ds-bell-pencil:before {
+  content: '\e808'; }
+
+.wux-ui-3ds-bell-list:before {
+  content: '\e1b7'; }
+
+.wux-ui-3ds-bell-user:before {
+  content: '\e1b8'; }
+
+.wux-ui-3ds-notification:before {
+  content: '\e085'; }
+
+.wux-ui-3ds-notification-read:before {
+  content: '\e086'; }
+
+.wux-ui-3ds-mail:before {
+  content: '\e087'; }
+
+.wux-ui-3ds-mail-open:before {
+  content: '\e088'; }
+
+.wux-ui-3ds-attach:before {
+  content: '\e024'; }
+
+.wux-ui-3ds-inbox:before {
+  content: '\e089'; }
+
+.wux-ui-3ds-reply:before {
+  content: '\e090'; }
+
+.wux-ui-3ds-reply-all:before {
+  content: '\e091'; }
+
+.wux-ui-3ds-forward:before {
+  content: '\e092'; }
+
+.wux-ui-3ds-forward-off:before {
+  content: '\e272'; }
+
+.wux-ui-3ds-forward-globe:before {
+  content: '\e16b'; }
+
+.wux-ui-3ds-phone:before {
+  content: '\e107'; }
+
+.wux-ui-3ds-phone-call-ongoing:before {
+  content: '\e35e'; }
+
+.wux-ui-3ds-phone-call-sent:before {
+  content: '\e35f'; }
+
+.wux-ui-3ds-phone-call-received:before {
+  content: '\e36a'; }
+
+.wux-ui-3ds-phone-call-declined:before {
+  content: '\e3a5'; }
+
+.wux-ui-3ds-phone-call-missed:before {
+  content: '\e36b'; }
+
+.wux-ui-3ds-camera:before {
+  content: '\e010'; }
+
+.wux-ui-3ds-camera-add:before {
+  content: '\e3a6'; }
+
+.wux-ui-3ds-camera-delete:before {
+  content: '\e3a7'; }
+
+.wux-ui-3ds-camera-refresh:before {
+  content: '\e633'; }
+
+.wux-ui-3ds-videocamera:before {
+  content: '\e325'; }
+
+.wux-ui-3ds-videocamera-off:before {
+  content: '\e326'; }
+
+.wux-ui-3ds-microphone:before {
+  content: '\e327'; }
+
+.wux-ui-3ds-microphone-off:before {
+  content: '\e328'; }
+
+.wux-ui-3ds-emoji-smile:before {
+  content: '\e463'; }
+
+.wux-ui-3ds-emoji-slight-smile:before {
+  content: '\e3f4'; }
+
+.wux-ui-3ds-emoji-neutral-face:before {
+  content: '\e3f5'; }
+
+.wux-ui-3ds-emoji-frowning-face:before {
+  content: '\e3f6'; }
+
+.wux-ui-3ds-emoji-angry-face:before {
+  content: '\e3f7'; }
+
+.wux-ui-3ds-emoji-handshake:before {
+  content: '\e850'; }
+
+.wux-ui-3ds-emoji-handshake-link:before {
+  content: '\e3f8'; }
+
+.wux-ui-3ds-legal:before {
+  content: '\e189'; }
+
+.wux-ui-3ds-legal-ok:before {
+  content: '\e07e'; }
+
+.wux-ui-3ds-legal-add:before {
+  content: '\e0ba'; }
+
+.wux-ui-3ds-legal-delete:before {
+  content: '\e0bb'; }
+
+.wux-ui-3ds-legal-insert:before {
+  content: '\e0bc'; }
+
+.wux-ui-3ds-gavel:before {
+  content: '\e919'; }
+
+.wux-ui-3ds-gavel-block:before {
+  content: '\e920'; }
+
+.wux-ui-3ds-briefcase:before {
+  content: '\e190'; }
+
+.wux-ui-3ds-briefcase-add:before {
+  content: '\e0bd'; }
+
+.wux-ui-3ds-briefcase-delete:before {
+  content: '\e0be'; }
+
+.wux-ui-3ds-suitcase:before {
+  content: '\e191'; }
+
+.wux-ui-3ds-showcase:before {
+  content: '\e583'; }
+
+.wux-ui-3ds-showcase-3dproduct:before {
+  content: '\e5fb'; }
+
+.wux-ui-3ds-tutorial:before {
+  content: '\e59e'; }
+
+.wux-ui-3ds-graduation-cap:before {
+  content: '\e125'; }
+
+.wux-ui-3ds-graduation-cap-add:before {
+  content: '\e0d8'; }
+
+.wux-ui-3ds-graduation-cap-delete:before {
+  content: '\e0d9'; }
+
+.wux-ui-3ds-trophy:before {
+  content: '\e259'; }
+
+.wux-ui-3ds-medal:before {
+  content: '\e260'; }
+
+.wux-ui-3ds-badge:before {
+  content: '\e778'; }
+
+.wux-ui-3ds-badge-add:before {
+  content: '\e779'; }
+
+.wux-ui-3ds-badge-delete:before {
+  content: '\e780'; }
+
+.wux-ui-3ds-badge-thumbs-up:before {
+  content: '\e921'; }
+
+.wux-ui-3ds-badge-favorite:before {
+  content: '\e922'; }
+
+.wux-ui-3ds-badge-interest:before {
+  content: '\e923'; }
+
+.wux-ui-3ds-flight:before {
+  content: '\e192'; }
+
+.wux-ui-3ds-space-rocket:before {
+  content: '\e20d'; }
+
+.wux-ui-3ds-flash:before {
+  content: '\e193'; }
+
+.wux-ui-3ds-flash-block:before {
+  content: '\e59f'; }
+
+.wux-ui-3ds-sparkle:before {
+  content: '\e1b9'; }
+
+.wux-ui-3ds-magnet:before {
+  content: '\e194'; }
+
+.wux-ui-3ds-megaphone:before {
+  content: '\e195'; }
+
+.wux-ui-3ds-megaphone-off:before {
+  content: '\e474'; }
+
+.wux-ui-3ds-tape:before {
+  content: '\e196'; }
+
+.wux-ui-3ds-flashlight:before {
+  content: '\e197'; }
+
+.wux-ui-3ds-lightbulb:before {
+  content: '\e123'; }
+
+.wux-ui-3ds-lightbulb-add:before {
+  content: '\e4f8'; }
+
+.wux-ui-3ds-lightbulb-delete:before {
+  content: '\e4f9'; }
+
+.wux-ui-3ds-lightbulb-thumbs-up:before {
+  content: '\e438'; }
+
+.wux-ui-3ds-lightbulb-thumbs-down:before {
+  content: '\e439'; }
+
+.wux-ui-3ds-ticket:before {
+  content: '\e198'; }
+
+.wux-ui-3ds-thermometer:before {
+  content: '\e199'; }
+
+.wux-ui-3ds-tachometer:before {
+  content: '\e584'; }
+
+.wux-ui-3ds-weighing-scale:before {
+  content: '\e16c'; }
+
+.wux-ui-3ds-broom:before {
+  content: '\e312'; }
+
+.wux-ui-3ds-leaf:before {
+  content: '\e200'; }
+
+.wux-ui-3ds-snowflake:before {
+  content: '\e612'; }
+
+.wux-ui-3ds-fire:before {
+  content: '\e613'; }
+
+.wux-ui-3ds-lifebelt:before {
+  content: '\e585'; }
+
+.wux-ui-3ds-warning-symbol-biohazard:before {
+  content: '\e751'; }
+
+.wux-ui-3ds-safety-sign-mask:before {
+  content: '\e752'; }
+
+.wux-ui-3ds-accessibility-symbol:before {
+  content: '\e924'; }
+
+.wux-ui-3ds-clothes-jacket:before {
+  content: '\e2e0'; }
+
+.wux-ui-3ds-sun:before {
+  content: '\e4a3'; }
+
+.wux-ui-3ds-moon-crescent:before {
+  content: '\e4a4'; }
+
+.wux-ui-3ds-meal:before {
+  content: '\e5fc'; }
+
+.wux-ui-3ds-rss:before {
+  content: '\e093'; }
+
+.wux-ui-3ds-rss-add:before {
+  content: '\e545'; }
+
+.wux-ui-3ds-rss-delete:before {
+  content: '\e546'; }
+
+.wux-ui-3ds-signal:before {
+  content: '\e094'; }
+
+.wux-ui-3ds-offline:before {
+  content: '\e095'; }
+
+.wux-ui-3ds-website:before {
+  content: '\e36c'; }
+
+.wux-ui-3ds-website-add:before {
+  content: '\e4fa'; }
+
+.wux-ui-3ds-website-delete:before {
+  content: '\e4fb'; }
+
+.wux-ui-3ds-website-collection:before {
+  content: '\e4fc'; }
+
+.wux-ui-3ds-internet:before {
+  content: '\e229'; }
+
+.wux-ui-3ds-network:before {
+  content: '\e101'; }
+
+.wux-ui-3ds-network-add:before {
+  content: '\e4fd'; }
+
+.wux-ui-3ds-network-delete:before {
+  content: '\e4fe'; }
+
+.wux-ui-3ds-computer-laptop:before {
+  content: '\e708'; }
+
+.wux-ui-3ds-computer-laptop-pencil:before {
+  content: '\e07f'; }
+
+.wux-ui-3ds-monitor:before {
+  content: '\e045'; }
+
+.wux-ui-3ds-monitor-off:before {
+  content: '\e925'; }
+
+.wux-ui-3ds-tablet:before {
+  content: '\e342'; }
+
+.wux-ui-3ds-mobile:before {
+  content: '\e046'; }
+
+.wux-ui-3ds-touch:before {
+  content: '\e047'; }
+
+.wux-ui-3ds-keyboard:before {
+  content: '\e048'; }
+
+.wux-ui-3ds-mouse:before {
+  content: '\e049'; }
+
+.wux-ui-3ds-print:before {
+  content: '\e050'; }
+
+.wux-ui-3ds-vr-goggle:before {
+  content: '\e354'; }
+
+.wux-ui-3ds-augmented-reality-mobile:before {
+  content: '\e2e1'; }
+
+.wux-ui-3ds-calculator:before {
+  content: '\e0da'; }
+
+.wux-ui-3ds-numeric-keypad-key-0:before {
+  content: '\e0db'; }
+
+.wux-ui-3ds-numeric-keypad-key-1:before {
+  content: '\e0dc'; }
+
+.wux-ui-3ds-numeric-keypad-key-2:before {
+  content: '\e0dd'; }
+
+.wux-ui-3ds-numeric-keypad-key-3:before {
+  content: '\e0de'; }
+
+.wux-ui-3ds-numeric-keypad-key-4:before {
+  content: '\e0df'; }
+
+.wux-ui-3ds-numeric-keypad-key-5:before {
+  content: '\e0e0'; }
+
+.wux-ui-3ds-numeric-keypad-key-6:before {
+  content: '\e0e1'; }
+
+.wux-ui-3ds-numeric-keypad-key-7:before {
+  content: '\e0e2'; }
+
+.wux-ui-3ds-numeric-keypad-key-8:before {
+  content: '\e0e3'; }
+
+.wux-ui-3ds-numeric-keypad-key-9:before {
+  content: '\e0e4'; }
+
+.wux-ui-3ds-dialpad:before {
+  content: '\e3f9'; }
+
+.wux-ui-3ds-dataflow-input:before {
+  content: '\e547'; }
+
+.wux-ui-3ds-dataflow-output:before {
+  content: '\e548'; }
+
+.wux-ui-3ds-dataflow-input-output:before {
+  content: '\e549'; }
+
+.wux-ui-3ds-dataflow-neutral:before {
+  content: '\e550'; }
+
+.wux-ui-3ds-process-linear:before {
+  content: '\e0e5'; }
+
+.wux-ui-3ds-process-linear-add:before {
+  content: '\e0e6'; }
+
+.wux-ui-3ds-process-linear-delete:before {
+  content: '\e0e7'; }
+
+.wux-ui-3ds-complex-process-linear:before {
+  content: '\e3a8'; }
+
+.wux-ui-3ds-complex-process-linear-add:before {
+  content: '\e3a9'; }
+
+.wux-ui-3ds-complex-process-linear-delete:before {
+  content: '\e3aa'; }
+
+.wux-ui-3ds-complex-process-linear-remove:before {
+  content: '\e3ab'; }
+
+.wux-ui-3ds-complex-process-linear-new:before {
+  content: '\e3ac'; }
+
+.wux-ui-3ds-agile-iteration:before {
+  content: '\e3ad'; }
+
+.wux-ui-3ds-agile-backlog:before {
+  content: '\e5fd'; }
+
+.wux-ui-3ds-progress-0:before {
+  content: '\e157'; }
+
+.wux-ui-3ds-progress-1:before {
+  content: '\e158'; }
+
+.wux-ui-3ds-progress-2:before {
+  content: '\e159'; }
+
+.wux-ui-3ds-progress-3:before {
+  content: '\e160'; }
+
+.wux-ui-3ds-progress-0-clock:before {
+  content: '\e0bf'; }
+
+.wux-ui-3ds-progress-2-stop:before {
+  content: '\e0c0'; }
+
+.wux-ui-3ds-progress-3-ok:before {
+  content: '\e551'; }
+
+.wux-ui-3ds-progress-bars-windowed:before {
+  content: '\e20e'; }
+
+.wux-ui-3ds-progress-bars-windowed-brush:before {
+  content: '\e20f'; }
+
+.wux-ui-3ds-level-low:before {
+  content: '\e234'; }
+
+.wux-ui-3ds-level-medium:before {
+  content: '\e235'; }
+
+.wux-ui-3ds-level-high:before {
+  content: '\e236'; }
+
+.wux-ui-3ds-stage-0:before {
+  content: '\e492'; }
+
+.wux-ui-3ds-stage-1:before {
+  content: '\e493'; }
+
+.wux-ui-3ds-stage-2:before {
+  content: '\e494'; }
+
+.wux-ui-3ds-stage-3:before {
+  content: '\e495'; }
+
+.wux-ui-3ds-stage-full:before {
+  content: '\e496'; }
+
+.wux-ui-3ds-step-0:before {
+  content: '\e522'; }
+
+.wux-ui-3ds-step-1:before {
+  content: '\e523'; }
+
+.wux-ui-3ds-step-2:before {
+  content: '\e524'; }
+
+.wux-ui-3ds-step-3:before {
+  content: '\e525'; }
+
+.wux-ui-3ds-step-full:before {
+  content: '\e526'; }
+
+.wux-ui-3ds-promote:before {
+  content: '\e440'; }
+
+.wux-ui-3ds-demote:before {
+  content: '\e441'; }
+
+.wux-ui-3ds-task:before {
+  content: '\e497'; }
+
+.wux-ui-3ds-task-add:before {
+  content: '\e3ae'; }
+
+.wux-ui-3ds-task-delete:before {
+  content: '\e3af'; }
+
+.wux-ui-3ds-task-remove:before {
+  content: '\e3b0'; }
+
+.wux-ui-3ds-task-new:before {
+  content: '\e3b1'; }
+
+.wux-ui-3ds-task-list:before {
+  content: '\e851'; }
+
+.wux-ui-3ds-task-list-add:before {
+  content: '\e3b2'; }
+
+.wux-ui-3ds-task-list-delete:before {
+  content: '\e3b3'; }
+
+.wux-ui-3ds-task-list-remove:before {
+  content: '\e3b4'; }
+
+.wux-ui-3ds-task-list-new:before {
+  content: '\e3b5'; }
+
+.wux-ui-3ds-task-list-pencil:before {
+  content: '\e852'; }
+
+.wux-ui-3ds-task-list-status-ok:before {
+  content: '\e2e2'; }
+
+.wux-ui-3ds-task-text:before {
+  content: '\e5fe'; }
+
+.wux-ui-3ds-task-flash:before {
+  content: '\e1d0'; }
+
+.wux-ui-3ds-task-user:before {
+  content: '\e1d1'; }
+
+.wux-ui-3ds-task-wrong:before {
+  content: '\e2e3'; }
+
+.wux-ui-3ds-task-wedo:before {
+  content: '\e2e4'; }
+
+.wux-ui-3ds-task-route:before {
+  content: '\e2e5'; }
+
+.wux-ui-3ds-task-business-process:before {
+  content: '\e2e6'; }
+
+.wux-ui-3ds-task-dpm-project:before {
+  content: '\e2e7'; }
+
+.wux-ui-3ds-task-project-planning:before {
+  content: '\e2e8'; }
+
+.wux-ui-3ds-task-project-planning-link:before {
+  content: '\e3fa'; }
+
+.wux-ui-3ds-status-change:before {
+  content: '\e781'; }
+
+.wux-ui-3ds-project-baseline:before {
+  content: '\e3fb'; }
+
+.wux-ui-3ds-project-gate:before {
+  content: '\e3fc'; }
+
+.wux-ui-3ds-project-milestone:before {
+  content: '\e3fd'; }
+
+.wux-ui-3ds-project-phase:before {
+  content: '\e3fe'; }
+
+.wux-ui-3ds-project-timeline-today:before {
+  content: '\e3ff'; }
+
+.wux-ui-3ds-project-scenario:before {
+  content: '\e4ff'; }
+
+.wux-ui-3ds-project-new-scenario:before {
+  content: '\e40a'; }
+
+.wux-ui-3ds-objective-target:before {
+  content: '\e5a0'; }
+
+.wux-ui-3ds-resource-utilisation:before {
+  content: '\e5ff'; }
+
+.wux-ui-3ds-favorite-on:before {
+  content: '\e012'; }
+
+.wux-ui-3ds-favorite-half:before {
+  content: '\e353'; }
+
+.wux-ui-3ds-favorite-off:before {
+  content: '\e013'; }
+
+.wux-ui-3ds-favorite-add:before {
+  content: '\e753'; }
+
+.wux-ui-3ds-favorite-delete:before {
+  content: '\e754'; }
+
+.wux-ui-3ds-bookmark:before {
+  content: '\e032'; }
+
+.wux-ui-3ds-bookmark-add:before {
+  content: '\e475'; }
+
+.wux-ui-3ds-bookmark-delete:before {
+  content: '\e476'; }
+
+.wux-ui-3ds-bookmark-flash:before {
+  content: '\e680'; }
+
+.wux-ui-3ds-bookmark-pin:before {
+  content: '\e809'; }
+
+.wux-ui-3ds-flag:before {
+  content: '\e033'; }
+
+.wux-ui-3ds-thumbs-up:before {
+  content: '\e034'; }
+
+.wux-ui-3ds-thumbs-down:before {
+  content: '\e035'; }
+
+.wux-ui-3ds-interest:before {
+  content: '\e232'; }
+
+.wux-ui-3ds-status-ok:before {
+  content: '\e477'; }
+
+.wux-ui-3ds-status-ok-ongoing:before {
+  content: '\e810'; }
+
+.wux-ui-3ds-status-ok-attention:before {
+  content: '\e5a1'; }
+
+.wux-ui-3ds-status-ko:before {
+  content: '\e478'; }
+
+.wux-ui-3ds-status-plus:before {
+  content: '\e811'; }
+
+.wux-ui-3ds-status-clock:before {
+  content: '\e984'; }
+
+.wux-ui-3ds-status-noway:before {
+  content: '\e985'; }
+
+.wux-ui-3ds-status-empty:before {
+  content: '\e986'; }
+
+.wux-ui-3ds-status-out-of-office:before {
+  content: '\e5a2'; }
+
+.wux-ui-3ds-status-trending-good:before {
+  content: '\e926'; }
+
+.wux-ui-3ds-status-trending-caution:before {
+  content: '\e927'; }
+
+.wux-ui-3ds-status-trending-critical:before {
+  content: '\e928'; }
+
+.wux-ui-3ds-rank-one:before {
+  content: '\e3b6'; }
+
+.wux-ui-3ds-rank-two:before {
+  content: '\e3b7'; }
+
+.wux-ui-3ds-rank-three:before {
+  content: '\e3b8'; }
+
+.wux-ui-3ds-rank-four:before {
+  content: '\e3b9'; }
+
+.wux-ui-3ds-rank-five:before {
+  content: '\e3ba'; }
+
+.wux-ui-3ds-role:before {
+  content: '\e121'; }
+
+.wux-ui-3ds-role-add:before {
+  content: '\e230'; }
+
+.wux-ui-3ds-role-delete:before {
+  content: '\e231'; }
+
+.wux-ui-3ds-role-key:before {
+  content: '\e336'; }
+
+.wux-ui-3ds-role-share:before {
+  content: '\e344'; }
+
+.wux-ui-3ds-role-clock:before {
+  content: '\e681'; }
+
+.wux-ui-3ds-role-ok:before {
+  content: '\e682'; }
+
+.wux-ui-3ds-role-cog:before {
+  content: '\e3bb'; }
+
+.wux-ui-3ds-app:before {
+  content: '\e273'; }
+
+.wux-ui-3ds-app-add:before {
+  content: '\e119'; }
+
+.wux-ui-3ds-app-delete:before {
+  content: '\e120'; }
+
+.wux-ui-3ds-app-cog:before {
+  content: '\e60a'; }
+
+.wux-ui-3ds-app-desktop:before {
+  content: '\e50a'; }
+
+.wux-ui-3ds-app-desktop-shortcut:before {
+  content: '\e50b'; }
+
+.wux-ui-3ds-app-web:before {
+  content: '\e50c'; }
+
+.wux-ui-3ds-app-web-shortcut:before {
+  content: '\e50d'; }
+
+.wux-ui-3ds-search:before {
+  content: '\e180'; }
+
+.wux-ui-3ds-search-recent:before {
+  content: '\e287'; }
+
+.wux-ui-3ds-search-similar:before {
+  content: '\e337'; }
+
+.wux-ui-3ds-search-cog:before {
+  content: '\e338'; }
+
+.wux-ui-3ds-search-filter:before {
+  content: '\e442'; }
+
+.wux-ui-3ds-search-swym:before {
+  content: '\e552'; }
+
+.wux-ui-3ds-search-book:before {
+  content: '\e553'; }
+
+.wux-ui-3ds-search-interest:before {
+  content: '\e50e'; }
+
+.wux-ui-3ds-search-add:before {
+  content: '\e929'; }
+
+.wux-ui-3ds-search-delete:before {
+  content: '\e930'; }
+
+.wux-ui-3ds-find-and-replace:before {
+  content: '\e40b'; }
+
+.wux-ui-3ds-tag:before {
+  content: '\e029'; }
+
+.wux-ui-3ds-tag-add:before {
+  content: '\e21a'; }
+
+.wux-ui-3ds-tag-delete:before {
+  content: '\e21b'; }
+
+.wux-ui-3ds-tag-active:before {
+  content: '\e030'; }
+
+.wux-ui-3ds-tag-eye:before {
+  content: '\e987'; }
+
+.wux-ui-3ds-tag-pencil:before {
+  content: '\e38e'; }
+
+.wux-ui-3ds-tag-cloud:before {
+  content: '\e5a3'; }
+
+.wux-ui-3ds-filter:before {
+  content: '\e031'; }
+
+.wux-ui-3ds-filter-search:before {
+  content: '\e853'; }
+
+.wux-ui-3ds-filter-add:before {
+  content: '\e887'; }
+
+.wux-ui-3ds-filter-delete:before {
+  content: '\e888'; }
+
+.wux-ui-3ds-filter-open:before {
+  content: '\e889'; }
+
+.wux-ui-3ds-filter-select-on:before {
+  content: '\e988'; }
+
+.wux-ui-3ds-filter-propagate:before {
+  content: '\e989'; }
+
+.wux-ui-3ds-filter-reset:before {
+  content: '\e1ba'; }
+
+.wux-ui-3ds-filter-refresh:before {
+  content: '\e2e9'; }
+
+.wux-ui-3ds-filter-3d-object:before {
+  content: '\e2ea'; }
+
+.wux-ui-3ds-filter-eye:before {
+  content: '\e2eb'; }
+
+.wux-ui-3ds-sorting:before {
+  content: '\e347'; }
+
+.wux-ui-3ds-alpha-sorting-a-z:before {
+  content: '\e181'; }
+
+.wux-ui-3ds-alpha-sorting-z-a:before {
+  content: '\e182'; }
+
+.wux-ui-3ds-num-sorting-1-2:before {
+  content: '\e183'; }
+
+.wux-ui-3ds-num-sorting-2-1:before {
+  content: '\e184'; }
+
+.wux-ui-3ds-date-sorting-1-31:before {
+  content: '\e931'; }
+
+.wux-ui-3ds-date-sorting-31-1:before {
+  content: '\e932'; }
+
+.wux-ui-3ds-tag-sorting:before {
+  content: '\e237'; }
+
+.wux-ui-3ds-fav-on-sorting:before {
+  content: '\e08a'; }
+
+.wux-ui-3ds-fav-off-sorting:before {
+  content: '\e08b'; }
+
+.wux-ui-3ds-tag-more:before {
+  content: '\e238'; }
+
+.wux-ui-3ds-find:before {
+  content: '\e634'; }
+
+.wux-ui-3ds-cog:before {
+  content: '\e115'; }
+
+.wux-ui-3ds-cog-ok:before {
+  content: '\e21c'; }
+
+.wux-ui-3ds-tools:before {
+  content: '\e116'; }
+
+.wux-ui-3ds-tools-add:before {
+  content: '\e50f'; }
+
+.wux-ui-3ds-tools-delete:before {
+  content: '\e51a'; }
+
+.wux-ui-3ds-tools-open:before {
+  content: '\e51b'; }
+
+.wux-ui-3ds-tools-search:before {
+  content: '\e5a4'; }
+
+.wux-ui-3ds-toolbox:before {
+  content: '\e51c'; }
+
+.wux-ui-3ds-toolbox-add:before {
+  content: '\e51d'; }
+
+.wux-ui-3ds-toolbox-delete:before {
+  content: '\e51e'; }
+
+.wux-ui-3ds-toolbox-open:before {
+  content: '\e51f'; }
+
+.wux-ui-3ds-toolbox-search:before {
+  content: '\e5a5'; }
+
+.wux-ui-3ds-attributes:before {
+  content: '\e258'; }
+
+.wux-ui-3ds-attributes-add:before {
+  content: '\e586'; }
+
+.wux-ui-3ds-attributes-delete:before {
+  content: '\e587'; }
+
+.wux-ui-3ds-attributes-cog:before {
+  content: '\e635'; }
+
+.wux-ui-3ds-attributes-filter:before {
+  content: '\e2ec'; }
+
+.wux-ui-3ds-attributes-open-in-a-new-window:before {
+  content: '\e0c1'; }
+
+.wux-ui-3ds-attributes-group:before {
+  content: '\e854'; }
+
+.wux-ui-3ds-attributes-group-add:before {
+  content: '\e855'; }
+
+.wux-ui-3ds-attributes-group-delete:before {
+  content: '\e856'; }
+
+.wux-ui-3ds-parameters:before {
+  content: '\e498'; }
+
+.wux-ui-3ds-parameters-add:before {
+  content: '\e602'; }
+
+.wux-ui-3ds-parameters-delete:before {
+  content: '\e603'; }
+
+.wux-ui-3ds-parameter-slider:before {
+  content: '\e5a6'; }
+
+.wux-ui-3ds-parameter-mapping:before {
+  content: '\e397'; }
+
+.wux-ui-3ds-parameter-mapping-ok:before {
+  content: '\e554'; }
+
+.wux-ui-3ds-properties:before {
+  content: '\e782'; }
+
+.wux-ui-3ds-properties-pencil:before {
+  content: '\e16d'; }
+
+.wux-ui-3ds-properties-filter:before {
+  content: '\e2ed'; }
+
+.wux-ui-3ds-menu:before {
+  content: '\e001'; }
+
+.wux-ui-3ds-menu-eye:before {
+  content: '\e636'; }
+
+.wux-ui-3ds-menu-dot:before {
+  content: '\e002'; }
+
+.wux-ui-3ds-check:before {
+  content: '\e014'; }
+
+.wux-ui-3ds-wrong:before {
+  content: '\e248'; }
+
+.wux-ui-3ds-checkbox-on:before {
+  content: '\e414'; }
+
+.wux-ui-3ds-checkbox-off:before {
+  content: '\e415'; }
+
+.wux-ui-3ds-radiobutton-on:before {
+  content: '\e401'; }
+
+.wux-ui-3ds-radiobutton-off:before {
+  content: '\e402'; }
+
+.wux-ui-3ds-pencil:before {
+  content: '\e073'; }
+
+.wux-ui-3ds-pencil-locked:before {
+  content: '\e464'; }
+
+.wux-ui-3ds-pencil-block:before {
+  content: '\e561'; }
+
+.wux-ui-3ds-pencil-double:before {
+  content: '\e890'; }
+
+.wux-ui-3ds-magic-wand:before {
+  content: '\e683'; }
+
+.wux-ui-3ds-switches:before {
+  content: '\e21d'; }
+
+.wux-ui-3ds-basket:before {
+  content: '\e112'; }
+
+.wux-ui-3ds-shopping-cart:before {
+  content: '\e113'; }
+
+.wux-ui-3ds-credit-card:before {
+  content: '\e114'; }
+
+.wux-ui-3ds-banknote:before {
+  content: '\e08c'; }
+
+.wux-ui-3ds-banknotes:before {
+  content: '\e40c'; }
+
+.wux-ui-3ds-banknotes-lock:before {
+  content: '\e40d'; }
+
+.wux-ui-3ds-banknotes-pile:before {
+  content: '\e40e'; }
+
+.wux-ui-3ds-tokens:before {
+  content: '\e574'; }
+
+.wux-ui-3ds-tokens-add:before {
+  content: '\e08d'; }
+
+.wux-ui-3ds-tokens-delete:before {
+  content: '\e08e'; }
+
+.wux-ui-3ds-vault:before {
+  content: '\e443'; }
+
+.wux-ui-3ds-parcel:before {
+  content: '\e562'; }
+
+.wux-ui-3ds-parcel-add:before {
+  content: '\e563'; }
+
+.wux-ui-3ds-parcel-delete:before {
+  content: '\e564'; }
+
+.wux-ui-3ds-parcel-ok:before {
+  content: '\e565'; }
+
+.wux-ui-3ds-parcel-pencil:before {
+  content: '\e4d7'; }
+
+.wux-ui-3ds-trolley:before {
+  content: '\e566'; }
+
+.wux-ui-3ds-trolley-add:before {
+  content: '\e08f'; }
+
+.wux-ui-3ds-trolley-delete:before {
+  content: '\e09a'; }
+
+.wux-ui-3ds-truck-delivery:before {
+  content: '\e567'; }
+
+.wux-ui-3ds-clock:before {
+  content: '\e109'; }
+
+.wux-ui-3ds-clock-attention:before {
+  content: '\e684'; }
+
+.wux-ui-3ds-clock-brush:before {
+  content: '\e21e'; }
+
+.wux-ui-3ds-clock-calendar:before {
+  content: '\e0e8'; }
+
+.wux-ui-3ds-clock-banknotes:before {
+  content: '\e40f'; }
+
+.wux-ui-3ds-clock-play:before {
+  content: '\e60b'; }
+
+.wux-ui-3ds-clock-ok:before {
+  content: '\e60c'; }
+
+.wux-ui-3ds-timer:before {
+  content: '\e5a7'; }
+
+.wux-ui-3ds-hourglass:before {
+  content: '\e110'; }
+
+.wux-ui-3ds-calendar:before {
+  content: '\e111'; }
+
+.wux-ui-3ds-calendar-add:before {
+  content: '\e41a'; }
+
+.wux-ui-3ds-calendar-delete:before {
+  content: '\e41b'; }
+
+.wux-ui-3ds-calendar-new:before {
+  content: '\e36d'; }
+
+.wux-ui-3ds-calendar-pencil:before {
+  content: '\e36e'; }
+
+.wux-ui-3ds-calendar-ok:before {
+  content: '\e709'; }
+
+.wux-ui-3ds-calendar-ok-periodic:before {
+  content: '\e60d'; }
+
+.wux-ui-3ds-calendar-share:before {
+  content: '\e41c'; }
+
+.wux-ui-3ds-calendar-clock:before {
+  content: '\e710'; }
+
+.wux-ui-3ds-calendar-attention:before {
+  content: '\e711'; }
+
+.wux-ui-3ds-calendar-cog:before {
+  content: '\e21f'; }
+
+.wux-ui-3ds-calendar-next:before {
+  content: '\e22a'; }
+
+.wux-ui-3ds-calendar-previous:before {
+  content: '\e22b'; }
+
+.wux-ui-3ds-calendar-move-to:before {
+  content: '\e22c'; }
+
+.wux-ui-3ds-calendar-day:before {
+  content: '\e16e'; }
+
+.wux-ui-3ds-calendar-day-move-to:before {
+  content: '\e22d'; }
+
+.wux-ui-3ds-calendar-week:before {
+  content: '\e16f'; }
+
+.wux-ui-3ds-calendar-year:before {
+  content: '\e17a'; }
+
+.wux-ui-3ds-calendar-question-move-to:before {
+  content: '\e22e'; }
+
+.wux-ui-3ds-infinity:before {
+  content: '\e257'; }
+
+.wux-ui-3ds-navigation-history:before {
+  content: '\e233'; }
+
+.wux-ui-3ds-navigation-history-share:before {
+  content: '\e41d'; }
+
+.wux-ui-3ds-navigation-history-play:before {
+  content: '\e60e'; }
+
+.wux-ui-3ds-timeline-activity-vertical:before {
+  content: '\e4a5'; }
+
+.wux-ui-3ds-timeline-activity-vertical-add:before {
+  content: '\e5a8'; }
+
+.wux-ui-3ds-timeline-activity-vertical-delete:before {
+  content: '\e5a9'; }
+
+.wux-ui-3ds-transportation-bicycle:before {
+  content: '\e637'; }
+
+.wux-ui-3ds-transportation-bus:before {
+  content: '\e638'; }
+
+.wux-ui-3ds-transportation-car:before {
+  content: '\e639'; }
+
+.wux-ui-3ds-transportation-truck:before {
+  content: '\e09b'; }
+
+.wux-ui-3ds-transportation-forklift:before {
+  content: '\e09c'; }
+
+.wux-ui-3ds-transportation-funicular:before {
+  content: '\e640'; }
+
+.wux-ui-3ds-transportation-metro:before {
+  content: '\e641'; }
+
+.wux-ui-3ds-transportation-train:before {
+  content: '\e642'; }
+
+.wux-ui-3ds-transportation-tram:before {
+  content: '\e643'; }
+
+.wux-ui-3ds-transportation-walk:before {
+  content: '\e644'; }
+
+.wux-ui-3ds-vehicle-drone:before {
+  content: '\e0e9'; }
+
+.wux-ui-3ds-vehicle-satellite:before {
+  content: '\e0ea'; }
+
+.wux-ui-3ds-vehicle-tunnel-boring-machine:before {
+  content: '\e0eb'; }
+
+.wux-ui-3ds-infrastructure-linear-bridge:before {
+  content: '\e2ee'; }
+
+.wux-ui-3ds-infrastructure-linear-tunnel:before {
+  content: '\e2ef'; }
+
+.wux-ui-3ds-infrastructure-linear-cut-cover-tunnel:before {
+  content: '\e2f0'; }
+
+.wux-ui-3ds-infrastructure-linear-dam:before {
+  content: '\e2f1'; }
+
+.wux-ui-3ds-infrastructure-linear-on-ground:before {
+  content: '\e2f2'; }
+
+.wux-ui-3ds-road-profil-crest:before {
+  content: '\e2f3'; }
+
+.wux-ui-3ds-road-profil-sag:before {
+  content: '\e2f4'; }
+
+.wux-ui-3ds-flow-cascade:before {
+  content: '\e173'; }
+
+.wux-ui-3ds-flow-cascade-ok-1:before {
+  content: '\e645'; }
+
+.wux-ui-3ds-flow-cascade-ok-2:before {
+  content: '\e646'; }
+
+.wux-ui-3ds-flow-cascade-wrong-1:before {
+  content: '\e614'; }
+
+.wux-ui-3ds-flow-cascade-wrong-2:before {
+  content: '\e615'; }
+
+.wux-ui-3ds-flow-cascade-search:before {
+  content: '\e857'; }
+
+.wux-ui-3ds-flow-cascade-dashed-1:before {
+  content: '\e2f5'; }
+
+.wux-ui-3ds-flow-children:before {
+  content: '\e416'; }
+
+.wux-ui-3ds-flow-children-eye:before {
+  content: '\e417'; }
+
+.wux-ui-3ds-flow-children-eye-off:before {
+  content: '\e418'; }
+
+.wux-ui-3ds-flow-branch:before {
+  content: '\e174'; }
+
+.wux-ui-3ds-flow-branch-add:before {
+  content: '\e262'; }
+
+.wux-ui-3ds-flow-branch-delete:before {
+  content: '\e263'; }
+
+.wux-ui-3ds-flow-branch-split:before {
+  content: '\e647'; }
+
+.wux-ui-3ds-flow-branch-split-add:before {
+  content: '\e648'; }
+
+.wux-ui-3ds-flow-branch-split-delete:before {
+  content: '\e649'; }
+
+.wux-ui-3ds-flow-branch-list:before {
+  content: '\e712'; }
+
+.wux-ui-3ds-flow-branch-downward:before {
+  content: '\e10b'; }
+
+.wux-ui-3ds-flow-tree:before {
+  content: '\e175'; }
+
+.wux-ui-3ds-flow-tree-expand-down:before {
+  content: '\e616'; }
+
+.wux-ui-3ds-flow-tree-child-1-expand-down:before {
+  content: '\e990'; }
+
+.wux-ui-3ds-flow-tree-child-3-expand-down:before {
+  content: '\e991'; }
+
+.wux-ui-3ds-flow-tree-child-1-3-expand-down:before {
+  content: '\e992'; }
+
+.wux-ui-3ds-flow-tree-expand-down-cog:before {
+  content: '\e617'; }
+
+.wux-ui-3ds-flow-tree-expand-up:before {
+  content: '\e618'; }
+
+.wux-ui-3ds-flow-tree-child-1-expand-up:before {
+  content: '\e993'; }
+
+.wux-ui-3ds-flow-tree-child-3-expand-up:before {
+  content: '\e994'; }
+
+.wux-ui-3ds-flow-tree-child-1-3-expand-up:before {
+  content: '\e995'; }
+
+.wux-ui-3ds-flow-tree-ordered:before {
+  content: '\e264'; }
+
+.wux-ui-3ds-flow-line:before {
+  content: '\e176'; }
+
+.wux-ui-3ds-flow-line-add:before {
+  content: '\e265'; }
+
+.wux-ui-3ds-flow-line-delete:before {
+  content: '\e266'; }
+
+.wux-ui-3ds-flow-line-update:before {
+  content: '\e659'; }
+
+.wux-ui-3ds-flow-dashed-line:before {
+  content: '\e527'; }
+
+.wux-ui-3ds-flow-dashed-line-add:before {
+  content: '\e528'; }
+
+.wux-ui-3ds-flow-dashed-line-delete:before {
+  content: '\e529'; }
+
+.wux-ui-3ds-flow-parallel:before {
+  content: '\e177'; }
+
+.wux-ui-3ds-flow-dashed-branchdown:before {
+  content: '\e588'; }
+
+.wux-ui-3ds-tree-view-root:before {
+  content: '\e713'; }
+
+.wux-ui-3ds-tree-view-leaf:before {
+  content: '\e714'; }
+
+.wux-ui-3ds-tree-view-leaves:before {
+  content: '\e10c'; }
+
+.wux-ui-3ds-tree-view-all:before {
+  content: '\e715'; }
+
+.wux-ui-3ds-tree-view-flattened:before {
+  content: '\e858'; }
+
+.wux-ui-3ds-tree-view-flattened-leaves:before {
+  content: '\e0ec'; }
+
+.wux-ui-3ds-tree-view-flattened-progress-3:before {
+  content: '\e859'; }
+
+.wux-ui-3ds-tree-view-flattened-cog:before {
+  content: '\e996'; }
+
+.wux-ui-3ds-tree-view-flattened-user:before {
+  content: '\e0ed'; }
+
+.wux-ui-3ds-tree-view-flattened-collapse:before {
+  content: '\e0ee'; }
+
+.wux-ui-3ds-tree-add:before {
+  content: '\e4d8'; }
+
+.wux-ui-3ds-tree-delete:before {
+  content: '\e812'; }
+
+.wux-ui-3ds-tree-reorder:before {
+  content: '\e813'; }
+
+.wux-ui-3ds-tree-reparent:before {
+  content: '\e933'; }
+
+.wux-ui-3ds-tree-revision-update:before {
+  content: '\e934'; }
+
+.wux-ui-3ds-tree-table:before {
+  content: '\e783'; }
+
+.wux-ui-3ds-tree-branch-reorder:before {
+  content: '\e5aa'; }
+
+.wux-ui-3ds-level-down:before {
+  content: '\e153'; }
+
+.wux-ui-3ds-level-up:before {
+  content: '\e154'; }
+
+.wux-ui-3ds-browsing-structure:before {
+  content: '\e22f'; }
+
+.wux-ui-3ds-browsing-structure-cog:before {
+  content: '\e23a'; }
+
+.wux-ui-3ds-browsing-structure-root:before {
+  content: '\e23b'; }
+
+.wux-ui-3ds-browsing-structure-root-add-to:before {
+  content: '\e23c'; }
+
+.wux-ui-3ds-browsing-structure-root-group:before {
+  content: '\e4d9'; }
+
+.wux-ui-3ds-browsing-structure-node:before {
+  content: '\e23d'; }
+
+.wux-ui-3ds-browsing-structure-node-add-to:before {
+  content: '\e23e'; }
+
+.wux-ui-3ds-video:before {
+  content: '\e008'; }
+
+.wux-ui-3ds-video-swatches:before {
+  content: '\e685'; }
+
+.wux-ui-3ds-video-360:before {
+  content: '\e398'; }
+
+.wux-ui-3ds-picture:before {
+  content: '\e009'; }
+
+.wux-ui-3ds-picture-add:before {
+  content: '\e686'; }
+
+.wux-ui-3ds-picture-delete:before {
+  content: '\e687'; }
+
+.wux-ui-3ds-picture-lightbulb:before {
+  content: '\e17b'; }
+
+.wux-ui-3ds-picture-export:before {
+  content: '\e2f6'; }
+
+.wux-ui-3ds-picture-update:before {
+  content: '\e4a6'; }
+
+.wux-ui-3ds-picture-360:before {
+  content: '\e351'; }
+
+.wux-ui-3ds-picture-360-add:before {
+  content: '\e2f7'; }
+
+.wux-ui-3ds-picture-360-delete:before {
+  content: '\e2f8'; }
+
+.wux-ui-3ds-picture-360-lightbulb:before {
+  content: '\e52a'; }
+
+.wux-ui-3ds-picture-animated:before {
+  content: '\e514'; }
+
+.wux-ui-3ds-note:before {
+  content: '\e011'; }
+
+.wux-ui-3ds-note-pencil:before {
+  content: '\e997'; }
+
+.wux-ui-3ds-media-360:before {
+  content: '\e399'; }
+
+.wux-ui-3ds-3d-object:before {
+  content: '\e122'; }
+
+.wux-ui-3ds-3d-object-barcode:before {
+  content: '\e935'; }
+
+.wux-ui-3ds-3d-object-reset:before {
+  content: '\e1bb'; }
+
+.wux-ui-3ds-3d-object-sparkle:before {
+  content: '\e52b'; }
+
+.wux-ui-3ds-3d-object-database:before {
+  content: '\e23f'; }
+
+.wux-ui-3ds-3d-object-question:before {
+  content: '\e24a'; }
+
+.wux-ui-3ds-3d-object-unknown-format:before {
+  content: '\e24b'; }
+
+.wux-ui-3ds-3d-object-3dxml:before {
+  content: '\e24c'; }
+
+.wux-ui-3ds-3d-object-gltf:before {
+  content: '\e52c'; }
+
+.wux-ui-3ds-3dpart:before {
+  content: '\e267'; }
+
+.wux-ui-3ds-3dpart-add:before {
+  content: '\e814'; }
+
+.wux-ui-3ds-3dpart-delete:before {
+  content: '\e815'; }
+
+.wux-ui-3ds-3dpart-insert:before {
+  content: '\e860'; }
+
+.wux-ui-3ds-3dpart-play:before {
+  content: '\e17c'; }
+
+.wux-ui-3ds-3dpart-trolley:before {
+  content: '\e5ab'; }
+
+.wux-ui-3ds-3dpart-truck:before {
+  content: '\e5ac'; }
+
+.wux-ui-3ds-3dpart-pencil:before {
+  content: '\e5ad'; }
+
+.wux-ui-3ds-3dpart-brush:before {
+  content: '\e5ae'; }
+
+.wux-ui-3ds-3dpart-shopping-cart:before {
+  content: '\e5af'; }
+
+.wux-ui-3ds-3dpart-search:before {
+  content: '\e5b0'; }
+
+.wux-ui-3ds-3dpart-open:before {
+  content: '\e5b1'; }
+
+.wux-ui-3ds-3dpart-import-into:before {
+  content: '\e5b2'; }
+
+.wux-ui-3ds-3dpart-replace:before {
+  content: '\e5b3'; }
+
+.wux-ui-3ds-3dproduct:before {
+  content: '\e268'; }
+
+.wux-ui-3ds-3dproduct-add:before {
+  content: '\e816'; }
+
+.wux-ui-3ds-3dproduct-delete:before {
+  content: '\e817'; }
+
+.wux-ui-3ds-3dproduct-insert:before {
+  content: '\e818'; }
+
+.wux-ui-3ds-3dproduct-play:before {
+  content: '\e5b4'; }
+
+.wux-ui-3ds-3dproduct-trolley:before {
+  content: '\e17d'; }
+
+.wux-ui-3ds-3dproduct-truck:before {
+  content: '\e819'; }
+
+.wux-ui-3ds-3dproduct-pencil:before {
+  content: '\e820'; }
+
+.wux-ui-3ds-3dproduct-brush:before {
+  content: '\e24d'; }
+
+.wux-ui-3ds-3dproduct-shopping-cart:before {
+  content: '\e861'; }
+
+.wux-ui-3ds-3dproduct-search:before {
+  content: '\e862'; }
+
+.wux-ui-3ds-3dproduct-open:before {
+  content: '\e891'; }
+
+.wux-ui-3ds-3dproduct-import-into:before {
+  content: '\e2f9'; }
+
+.wux-ui-3ds-3dproduct-replace:before {
+  content: '\e5b5'; }
+
+.wux-ui-3ds-deformability:before {
+  content: '\e5b6'; }
+
+.wux-ui-3ds-deformability-insert:before {
+  content: '\e5b7'; }
+
+.wux-ui-3ds-drawing:before {
+  content: '\e269'; }
+
+.wux-ui-3ds-drawing-add:before {
+  content: '\e821'; }
+
+.wux-ui-3ds-drawing-delete:before {
+  content: '\e822'; }
+
+.wux-ui-3ds-drawing-insert:before {
+  content: '\e863'; }
+
+.wux-ui-3ds-material:before {
+  content: '\e270'; }
+
+.wux-ui-3ds-material-new:before {
+  content: '\e17e'; }
+
+.wux-ui-3ds-material-add:before {
+  content: '\e688'; }
+
+.wux-ui-3ds-material-delete:before {
+  content: '\e689'; }
+
+.wux-ui-3ds-material-script:before {
+  content: '\e864'; }
+
+.wux-ui-3ds-material-search:before {
+  content: '\e1d2'; }
+
+.wux-ui-3ds-material-cog:before {
+  content: '\e3bc'; }
+
+.wux-ui-3ds-material-attention:before {
+  content: '\e41e'; }
+
+.wux-ui-3ds-materials:before {
+  content: '\e823'; }
+
+.wux-ui-3ds-raw-material:before {
+  content: '\e998'; }
+
+.wux-ui-3ds-raw-material-add:before {
+  content: '\e999'; }
+
+.wux-ui-3ds-raw-material-delete:before {
+  content: '\e00a'; }
+
+.wux-ui-3ds-collection:before {
+  content: '\e339'; }
+
+.wux-ui-3ds-collection-add:before {
+  content: '\e530'; }
+
+.wux-ui-3ds-collection-delete:before {
+  content: '\e531'; }
+
+.wux-ui-3ds-render:before {
+  content: '\e352'; }
+
+.wux-ui-3ds-part-ebom:before {
+  content: '\e555'; }
+
+.wux-ui-3ds-template:before {
+  content: '\e650'; }
+
+.wux-ui-3ds-template-add:before {
+  content: '\e865'; }
+
+.wux-ui-3ds-template-delete:before {
+  content: '\e866'; }
+
+.wux-ui-3ds-template-cog:before {
+  content: '\e651'; }
+
+.wux-ui-3ds-template-eye:before {
+  content: '\e690'; }
+
+.wux-ui-3ds-template-eye-off:before {
+  content: '\e691'; }
+
+.wux-ui-3ds-fl-diagram:before {
+  content: '\e716'; }
+
+.wux-ui-3ds-fl-diagram-eye:before {
+  content: '\e2fa'; }
+
+.wux-ui-3ds-fl-diagrams:before {
+  content: '\e717'; }
+
+.wux-ui-3ds-logical:before {
+  content: '\e41f'; }
+
+.wux-ui-3ds-space-management:before {
+  content: '\e867'; }
+
+.wux-ui-3ds-electronic-component:before {
+  content: '\e00b'; }
+
+.wux-ui-3ds-electronic-component-add:before {
+  content: '\e00c'; }
+
+.wux-ui-3ds-electronic-component-delete:before {
+  content: '\e00d'; }
+
+.wux-ui-3ds-electronic-component-processor:before {
+  content: '\e2fb'; }
+
+.wux-ui-3ds-electronic-component-processor-search:before {
+  content: '\e52d'; }
+
+.wux-ui-3ds-electronic-component-processor-exchange:before {
+  content: '\e52e'; }
+
+.wux-ui-3ds-electronic-component-processor-user:before {
+  content: '\e52f'; }
+
+.wux-ui-3ds-electronic-component-processor-cog:before {
+  content: '\e60f'; }
+
+.wux-ui-3ds-pcb-board-bare:before {
+  content: '\e00e'; }
+
+.wux-ui-3ds-pcb-board-bare-add:before {
+  content: '\e00f'; }
+
+.wux-ui-3ds-pcb-board-bare-delete:before {
+  content: '\e01a'; }
+
+.wux-ui-3ds-pcb-board-assembly:before {
+  content: '\e01b'; }
+
+.wux-ui-3ds-pcb-board-assembly-add:before {
+  content: '\e01c'; }
+
+.wux-ui-3ds-pcb-board-assembly-delete:before {
+  content: '\e01d'; }
+
+.wux-ui-3ds-requirement:before {
+  content: '\e09d'; }
+
+.wux-ui-3ds-requirement-add:before {
+  content: '\e24e'; }
+
+.wux-ui-3ds-requirement-delete:before {
+  content: '\e24f'; }
+
+.wux-ui-3ds-requirement-open:before {
+  content: '\e25a'; }
+
+.wux-ui-3ds-requirement-insert:before {
+  content: '\e4a7'; }
+
+.wux-ui-3ds-requirement-specification:before {
+  content: '\e09e'; }
+
+.wux-ui-3ds-requirement-specification-add:before {
+  content: '\e25b'; }
+
+.wux-ui-3ds-requirement-specification-delete:before {
+  content: '\e25c'; }
+
+.wux-ui-3ds-requirement-specification-open:before {
+  content: '\e25d'; }
+
+.wux-ui-3ds-requirement-specification-insert:before {
+  content: '\e4a8'; }
+
+.wux-ui-3ds-ontology:before {
+  content: '\e0ef'; }
+
+.wux-ui-3ds-script:before {
+  content: '\e0f0'; }
+
+.wux-ui-3ds-physics-simulation:before {
+  content: '\e17f'; }
+
+.wux-ui-3ds-media-collection:before {
+  content: '\e18a'; }
+
+.wux-ui-3ds-media-collection-play:before {
+  content: '\e18b'; }
+
+.wux-ui-3ds-dashboard-story:before {
+  content: '\e36f'; }
+
+.wux-ui-3ds-dashboard-story-add:before {
+  content: '\e37a'; }
+
+.wux-ui-3ds-dashboard-story-folder:before {
+  content: '\e37b'; }
+
+.wux-ui-3ds-theme-file:before {
+  content: '\e3bd'; }
+
+.wux-ui-3ds-user:before {
+  content: '\e003'; }
+
+.wux-ui-3ds-user-add:before {
+  content: '\e005'; }
+
+.wux-ui-3ds-user-delete:before {
+  content: '\e006'; }
+
+.wux-ui-3ds-user-ok:before {
+  content: '\e007'; }
+
+.wux-ui-3ds-user-key:before {
+  content: '\e254'; }
+
+.wux-ui-3ds-user-change:before {
+  content: '\e255'; }
+
+.wux-ui-3ds-user-change-sent:before {
+  content: '\e42a'; }
+
+.wux-ui-3ds-user-change-received:before {
+  content: '\e42b'; }
+
+.wux-ui-3ds-user-cog:before {
+  content: '\e400'; }
+
+.wux-ui-3ds-user-clock:before {
+  content: '\e868'; }
+
+.wux-ui-3ds-user-block:before {
+  content: '\e892'; }
+
+.wux-ui-3ds-user-help:before {
+  content: '\e09f'; }
+
+.wux-ui-3ds-user-flag:before {
+  content: '\e0f1'; }
+
+.wux-ui-3ds-user-pencil:before {
+  content: '\e0f2'; }
+
+.wux-ui-3ds-user-feather:before {
+  content: '\e0f3'; }
+
+.wux-ui-3ds-user-comment:before {
+  content: '\e0f4'; }
+
+.wux-ui-3ds-user-eye:before {
+  content: '\e0f5'; }
+
+.wux-ui-3ds-user-hourglass:before {
+  content: '\e2fc'; }
+
+.wux-ui-3ds-users:before {
+  content: '\e004'; }
+
+.wux-ui-3ds-users-add:before {
+  content: '\e225'; }
+
+.wux-ui-3ds-users-delete:before {
+  content: '\e226'; }
+
+.wux-ui-3ds-users-collaborate:before {
+  content: '\e936'; }
+
+.wux-ui-3ds-users-hourglass:before {
+  content: '\e2fd'; }
+
+.wux-ui-3ds-users-group:before {
+  content: '\e419'; }
+
+.wux-ui-3ds-users-group-add:before {
+  content: '\e420'; }
+
+.wux-ui-3ds-users-group-delete:before {
+  content: '\e421'; }
+
+.wux-ui-3ds-users-group-ok:before {
+  content: '\e515'; }
+
+.wux-ui-3ds-users-group-key:before {
+  content: '\e516'; }
+
+.wux-ui-3ds-users-group-change:before {
+  content: '\e517'; }
+
+.wux-ui-3ds-users-group-cog:before {
+  content: '\e518'; }
+
+.wux-ui-3ds-users-group-locked:before {
+  content: '\e589'; }
+
+.wux-ui-3ds-users-group-search:before {
+  content: '\e53a'; }
+
+.wux-ui-3ds-users-groups:before {
+  content: '\e619'; }
+
+.wux-ui-3ds-users-meeting:before {
+  content: '\e4a9'; }
+
+.wux-ui-3ds-users-classroom:before {
+  content: '\e61a'; }
+
+.wux-ui-3ds-home:before {
+  content: '\e021'; }
+
+.wux-ui-3ds-home-delete:before {
+  content: '\e37c'; }
+
+.wux-ui-3ds-home-back:before {
+  content: '\e53b'; }
+
+.wux-ui-3ds-back:before {
+  content: '\e022'; }
+
+.wux-ui-3ds-reload:before {
+  content: '\e151'; }
+
+.wux-ui-3ds-refresh:before {
+  content: '\e152'; }
+
+.wux-ui-3ds-refresh-stop:before {
+  content: '\e5b8'; }
+
+.wux-ui-3ds-update:before {
+  content: '\e652'; }
+
+.wux-ui-3ds-update-lock-open:before {
+  content: '\e2fe'; }
+
+.wux-ui-3ds-reset:before {
+  content: '\e251'; }
+
+.wux-ui-3ds-anchor:before {
+  content: '\e271'; }
+
+.wux-ui-3ds-shortcut:before {
+  content: '\e499'; }
+
+.wux-ui-3ds-popup:before {
+  content: '\e131'; }
+
+.wux-ui-3ds-open-in-a-new-window:before {
+  content: '\e132'; }
+
+.wux-ui-3ds-open-inside-a-window:before {
+  content: '\e25e'; }
+
+.wux-ui-3ds-pin:before {
+  content: '\e261'; }
+
+.wux-ui-3ds-pin-off:before {
+  content: '\e274'; }
+
+.wux-ui-3ds-close:before {
+  content: '\e015'; }
+
+.wux-ui-3ds-width-full:before {
+  content: '\e0f6'; }
+
+.wux-ui-3ds-width-small:before {
+  content: '\e0f7'; }
+
+.wux-ui-3ds-resize-full:before {
+  content: '\e133'; }
+
+.wux-ui-3ds-resize-small:before {
+  content: '\e134'; }
+
+.wux-ui-3ds-resize-handle:before {
+  content: '\e465'; }
+
+.wux-ui-3ds-resize-fullscreen:before {
+  content: '\e479'; }
+
+.wux-ui-3ds-resize-fullscreen-off:before {
+  content: '\e480'; }
+
+.wux-ui-3ds-widget-instance:before {
+  content: '\e01e'; }
+
+.wux-ui-3ds-expand-collapse-panel:before {
+  content: '\e135'; }
+
+.wux-ui-3ds-expand-all:before {
+  content: '\e718'; }
+
+.wux-ui-3ds-collapse-all:before {
+  content: '\e719'; }
+
+.wux-ui-3ds-fold:before {
+  content: '\e937'; }
+
+.wux-ui-3ds-unfold:before {
+  content: '\e938'; }
+
+.wux-ui-3ds-drawing-anchor-point:before {
+  content: '\e0a0'; }
+
+.wux-ui-3ds-drawing-line:before {
+  content: '\e0a1'; }
+
+.wux-ui-3ds-drawing-polyline:before {
+  content: '\e5b9'; }
+
+.wux-ui-3ds-drawing-polyline-convert:before {
+  content: '\e5ba'; }
+
+.wux-ui-3ds-drawing-polygon:before {
+  content: '\e0a2'; }
+
+.wux-ui-3ds-geometry-square:before {
+  content: '\e42c'; }
+
+.wux-ui-3ds-geometry-square-bold:before {
+  content: '\e42d'; }
+
+.wux-ui-3ds-geometry-square-off:before {
+  content: '\e42e'; }
+
+.wux-ui-3ds-geometry-circle:before {
+  content: '\e42f'; }
+
+.wux-ui-3ds-line-thickness-0:before {
+  content: '\e43a'; }
+
+.wux-ui-3ds-line-thickness-1:before {
+  content: '\e43b'; }
+
+.wux-ui-3ds-line-thickness-2:before {
+  content: '\e43c'; }
+
+.wux-ui-3ds-line-thickness-3:before {
+  content: '\e43d'; }
+
+.wux-ui-3ds-line-dotted-1:before {
+  content: '\e43e'; }
+
+.wux-ui-3ds-line-dotted-2:before {
+  content: '\e43f'; }
+
+.wux-ui-3ds-line-dotted-3:before {
+  content: '\e44a'; }
+
+.wux-ui-3ds-graphic-symbol:before {
+  content: '\e61b'; }
+
+.wux-ui-3ds-graphic-pattern:before {
+  content: '\e61c'; }
+
+.wux-ui-3ds-spin-cw:before {
+  content: '\e692'; }
+
+.wux-ui-3ds-spin-ccw:before {
+  content: '\e693'; }
+
+.wux-ui-3ds-rotation-3d:before {
+  content: '\e694'; }
+
+.wux-ui-3ds-object-symmetry:before {
+  content: '\e61d'; }
+
+.wux-ui-3ds-plane-eye:before {
+  content: '\e1bc'; }
+
+.wux-ui-3ds-plane-eye-off:before {
+  content: '\e1bd'; }
+
+.wux-ui-3ds-robot-3d-xyz:before {
+  content: '\e3be'; }
+
+.wux-ui-3ds-view-3d-top:before {
+  content: '\e3bf'; }
+
+.wux-ui-3ds-view-3d-bottom:before {
+  content: '\e3c0'; }
+
+.wux-ui-3ds-view-3d-left:before {
+  content: '\e3c1'; }
+
+.wux-ui-3ds-view-3d-right:before {
+  content: '\e3c2'; }
+
+.wux-ui-3ds-view-3d-front:before {
+  content: '\e3c3'; }
+
+.wux-ui-3ds-view-3d-back:before {
+  content: '\e3c4'; }
+
+.wux-ui-3ds-view-3d-isometric:before {
+  content: '\e3c5'; }
+
+.wux-ui-3ds-view-3d-trimetric:before {
+  content: '\e61e'; }
+
+.wux-ui-3ds-view-3d-perspective-3pt:before {
+  content: '\e61f'; }
+
+.wux-ui-3ds-view-3d-normal-to-face:before {
+  content: '\e62a'; }
+
+.wux-ui-3ds-flip-direction:before {
+  content: '\e5bb'; }
+
+.wux-ui-3ds-tech-annotation-3dprodcut:before {
+  content: '\e62b'; }
+
+.wux-ui-3ds-manufacturing-additive:before {
+  content: '\e403'; }
+
+.wux-ui-3ds-manufacturing-substractive:before {
+  content: '\e404'; }
+
+.wux-ui-3ds-manufacturing-forming:before {
+  content: '\e405'; }
+
+.wux-ui-3ds-manufacturing-cutting:before {
+  content: '\e406'; }
+
+.wux-ui-3ds-manufacturing-finishing:before {
+  content: '\e407'; }
+
+.wux-ui-3ds-manufacturing-molding:before {
+  content: '\e408'; }
+
+.wux-ui-3ds-scene-transition:before {
+  content: '\e893'; }
+
+.wux-ui-3ds-scene-transition-fade:before {
+  content: '\e894'; }
+
+.wux-ui-3ds-scene-transition-slide-left:before {
+  content: '\e895'; }
+
+.wux-ui-3ds-scene-transition-slide-up:before {
+  content: '\e896'; }
+
+.wux-ui-3ds-scene-transition-zoom-in-out:before {
+  content: '\e897'; }
+
+.wux-ui-3ds-scene-transition-zoom-in:before {
+  content: '\e898'; }
+
+.wux-ui-3ds-scene-transition-zoom-out:before {
+  content: '\e899'; }
+
+.wux-ui-3ds-scene-transition-cover:before {
+  content: '\e900'; }
+
+.wux-ui-3ds-scene-animation:before {
+  content: '\e18c'; }
+
+.wux-ui-3ds-scene-animation-pencil:before {
+  content: '\e18d'; }
+
+.wux-ui-3ds-scene-animation-off:before {
+  content: '\e18e'; }
+
+.wux-ui-3ds-camera-fov-narrow:before {
+  content: '\e01f'; }
+
+.wux-ui-3ds-camera-fov-medium:before {
+  content: '\e02a'; }
+
+.wux-ui-3ds-camera-fov-wide:before {
+  content: '\e02b'; }
+
+.wux-ui-3ds-object-bring-front:before {
+  content: '\e02c'; }
+
+.wux-ui-3ds-object-bring-forward:before {
+  content: '\e02d'; }
+
+.wux-ui-3ds-object-send-back:before {
+  content: '\e02e'; }
+
+.wux-ui-3ds-object-send-backward:before {
+  content: '\e02f'; }
+
+.wux-ui-3ds-object-compare-overlap:before {
+  content: '\e5bc'; }
+
+.wux-ui-3ds-object-compare-side:before {
+  content: '\e5bd'; }
+
+.wux-ui-3ds-object-compare-stacked:before {
+  content: '\e5be'; }
+
+.wux-ui-3ds-object-compare-slider:before {
+  content: '\e62c'; }
+
+.wux-ui-3ds-object-compare-solo-a:before {
+  content: '\e62d'; }
+
+.wux-ui-3ds-object-compare-solo-b:before {
+  content: '\e62e'; }
+
+.wux-ui-3ds-picture-from-3d:before {
+  content: '\e0f8'; }
+
+.wux-ui-3ds-picture-portrait-to-landscape:before {
+  content: '\e2ff'; }
+
+.wux-ui-3ds-picture-landscape-to-portrait:before {
+  content: '\e30a'; }
+
+.wux-ui-3ds-objects-horizontal-align-left:before {
+  content: '\e25f'; }
+
+.wux-ui-3ds-objects-horizontal-align-center:before {
+  content: '\e26a'; }
+
+.wux-ui-3ds-objects-horizontal-align-right:before {
+  content: '\e26b'; }
+
+.wux-ui-3ds-objects-vertical-align-top:before {
+  content: '\e26c'; }
+
+.wux-ui-3ds-objects-vertical-align-middle:before {
+  content: '\e26d'; }
+
+.wux-ui-3ds-objects-vertical-align-bottom:before {
+  content: '\e26e'; }
+
+.wux-ui-3ds-objects-horizontal-distribute-center:before {
+  content: '\e26f'; }
+
+.wux-ui-3ds-objects-vertical-distribute-center:before {
+  content: '\e27a'; }
+
+.wux-ui-3ds-object-shadow:before {
+  content: '\e27b'; }
+
+.wux-ui-3ds-object-shadow-off:before {
+  content: '\e27c'; }
+
+.wux-ui-3ds-object-shape-split:before {
+  content: '\e30b'; }
+
+.wux-ui-3ds-object-shape-merge:before {
+  content: '\e30c'; }
+
+.wux-ui-3ds-object-shape-replace:before {
+  content: '\e30d'; }
+
+.wux-ui-3ds-object-shape-round-corner:before {
+  content: '\e30e'; }
+
+.wux-ui-3ds-perspective-grid:before {
+  content: '\e30f'; }
+
+.wux-ui-3ds-product-fit-perspective:before {
+  content: '\e31a'; }
+
+.wux-ui-3ds-uv-map-unwrap:before {
+  content: '\e31b'; }
+
+.wux-ui-3ds-uv-map-projection:before {
+  content: '\e31c'; }
+
+.wux-ui-3ds-uv-map-envelope:before {
+  content: '\e31d'; }
+
+.wux-ui-3ds-uv-map-envelope-impostor:before {
+  content: '\e31e'; }
+
+.wux-ui-3ds-mesh-decimate:before {
+  content: '\e31f'; }
+
+.wux-ui-3ds-mesh-tesselate:before {
+  content: '\e32a'; }
+
+.wux-ui-3ds-mesh-tesselate-cog:before {
+  content: '\e32b'; }
+
+.wux-ui-3ds-geometries-eye:before {
+  content: '\e32c'; }
+
+.wux-ui-3ds-geometries-eye-off:before {
+  content: '\e32d'; }
+
+.wux-ui-3ds-category-picture-360:before {
+  content: '\e4aa'; }
+
+.wux-ui-3ds-category-3dproduct:before {
+  content: '\e4ab'; }
+
+.wux-ui-3ds-picture-compare-slider:before {
+  content: '\e4da'; }
+
+.wux-ui-3ds-creative-experience:before {
+  content: '\e62f'; }
+
+.wux-ui-3ds-creative-experience-magic-wand:before {
+  content: '\e63a'; }
+
+.wux-ui-3ds-experience-media-play:before {
+  content: '\e63b'; }
+
+.wux-ui-3ds-explore-3dproduct-user:before {
+  content: '\e63c'; }
+
+.wux-ui-3ds-discovery-project:before {
+  content: '\e500'; }
+
+.wux-ui-3ds-protein-project:before {
+  content: '\e4db'; }
+
+.wux-ui-3ds-study-tpp:before {
+  content: '\e4dc'; }
+
+.wux-ui-3ds-package-tpp-characteristic:before {
+  content: '\e502'; }
+
+.wux-ui-3ds-package-tpp-question:before {
+  content: '\e503'; }
+
+.wux-ui-3ds-package-tpp-test:before {
+  content: '\e504'; }
+
+.wux-ui-3ds-package-tpp-protocol:before {
+  content: '\e505'; }
+
+.wux-ui-3ds-ddp-question-add:before {
+  content: '\e604'; }
+
+.wux-ui-3ds-ddp-question-delete:before {
+  content: '\e605'; }
+
+.wux-ui-3ds-amount:before {
+  content: '\e654'; }
+
+.wux-ui-3ds-amount-status-ok:before {
+  content: '\e655'; }
+
+.wux-ui-3ds-amount-status-ko:before {
+  content: '\e656'; }
+
+.wux-ui-3ds-griffin-beaker-empty:before {
+  content: '\e720'; }
+
+.wux-ui-3ds-griffin-beaker-mid:before {
+  content: '\e721'; }
+
+.wux-ui-3ds-griffin-beaker-mid-open:before {
+  content: '\e1be'; }
+
+.wux-ui-3ds-griffin-beaker-mid-search:before {
+  content: '\e4ac'; }
+
+.wux-ui-3ds-griffin-beaker-full:before {
+  content: '\e722'; }
+
+.wux-ui-3ds-griffin-beaker-full-stirrer:before {
+  content: '\e5bf'; }
+
+.wux-ui-3ds-griffin-beaker-up-down:before {
+  content: '\e723'; }
+
+.wux-ui-3ds-griffin-beaker-composite:before {
+  content: '\e5c0'; }
+
+.wux-ui-3ds-flask-erlen-empty:before {
+  content: '\e489'; }
+
+.wux-ui-3ds-flask-erlen-mid:before {
+  content: '\e490'; }
+
+.wux-ui-3ds-flask-erlen-full:before {
+  content: '\e491'; }
+
+.wux-ui-3ds-flask-erlen-virtual:before {
+  content: '\e44b'; }
+
+.wux-ui-3ds-test-tube-empty:before {
+  content: '\e755'; }
+
+.wux-ui-3ds-test-tube-mid:before {
+  content: '\e756'; }
+
+.wux-ui-3ds-test-tube-mid-tablet:before {
+  content: '\e0a3'; }
+
+.wux-ui-3ds-test-tube-mid-tablet-new:before {
+  content: '\e53c'; }
+
+.wux-ui-3ds-test-tube-full:before {
+  content: '\e757'; }
+
+.wux-ui-3ds-eppendorf-tube:before {
+  content: '\e1d3'; }
+
+.wux-ui-3ds-eppendorf-tube-new:before {
+  content: '\e1d4'; }
+
+.wux-ui-3ds-eppendorf-tube-add:before {
+  content: '\e1d5'; }
+
+.wux-ui-3ds-eppendorf-tube-delete:before {
+  content: '\e1d6'; }
+
+.wux-ui-3ds-eppendorf-tube-remove:before {
+  content: '\e1d7'; }
+
+.wux-ui-3ds-eppendorf-tube-list:before {
+  content: '\e1d8'; }
+
+.wux-ui-3ds-eppendorf-tube-list-add:before {
+  content: '\e3c6'; }
+
+.wux-ui-3ds-eppendorf-tube-list-delete:before {
+  content: '\e3c7'; }
+
+.wux-ui-3ds-eppendorf-tube-list-remove:before {
+  content: '\e3c8'; }
+
+.wux-ui-3ds-eppendorf-tube-list-new:before {
+  content: '\e3c9'; }
+
+.wux-ui-3ds-plp-summation:before {
+  content: '\e0c2'; }
+
+.wux-ui-3ds-notebook-experiment:before {
+  content: '\e1bf'; }
+
+.wux-ui-3ds-workbook-experiment:before {
+  content: '\e1c0'; }
+
+.wux-ui-3ds-scientific-notebook-experiment:before {
+  content: '\e1c1'; }
+
+.wux-ui-3ds-sn-experiment-new:before {
+  content: '\e1d9'; }
+
+.wux-ui-3ds-sn-experiment-add:before {
+  content: '\e1da'; }
+
+.wux-ui-3ds-sn-experiment-delete:before {
+  content: '\e1db'; }
+
+.wux-ui-3ds-sn-experiment-remove:before {
+  content: '\e1dc'; }
+
+.wux-ui-3ds-sn-experiment-search:before {
+  content: '\e1dd'; }
+
+.wux-ui-3ds-sn-experiment-list:before {
+  content: '\e1de'; }
+
+.wux-ui-3ds-sn-experiment-template:before {
+  content: '\e4dd'; }
+
+.wux-ui-3ds-machine-learning:before {
+  content: '\e27d'; }
+
+.wux-ui-3ds-machine-learning-training-task:before {
+  content: '\e27e'; }
+
+.wux-ui-3ds-machine-learning-training-procedure:before {
+  content: '\e27f'; }
+
+.wux-ui-3ds-biosystemmap:before {
+  content: '\e37d'; }
+
+.wux-ui-3ds-biosystemmap-new:before {
+  content: '\e37e'; }
+
+.wux-ui-3ds-biosystemmap-list:before {
+  content: '\e37f'; }
+
+.wux-ui-3ds-biosystemmap-clock:before {
+  content: '\e38a'; }
+
+.wux-ui-3ds-simple-test:before {
+  content: '\e38b'; }
+
+.wux-ui-3ds-screening-test:before {
+  content: '\e28a'; }
+
+.wux-ui-3ds-material-experimental:before {
+  content: '\e38c'; }
+
+.wux-ui-3ds-floors:before {
+  content: '\e3ca'; }
+
+.wux-ui-3ds-room:before {
+  content: '\e3cb'; }
+
+.wux-ui-3ds-room-lab:before {
+  content: '\e3cc'; }
+
+.wux-ui-3ds-lab-fridge:before {
+  content: '\e3cd'; }
+
+.wux-ui-3ds-lab-freezer:before {
+  content: '\e3ce'; }
+
+.wux-ui-3ds-cabinet:before {
+  content: '\e3cf'; }
+
+.wux-ui-3ds-shelf:before {
+  content: '\e3d0'; }
+
+.wux-ui-3ds-electronic-scale:before {
+  content: '\e3d1'; }
+
+.wux-ui-3ds-electronic-scale-add:before {
+  content: '\e3d2'; }
+
+.wux-ui-3ds-electronic-scale-delete:before {
+  content: '\e3d3'; }
+
+.wux-ui-3ds-electronic-scale-remove:before {
+  content: '\e3d4'; }
+
+.wux-ui-3ds-electronic-scale-new:before {
+  content: '\e3d5'; }
+
+.wux-ui-3ds-electronic-scale-list:before {
+  content: '\e3d6'; }
+
+.wux-ui-3ds-activity:before {
+  content: '\e3d7'; }
+
+.wux-ui-3ds-activity-add:before {
+  content: '\e3d8'; }
+
+.wux-ui-3ds-activity-delete:before {
+  content: '\e3d9'; }
+
+.wux-ui-3ds-activity-remove:before {
+  content: '\e3da'; }
+
+.wux-ui-3ds-activity-new:before {
+  content: '\e3db'; }
+
+.wux-ui-3ds-activity-plan:before {
+  content: '\e3dc'; }
+
+.wux-ui-3ds-activity-plan-add:before {
+  content: '\e3dd'; }
+
+.wux-ui-3ds-activity-plan-delete:before {
+  content: '\e3de'; }
+
+.wux-ui-3ds-activity-plan-remove:before {
+  content: '\e3df'; }
+
+.wux-ui-3ds-activity-plan-new:before {
+  content: '\e3e0'; }
+
+.wux-ui-3ds-cosmo-compound-set:before {
+  content: '\e44c'; }
+
+.wux-ui-3ds-va-microstate-generation:before {
+  content: '\e44d'; }
+
+.wux-ui-3ds-pure-comp-mixture:before {
+  content: '\e44e'; }
+
+.wux-ui-3ds-solubility-screening:before {
+  content: '\e44f'; }
+
+.wux-ui-3ds-coefficient-partitioning:before {
+  content: '\e45a'; }
+
+.wux-ui-3ds-group-line-move:before {
+  content: '\e45b'; }
+
+.wux-ui-3ds-scientific-data-pipeline:before {
+  content: '\e4ad'; }
+
+.wux-ui-3ds-scientific-data-pipeline-template:before {
+  content: '\e4ae'; }
+
+.wux-ui-3ds-bio-retrosynthesis:before {
+  content: '\e4de'; }
+
+.wux-ui-3ds-substance-registry:before {
+  content: '\e4df'; }
+
+.wux-ui-3ds-bio-container-empty:before {
+  content: '\e63d'; }
+
+.wux-ui-3ds-bio-container-mid:before {
+  content: '\e63e'; }
+
+.wux-ui-3ds-bio-container-full:before {
+  content: '\e63f'; }
+
+.wux-ui-3ds-bio-container-full-sealed:before {
+  content: '\e64a'; }
+
+.wux-ui-3ds-bio-container-move:before {
+  content: '\e4e0'; }
+
+.wux-ui-3ds-bio-container-delete:before {
+  content: '\e4e1'; }
+
+.wux-ui-3ds-bio-container-shopping-cart:before {
+  content: '\e4e2'; }
+
+.wux-ui-3ds-bio-container-propagate:before {
+  content: '\e53d'; }
+
+.wux-ui-3ds-bio-container-ok:before {
+  content: '\e5c1'; }
+
+.wux-ui-3ds-bio-container-dispense:before {
+  content: '\e5c2'; }
+
+.wux-ui-3ds-bio-container-poured:before {
+  content: '\e5c3'; }
+
+.wux-ui-3ds-bio-container-opened:before {
+  content: '\e4e3'; }
+
+.wux-ui-3ds-gtd-experiment:before {
+  content: '\e4e4'; }
+
+.wux-ui-3ds-nutritional-values-list:before {
+  content: '\e5c4'; }
+
+.wux-ui-3ds-per-serving:before {
+  content: '\e5c5'; }
+
+.wux-ui-3ds-molecule-candidate:before {
+  content: '\e501'; }
+
+.wux-ui-3ds-molecule-candidate-list:before {
+  content: '\e5c6'; }
+
+.wux-ui-3ds-molecule-type-protein:before {
+  content: '\e695'; }
+
+.wux-ui-3ds-molecule-type-dna:before {
+  content: '\e696'; }
+
+.wux-ui-3ds-molecule-type-rna:before {
+  content: '\e697'; }
+
+.wux-ui-3ds-molecule-type-cell-line:before {
+  content: '\e698'; }
+
+.wux-ui-3ds-molecule-type-monoclonal:before {
+  content: '\e699'; }
+
+.wux-ui-3ds-molecule-type-polyclonal-antibody:before {
+  content: '\e869'; }
+
+.wux-ui-3ds-molecule-type-simple-molecule:before {
+  content: '\e700'; }
+
+.wux-ui-3ds-molecule-type-generic-substance:before {
+  content: '\e784'; }
+
+.wux-ui-3ds-molecule-type-generic-substance-new:before {
+  content: '\e3e1'; }
+
+.wux-ui-3ds-molecule-type-methane:before {
+  content: '\e18f'; }
+
+.wux-ui-3ds-molecule-type-methane-new:before {
+  content: '\e1df'; }
+
+.wux-ui-3ds-molecule-type-methane-open:before {
+  content: '\e1e0'; }
+
+.wux-ui-3ds-molecule-type-methane-search:before {
+  content: '\e1e1'; }
+
+.wux-ui-3ds-molecule-type-lithium-conductivity:before {
+  content: '\e5c7'; }
+
+.wux-ui-3ds-molecule-mixture:before {
+  content: '\e5c8'; }
+
+.wux-ui-3ds-interference-simulation:before {
+  content: '\e724'; }
+
+.wux-ui-3ds-interference-metric:before {
+  content: '\e725'; }
+
+.wux-ui-3ds-review:before {
+  content: '\e0c3'; }
+
+.wux-ui-3ds-highlight-review:before {
+  content: '\e0a4'; }
+
+.wux-ui-3ds-markup-review:before {
+  content: '\e0f9'; }
+
+.wux-ui-3ds-check-review:before {
+  content: '\e0fa'; }
+
+.wux-ui-3ds-failure-mode-analysis:before {
+  content: '\e28b'; }
+
+.wux-ui-3ds-pipe-backfill:before {
+  content: '\e45c'; }
+
+.wux-ui-3ds-pipe-v-clearance:before {
+  content: '\e45d'; }
+
+.wux-ui-3ds-forklift-load:before {
+  content: '\e0a5'; }
+
+.wux-ui-3ds-forklift-unload:before {
+  content: '\e0a6'; }
+
+.wux-ui-3ds-shipping-container:before {
+  content: '\e0a7'; }
+
+.wux-ui-3ds-pallet:before {
+  content: '\e0a8'; }
+
+.wux-ui-3ds-pallet-loaded:before {
+  content: '\e0a9'; }
+
+.wux-ui-3ds-part-of:before {
+  content: '\e0fb'; }
+
+.wux-ui-3ds-part-of-lock:before {
+  content: '\e0fc'; }
+
+.wux-ui-3ds-part-of-interlocked:before {
+  content: '\e10d'; }
+
+.wux-ui-3ds-robotic-arm:before {
+  content: '\e19a'; }
+
+.wux-ui-3ds-operation-execution:before {
+  content: '\e28c'; }
+
+.wux-ui-3ds-operation-execution-brush:before {
+  content: '\e28d'; }
+
+.wux-ui-3ds-operation-time-constraint:before {
+  content: '\e5c9'; }
+
+.wux-ui-3ds-workload:before {
+  content: '\e28e'; }
+
+.wux-ui-3ds-workload-percentage:before {
+  content: '\e28f'; }
+
+.wux-ui-3ds-workload-time:before {
+  content: '\e29a'; }
+
+.wux-ui-3ds-workload-capacity:before {
+  content: '\e29b'; }
+
+.wux-ui-3ds-workload-capacity-left:before {
+  content: '\e29c'; }
+
+.wux-ui-3ds-bucket-period-touch:before {
+  content: '\e29d'; }
+
+.wux-ui-3ds-bucket-period-next:before {
+  content: '\e29e'; }
+
+.wux-ui-3ds-bucket-period-previous:before {
+  content: '\e29f'; }
+
+.wux-ui-3ds-chart-schedule-workload-capacity:before {
+  content: '\e2a0'; }
+
+.wux-ui-3ds-chart-schedule-combined:before {
+  content: '\e2a1'; }
+
+.wux-ui-3ds-chart-schedule-connexion:before {
+  content: '\e45e'; }
+
+.wux-ui-3ds-capable-resources:before {
+  content: '\e5ca'; }
+
+.wux-ui-3ds-capable-resources-eye:before {
+  content: '\e5cb'; }
+
+.wux-ui-3ds-capable-resources-eye-off:before {
+  content: '\e5cc'; }
+
+.wux-ui-3ds-wrenches-pair:before {
+  content: '\e5cd'; }
+
+.wux-ui-3ds-project-plans:before {
+  content: '\e901'; }
+
+.wux-ui-3ds-attributes-persistent:before {
+  content: '\e939'; }
+
+.wux-ui-3ds-deployment-extension:before {
+  content: '\e940'; }
+
+.wux-ui-3ds-package-extension:before {
+  content: '\e941'; }
+
+.wux-ui-3ds-symboltype:before {
+  content: '\e942'; }
+
+.wux-ui-3ds-part-made-from:before {
+  content: '\e03a'; }
+
+.wux-ui-3ds-part-made-from-add:before {
+  content: '\e0fd'; }
+
+.wux-ui-3ds-sellable-item:before {
+  content: '\e0c4'; }
+
+.wux-ui-3ds-sellable-item-add:before {
+  content: '\e0c5'; }
+
+.wux-ui-3ds-sellable-item-delete:before {
+  content: '\e0c6'; }
+
+.wux-ui-3ds-product-made-from-part:before {
+  content: '\e0fe'; }
+
+.wux-ui-3ds-risk-type:before {
+  content: '\e0ff'; }
+
+.wux-ui-3ds-folder-risk-type:before {
+  content: '\e45f'; }
+
+.wux-ui-3ds-opportunity-type:before {
+  content: '\e3e2'; }
+
+.wux-ui-3ds-issue-type:before {
+  content: '\e3e3'; }
+
+.wux-ui-3ds-at-risk-status:before {
+  content: '\e10e'; }
+
+.wux-ui-3ds-delivered-status:before {
+  content: '\e10f'; }
+
+.wux-ui-3ds-impact-analysis-chart-line-bar:before {
+  content: '\e11a'; }
+
+.wux-ui-3ds-workforce:before {
+  content: '\e1c2'; }
+
+.wux-ui-3ds-subscription-others-add:before {
+  content: '\e1c3'; }
+
+.wux-ui-3ds-subscription-others-pencil:before {
+  content: '\e1c4'; }
+
+.wux-ui-3ds-object-computed-state:before {
+  content: '\e1e2'; }
+
+.wux-ui-3ds-performance-specification:before {
+  content: '\e3e4'; }
+
+.wux-ui-3ds-performance-specification-target:before {
+  content: '\e4e5'; }
+
+.wux-ui-3ds-packaging-artwork-poa:before {
+  content: '\e46a'; }
+
+.wux-ui-3ds-packaging-artwork-template:before {
+  content: '\e5d1'; }
+
+.wux-ui-3ds-packaging-typo-poa:before {
+  content: '\e5ce'; }
+
+.wux-ui-3ds-packaging-typo-poa-add:before {
+  content: '\e5cf'; }
+
+.wux-ui-3ds-packaging-typo-poa-delete:before {
+  content: '\e5d0'; }
+
+.wux-ui-3ds-align-real-virtual-position:before {
+  content: '\e4af'; }
+
+.wux-ui-3ds-design-experience:before {
+  content: '\e4b0'; }
+
+.wux-ui-3ds-design-experience-add:before {
+  content: '\e4b1'; }
+
+.wux-ui-3ds-design-experience-delete:before {
+  content: '\e4b2'; }
+
+.wux-ui-3ds-design-experience-context:before {
+  content: '\e4e6'; }
+
+.wux-ui-3ds-design-experience-wip:before {
+  content: '\e4e7'; }
+
+.wux-ui-3ds-formulated-product:before {
+  content: '\e4e8'; }
+
+.wux-ui-3ds-formulated-product-add:before {
+  content: '\e4e9'; }
+
+.wux-ui-3ds-formulated-product-delete:before {
+  content: '\e4ea'; }
+
+.wux-ui-3ds-link-requirements-start:before {
+  content: '\e4eb'; }
+
+.wux-ui-3ds-link-requirements-end:before {
+  content: '\e4ec'; }
+
+.wux-ui-3ds-link-requirements-check:before {
+  content: '\e4ed'; }
+
+.wux-ui-3ds-distribution-event:before {
+  content: '\e4ee'; }
+
+.wux-ui-3ds-place-blank:before {
+  content: '\e53e'; }
+
+.wux-ui-3ds-place-collection:before {
+  content: '\e53f'; }
+
+.wux-ui-3ds-place-values:before {
+  content: '\e54a'; }
+
+.wux-ui-3ds-semicond-design-env:before {
+  content: '\e54b'; }
+
+.wux-ui-3ds-semicond-design-env-add:before {
+  content: '\e54c'; }
+
+.wux-ui-3ds-semicond-design-env-open:before {
+  content: '\e54d'; }
+
+.wux-ui-3ds-semicond-design-env-search:before {
+  content: '\e5d2'; }
+
+.wux-ui-3ds-semicond-design-responsability:before {
+  content: '\e54e'; }
+
+.wux-ui-3ds-print-ready:before {
+  content: '\e5d3'; }
+
+.wux-ui-3ds-print-ready-add:before {
+  content: '\e5d4'; }
+
+.wux-ui-3ds-print-ready-delete:before {
+  content: '\e5d5'; }
+
+.wux-ui-3ds-doc-config-json:before {
+  content: '\e64b'; }
+
+.wux-ui-3ds-change:before {
+  content: '\e506'; }
+
+.wux-ui-3ds-dependency:before {
+  content: '\e507'; }
+
+.wux-ui-3ds-dependencies:before {
+  content: '\e508'; }
+
+.wux-ui-3ds-codependency:before {
+  content: '\e509'; }
+
+.wux-ui-3ds-hardhat:before {
+  content: '\e277'; }
+
+.wux-ui-3ds-change-action:before {
+  content: '\e03b'; }
+
+.wux-ui-3ds-change-action-add:before {
+  content: '\e03c'; }
+
+.wux-ui-3ds-change-action-delete:before {
+  content: '\e03d'; }
+
+.wux-ui-3ds-change-action-insert:before {
+  content: '\e4b3'; }
+
+.wux-ui-3ds-change-action-sync:before {
+  content: '\e348'; }
+
+.wux-ui-3ds-change-action-workunder:before {
+  content: '\e349'; }
+
+.wux-ui-3ds-change-action-proposed:before {
+  content: '\e444'; }
+
+.wux-ui-3ds-change-action-realized:before {
+  content: '\e445'; }
+
+.wux-ui-3ds-change-order:before {
+  content: '\e03e'; }
+
+.wux-ui-3ds-change-order-add:before {
+  content: '\e03f'; }
+
+.wux-ui-3ds-change-order-delete:before {
+  content: '\e04a'; }
+
+.wux-ui-3ds-change-order-insert:before {
+  content: '\e4b4'; }
+
+.wux-ui-3ds-change-request:before {
+  content: '\e0aa'; }
+
+.wux-ui-3ds-change-request-add:before {
+  content: '\e0ab'; }
+
+.wux-ui-3ds-change-request-delete:before {
+  content: '\e0ac'; }
+
+.wux-ui-3ds-change-request-insert:before {
+  content: '\e4b5'; }
+
+.wux-ui-3ds-change-request-attention:before {
+  content: '\e0ad'; }
+
+.wux-ui-3ds-change-request-alert:before {
+  content: '\e0ae'; }
+
+.wux-ui-3ds-change-request-impacted-items:before {
+  content: '\e0af'; }
+
+.wux-ui-3ds-change-request-chart-line-bar:before {
+  content: '\e0b0'; }
+
+.wux-ui-3ds-investigation-request:before {
+  content: '\e4b6'; }
+
+.wux-ui-3ds-investigation-request-add:before {
+  content: '\e4b7'; }
+
+.wux-ui-3ds-investigation-request-delete:before {
+  content: '\e4b8'; }
+
+.wux-ui-3ds-evolution-workunder:before {
+  content: '\e350'; }
+
+.wux-ui-3ds-evolution-effectivity:before {
+  content: '\e446'; }
+
+.wux-ui-3ds-evolution-effectivity-extension:before {
+  content: '\e943'; }
+
+.wux-ui-3ds-implementation-validation:before {
+  content: '\e4b9'; }
+
+.wux-ui-3ds-route:before {
+  content: '\e510'; }
+
+.wux-ui-3ds-route-start:before {
+  content: '\e511'; }
+
+.wux-ui-3ds-route-stop:before {
+  content: '\e512'; }
+
+.wux-ui-3ds-route-resume:before {
+  content: '\e513'; }
+
+.wux-ui-3ds-route-task:before {
+  content: '\e785'; }
+
+.wux-ui-3ds-flow-down:before {
+  content: '\e556'; }
+
+.wux-ui-3ds-flow-down-ok:before {
+  content: '\e557'; }
+
+.wux-ui-3ds-collaborative-lifecycle-management:before {
+  content: '\e657'; }
+
+.wux-ui-3ds-lifecycle-management-3d-object:before {
+  content: '\e1c5'; }
+
+.wux-ui-3ds-derived-output:before {
+  content: '\e658'; }
+
+.wux-ui-3ds-variants-and-options:before {
+  content: '\e870'; }
+
+.wux-ui-3ds-variants-and-options-compare:before {
+  content: '\e1c6'; }
+
+.wux-ui-3ds-variability-option:before {
+  content: '\e4ef'; }
+
+.wux-ui-3ds-change-investigation-start:before {
+  content: '\e4ba'; }
+
+.wux-ui-3ds-change-scope-analysis:before {
+  content: '\e4bb'; }
+
+.wux-ui-3ds-disposition:before {
+  content: '\e4bc'; }
+
+.wux-ui-3ds-shield-empty:before {
+  content: '\e447'; }
+
+.wux-ui-3ds-shield-1:before {
+  content: '\e448'; }
+
+.wux-ui-3ds-shield-2:before {
+  content: '\e449'; }
+
+.wux-ui-3ds-shield-3:before {
+  content: '\e450'; }
+
+.wux-ui-3ds-shield-full:before {
+  content: '\e451'; }
+
+.wux-ui-3ds-propagate:before {
+  content: '\e452'; }
+
+.wux-ui-3ds-aggregate:before {
+  content: '\e32e'; }
+
+.wux-ui-3ds-option-infinite:before {
+  content: '\e466'; }
+
+.wux-ui-3ds-option-empty:before {
+  content: '\e467'; }
+
+.wux-ui-3ds-catalog-part:before {
+  content: '\e786'; }
+
+.wux-ui-3ds-replace-by-existing:before {
+  content: '\e824'; }
+
+.wux-ui-3ds-replace-by-latest-version:before {
+  content: '\e825'; }
+
+.wux-ui-3ds-replace-by-revision:before {
+  content: '\e826'; }
+
+.wux-ui-3ds-replace-by-variant:before {
+  content: '\e0b1'; }
+
+.wux-ui-3ds-replace-by-configuration:before {
+  content: '\e0b2'; }
+
+.wux-ui-3ds-replace-by-configuration-instantiated:before {
+  content: '\e32f'; }
+
+.wux-ui-3ds-replace-by-duplicate:before {
+  content: '\e4f0'; }
+
+.wux-ui-3ds-duplicate-3dproduct:before {
+  content: '\e4f1'; }
+
+.wux-ui-3ds-configuration:before {
+  content: '\e04b'; }
+
+.wux-ui-3ds-configuration-effectivity:before {
+  content: '\e944'; }
+
+.wux-ui-3ds-configuration-effectivity-add-to:before {
+  content: '\e0b3'; }
+
+.wux-ui-3ds-configuration-add:before {
+  content: '\e04c'; }
+
+.wux-ui-3ds-configuration-delete:before {
+  content: '\e04d'; }
+
+.wux-ui-3ds-configuration-insert:before {
+  content: '\e04e'; }
+
+.wux-ui-3ds-product-configuration-search:before {
+  content: '\e2a2'; }
+
+.wux-ui-3ds-base-configuration-change:before {
+  content: '\e54f'; }
+
+.wux-ui-3ds-rule-status-required:before {
+  content: '\e46b'; }
+
+.wux-ui-3ds-rule-status-default:before {
+  content: '\e46c'; }
+
+.wux-ui-3ds-rule-status-incompatible:before {
+  content: '\e46d'; }
+
+.wux-ui-3ds-rule-status-selected:before {
+  content: '\e46e'; }
+
+.wux-ui-3ds-rule-status-conflict:before {
+  content: '\e46f'; }
+
+.wux-ui-3ds-ip-control-class:before {
+  content: '\e787'; }
+
+.wux-ui-3ds-ip-exception:before {
+  content: '\e788'; }
+
+.wux-ui-3ds-rule-security:before {
+  content: '\e789'; }
+
+.wux-ui-3ds-rule-security-expression:before {
+  content: '\e47a'; }
+
+.wux-ui-3ds-security-control-class:before {
+  content: '\e790'; }
+
+.wux-ui-3ds-security-exception:before {
+  content: '\e791'; }
+
+.wux-ui-3ds-export-control-library:before {
+  content: '\e792'; }
+
+.wux-ui-3ds-export-control-location:before {
+  content: '\e2a3'; }
+
+.wux-ui-3ds-export-control-class:before {
+  content: '\e793'; }
+
+.wux-ui-3ds-export-control-doc:before {
+  content: '\e794'; }
+
+.wux-ui-3ds-term:before {
+  content: '\e1e3'; }
+
+.wux-ui-3ds-terminology:before {
+  content: '\e1e4'; }
+
+.wux-ui-3ds-job-family:before {
+  content: '\e2a4'; }
+
+.wux-ui-3ds-classification-book:before {
+  content: '\e3e5'; }
+
+.wux-ui-3ds-path-related:before {
+  content: '\e278'; }
+
+.wux-ui-3ds-where-used:before {
+  content: '\e568'; }
+
+.wux-ui-3ds-object-related:before {
+  content: '\e569'; }
+
+.wux-ui-3ds-object-related-cog:before {
+  content: '\e570'; }
+
+.wux-ui-3ds-object-related-reorder:before {
+  content: '\e55a'; }
+
+.wux-ui-3ds-object-reference:before {
+  content: '\e871'; }
+
+.wux-ui-3ds-object-instance:before {
+  content: '\e872'; }
+
+.wux-ui-3ds-object-instance-select:before {
+  content: '\e04f'; }
+
+.wux-ui-3ds-convergence-state:before {
+  content: '\e902'; }
+
+.wux-ui-3ds-convergence-state-cog:before {
+  content: '\e903'; }
+
+.wux-ui-3ds-tree:before {
+  content: '\e0b4'; }
+
+.wux-ui-3ds-streetlamp:before {
+  content: '\e0b5'; }
+
+.wux-ui-3ds-potion:before {
+  content: '\e19b'; }
+
+.wux-ui-3ds-inner-join-2:before {
+  content: '\e33a'; }
+
+.wux-ui-3ds-inner-join-3:before {
+  content: '\e33b'; }
+
+.wux-ui-3ds-brackets-limit:before {
+  content: '\e33c'; }
+
+.wux-ui-3ds-square-to-triangle:before {
+  content: '\e33d'; }
+
+.wux-ui-3ds-ranking-podium:before {
+  content: '\e33e'; }
+
+.wux-ui-3ds-stream-divided-3:before {
+  content: '\e33f'; }
+
+.wux-ui-3ds-dataperspective-workspace:before {
+  content: '\e5d6'; }
+
+.wux-ui-3ds-dataperspective-project:before {
+  content: '\e5d7'; }
+
+.wux-ui-3ds-dataperspective-project-dependency:before {
+  content: '\e64c'; }
+
+.wux-ui-3ds-dataperspective-dashboard:before {
+  content: '\e64d'; }
+
+.wux-ui-3ds-data-text-intelligence-studio:before {
+  content: '\e64e'; }
+
+.wux-ui-3ds-computer-server:before {
+  content: '\e279'; }
+
+.wux-ui-3ds-computer-group:before {
+  content: '\e280'; }
+
+.wux-ui-3ds-computer-group-add:before {
+  content: '\e303'; }
+
+.wux-ui-3ds-computer-group-delete:before {
+  content: '\e304'; }
+
+.wux-ui-3ds-computer-connected:before {
+  content: '\e281'; }
+
+.wux-ui-3ds-computer-connected-actions:before {
+  content: '\e701'; }
+
+.wux-ui-3ds-computer-add:before {
+  content: '\e305'; }
+
+.wux-ui-3ds-computer-delete:before {
+  content: '\e306'; }
+
+.wux-ui-3ds-part-hole-counterbored-conical:before {
+  content: '\e2a5'; }
+
+.wux-ui-3ds-part-hole-counterbored-flat:before {
+  content: '\e2a6'; }
+
+.wux-ui-3ds-part-hole-counterbored-spherical:before {
+  content: '\e2a7'; }
+
+.wux-ui-3ds-part-hole-counterbored-through:before {
+  content: '\e2a8'; }
+
+.wux-ui-3ds-part-hole-counterdrilled-conical:before {
+  content: '\e2a9'; }
+
+.wux-ui-3ds-part-hole-counterdrilled-flat:before {
+  content: '\e2aa'; }
+
+.wux-ui-3ds-part-hole-counterdrilled-spherical:before {
+  content: '\e2ab'; }
+
+.wux-ui-3ds-part-hole-counterdrilled-through:before {
+  content: '\e2ac'; }
+
+.wux-ui-3ds-part-hole-countersunk-conical:before {
+  content: '\e2ad'; }
+
+.wux-ui-3ds-part-hole-countersunk-flat:before {
+  content: '\e2ae'; }
+
+.wux-ui-3ds-part-hole-countersunk-spherical:before {
+  content: '\e2af'; }
+
+.wux-ui-3ds-part-hole-countersunk-through:before {
+  content: '\e2b0'; }
+
+.wux-ui-3ds-part-hole-simple-conical:before {
+  content: '\e2b1'; }
+
+.wux-ui-3ds-part-hole-simple-flat:before {
+  content: '\e2b2'; }
+
+.wux-ui-3ds-part-hole-simple-spherical:before {
+  content: '\e2b3'; }
+
+.wux-ui-3ds-part-hole-simple-through:before {
+  content: '\e2b4'; }
+
+.wux-ui-3ds-part-pocket-blind:before {
+  content: '\e2b5'; }
+
+.wux-ui-3ds-part-pocket-through:before {
+  content: '\e2b6'; }
+
+.wux-ui-3ds-part-pocket-notch-blind:before {
+  content: '\e2b7'; }
+
+.wux-ui-3ds-part-pocket-notch-through:before {
+  content: '\e2b8'; }
+
+.wux-ui-3ds-part-pocket-rectangular-blind:before {
+  content: '\e2b9'; }
+
+.wux-ui-3ds-part-pocket-rectangular-through:before {
+  content: '\e2ba'; }
+
+.wux-ui-3ds-part-pocket-round-blind:before {
+  content: '\e2bb'; }
+
+.wux-ui-3ds-part-pocket-round-through:before {
+  content: '\e2bc'; }
+
+.wux-ui-3ds-part-pattern-linear:before {
+  content: '\e2bd'; }
+
+.wux-ui-3ds-part-pattern-circular:before {
+  content: '\e2be'; }
+
+.wux-ui-3ds-part-add:before {
+  content: '\e453'; }
+
+.wux-ui-3ds-part-open:before {
+  content: '\e454'; }
+
+.wux-ui-3ds-part-select:before {
+  content: '\e38d'; }
+
+.wux-ui-3ds-part-replace:before {
+  content: '\e455'; }
+
+.wux-ui-3ds-part-replace-new:before {
+  content: '\e34a'; }
+
+.wux-ui-3ds-part-replace-floppy:before {
+  content: '\e34b'; }
+
+.wux-ui-3ds-part-search:before {
+  content: '\e456'; }
+
+.wux-ui-3ds-part-position:before {
+  content: '\e575'; }
+
+.wux-ui-3ds-part-compare:before {
+  content: '\e702'; }
+
+.wux-ui-3ds-volumetric-measure:before {
+  content: '\e2bf'; }
+
+.wux-ui-3ds-mass:before {
+  content: '\e2c0'; }
+
+.wux-ui-3ds-density:before {
+  content: '\e2c1'; }
+
+.wux-ui-3ds-part-bodies-merged:before {
+  content: '\e2c2'; }
+
+.wux-ui-3ds-part-extruded:before {
+  content: '\e2c3'; }
+
+.wux-ui-3ds-part-path-from:before {
+  content: '\e5d8'; }
+
+.wux-ui-3ds-see-thru-camera:before {
+  content: '\e558'; }
+
+.wux-ui-3ds-see-thru-light:before {
+  content: '\e559'; }
+
+.wux-ui-3ds-product-light:before {
+  content: '\e34c'; }
+
+.wux-ui-3ds-light-global-illumination:before {
+  content: '\e64f'; }
+
+.wux-ui-3ds-product-camera:before {
+  content: '\e34d'; }
+
+.wux-ui-3ds-product-camera-side-to-side:before {
+  content: '\e5d9'; }
+
+.wux-ui-3ds-focal-lenght:before {
+  content: '\e34e'; }
+
+.wux-ui-3ds-focal-point:before {
+  content: '\e34f'; }
+
+.wux-ui-3ds-camera-exposure:before {
+  content: '\e4bd'; }
+
+.wux-ui-3ds-environment-3d:before {
+  content: '\e4be'; }
+
+.wux-ui-3ds-environment-3d-planet:before {
+  content: '\e4bf'; }
+
+.wux-ui-3ds-environment-3d-ambience:before {
+  content: '\e4c0'; }
+
+.wux-ui-3ds-ambience-3d:before {
+  content: '\e4c1'; }
+
+.wux-ui-3ds-ambience-3d-backplate:before {
+  content: '\e4c2'; }
+
+.wux-ui-3ds-ambience-backplate:before {
+  content: '\e4c3'; }
+
+.wux-ui-3ds-ambience-ground:before {
+  content: '\e4c4'; }
+
+.wux-ui-3ds-ambience-studio:before {
+  content: '\e4c5'; }
+
+.wux-ui-3ds-picture-progress-bar:before {
+  content: '\e5da'; }
+
+.wux-ui-3ds-rasterizer:before {
+  content: '\e65a'; }
+
+.wux-ui-3ds-simulation-compare:before {
+  content: '\e796'; }
+
+.wux-ui-3ds-guided-analytics:before {
+  content: '\e945'; }
+
+.wux-ui-3ds-approximation-parameter:before {
+  content: '\e10a'; }
+
+.wux-ui-3ds-formulation:before {
+  content: '\e19c'; }
+
+.wux-ui-3ds-3dpart-simulation-scenario:before {
+  content: '\e19d'; }
+
+.wux-ui-3ds-simulation-category-specification:before {
+  content: '\e2c4'; }
+
+.wux-ui-3ds-simulation-category-internal-data:before {
+  content: '\e2c5'; }
+
+.wux-ui-3ds-simulation-category-results:before {
+  content: '\e2c6'; }
+
+.wux-ui-3ds-simulation-process:before {
+  content: '\e3e6'; }
+
+.wux-ui-3ds-simulation-process-referenced:before {
+  content: '\e3e7'; }
+
+.wux-ui-3ds-simulation-process-instantiated:before {
+  content: '\e65b'; }
+
+.wux-ui-3ds-simulation-process-instantiated-add:before {
+  content: '\e65c'; }
+
+.wux-ui-3ds-simulation-process-instantiated-delete:before {
+  content: '\e65d'; }
+
+.wux-ui-3ds-sim-test-case:before {
+  content: '\e47b'; }
+
+.wux-ui-3ds-sim-test-case-add:before {
+  content: '\e47c'; }
+
+.wux-ui-3ds-sim-test-case-insert:before {
+  content: '\e4f2'; }
+
+.wux-ui-3ds-sim-test-case-create-from:before {
+  content: '\e4f3'; }
+
+.wux-ui-3ds-sim-test-chapter:before {
+  content: '\e47d'; }
+
+.wux-ui-3ds-sim-test-chapter-add:before {
+  content: '\e47e'; }
+
+.wux-ui-3ds-sim-test-specification:before {
+  content: '\e47f'; }
+
+.wux-ui-3ds-sim-test-specification-add:before {
+  content: '\e48a'; }
+
+.wux-ui-3ds-sim-test-specification-insert:before {
+  content: '\e4f4'; }
+
+.wux-ui-3ds-coverage-matrix:before {
+  content: '\e48b'; }
+
+.wux-ui-3ds-log-first-error:before {
+  content: '\e4c6'; }
+
+.wux-ui-3ds-history-first-error:before {
+  content: '\e4c7'; }
+
+.wux-ui-3ds-process-interactive-tasks:before {
+  content: '\e65e'; }
+
+.wux-ui-3ds-process-sim-current-pause:before {
+  content: '\e65f'; }
+
+.wux-ui-3ds-process-sim-current-stop:before {
+  content: '\e66a'; }
+
+.wux-ui-3ds-import-manager-dialog:before {
+  content: '\e55b'; }
+
+.wux-ui-3ds-edu-learning-module:before {
+  content: '\e1c7'; }
+
+.wux-ui-3ds-edu-learning-path:before {
+  content: '\e1c8'; }
+
+.wux-ui-3ds-edu-learning-certification:before {
+  content: '\e1c9'; }
+
+.wux-ui-3ds-edu-learning-center:before {
+  content: '\e66b'; }
+
+.wux-ui-3ds-connected-network:before {
+  content: '\e48c'; }
+
+.wux-ui-3ds-connected-users:before {
+  content: '\e48d'; }
+
+.wux-ui-3ds-object-class-concrete-add:before {
+  content: '\e05a'; }
+
+.wux-ui-3ds-object-class-abstract:before {
+  content: '\e05b'; }
+
+.wux-ui-3ds-product:before {
+  content: '\e268'; }
+
+.wux-ui-3ds-open-down:before {
+  content: '\e139'; }
+
+.wux-ui-3ds-open-left:before {
+  content: '\e140'; }
+
+.wux-ui-3ds-open-right:before {
+  content: '\e141'; }
+
+.wux-ui-3ds-open-up:before {
+  content: '\e142'; }
+
+.wux-ui-3ds-issue:before {
+  content: '\e481'; }

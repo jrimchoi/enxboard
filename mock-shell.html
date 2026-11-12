@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<!--
+  3D Dashboard 부모 창의 대역이다. iframe이 index.html, 즉 ENXBoard 위젯이다.
+  window.widget에 getValue, setValue, addEvent, setTitle을 두고 onLoad 메시지를 한 번 보낸다.
+  ENXBoard의 js/app.js는 이 객체를 읽지 않아서, 셸을 열어도 목록 동작은 index.html을 직접 열 때와 같다.
+  ENXBoardReact·ENXBoardVue·ENXBoardNext의 셸은 같은 부모 API를 만들고, 그 안의 컨트롤러가 addEvent로 받는다.
+  차이는 appId와 iframe 주소뿐이다. Next 셸의 iframe은 빌드 결과인 out/index.html이다.
+-->
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>3DDashboard — ENXBoard</title>
+    <style>
+        html, body {
+            margin: 0;
+            height: 100%;
+            background: #e8eaed;
+            color: #3d3d3d;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .dashboard {
+            min-height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        .compass {
+            height: 48px;
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            padding: 0 16px;
+            background: #1f2a44;
+            color: #fff;
+        }
+        .compass strong {
+            font-weight: 600;
+        }
+        .stage {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            padding: 24px 16px 32px;
+        }
+        .panel {
+            width: 800px;
+            background: #fff;
+            border: 1px solid #c8ccd0;
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
+        }
+        .titlebar {
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 12px;
+            background: #f4f5f6;
+            border-bottom: 1px solid #d5d8dc;
+        }
+        .titlebar h1 {
+            margin: 0;
+            font-size: 14px;
+            font-weight: 600;
+        }
+        .app-id {
+            font-size: 12px;
+            color: #5b6770;
+        }
+        iframe {
+            display: block;
+            width: 800px;
+            height: 600px;
+            border: 0;
+            background: #fff;
+        }
+    </style>
+    <script>
+        (function () {
+            var APP_ID = "ENXBoard";
+            var values = {};
+            var handlers = {};
+            var widget = {
+                id: "widget-enxboard",
+                appId: APP_ID,
+                title: "ENXBoard",
+                preferences: [],
+                getValue: function (key) {
+                    return values[key];
+                },
+                setValue: function (key, value) {
+                    values[key] = value;
+                    return value;
+                },
+                deleteValue: function (key) {
+                    delete values[key];
+                },
+                addEvent: function (name, handler) {
+                    if (!handlers[name]) {
+                        handlers[name] = [];
+                    }
+                    handlers[name].push(handler);
+                },
+                setTitle: function (title) {
+                    widget.title = title;
+                    var heading = document.getElementById("shell-title");
+                    if (heading) {
+                        heading.textContent = title;
+                    }
+                }
+            };
+
+            function frameWindow() {
+                var frame = document.getElementById("widget-frame");
+                return frame ? frame.contentWindow : null;
+            }
+
+            function postToWidget(type, data) {
+                var message = {
+                    source: "3DDashboard",
+                    appId: APP_ID,
+                    widgetId: widget.id,
+                    type: type,
+                    data: data || {}
+                };
+                var child = frameWindow();
+                if (child) {
+                    child.postMessage(message, "*");
+                }
+                (handlers[type] || []).forEach(function (handler) {
+                    handler(message.data);
+                });
+                return message;
+            }
+
+            window.appId = APP_ID;
+            window.widget = widget;
+            window.dashboard = {
+                appId: APP_ID,
+                widget: widget,
+                postToWidget: postToWidget
+            };
+
+            window.addEventListener("message", function (event) {
+                if (event.source !== frameWindow()) {
+                    return;
+                }
+                var payload = event.data || {};
+                if (payload.type === "setTitle" && payload.title) {
+                    widget.setTitle(payload.title);
+                }
+                (handlers[payload.type] || []).forEach(function (handler) {
+                    handler(payload.data === undefined ? payload : payload.data);
+                });
+            });
+
+            window.addEventListener("DOMContentLoaded", function () {
+                document.getElementById("widget-frame").addEventListener("load", function () {
+                    postToWidget("onLoad", { appId: APP_ID });
+                });
+            });
+        })();
+    </script>
+</head>
+<body>
+    <div class="dashboard">
+        <header class="compass">
+            <strong>3DDashboard</strong>
+            <span>목 셸</span>
+        </header>
+        <main class="stage">
+            <section class="panel">
+                <div class="titlebar">
+                    <h1 id="shell-title">ENXBoard</h1>
+                    <span class="app-id">ENXBoard</span>
+                </div>
+                <iframe id="widget-frame" title="ENXBoard" width="800" height="600" src="index.html"></iframe>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

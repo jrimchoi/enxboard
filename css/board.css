@@ -1,0 +1,114 @@
+/*
+ * 네 게시판이 맞추는 화면 골격이다.
+ * ENXBoardReact와 ENXBoardVue는 이 파일을 link로 읽는다. 번들이 없어 형제 앱 CSS를 실행 중에 붙인다.
+ * ENXBoardNext는 styles/board.css에 같은 규칙을 두고 pages/_app.js가 import한다.
+ * Next는 그 import를 out/_next 아래 CSS 청크로 넣고, 이 파일은 그 빌드에 들어가지 않는다.
+ * 아이콘 글꼴은 여기 없다. Core/wux-3ds-fonticons.css의 wux-ui-3ds-* 클래스다.
+ */
+body {
+    margin: 0;
+    font-family: "3ds", Arial, Helvetica, sans-serif;
+    color: #3d3d3d;
+    background: #f5f6f7;
+}
+
+#board {
+    max-width: 960px;
+    margin: 24px auto;
+    padding: 24px;
+    background: #fff;
+    border: 1px solid #d1d4d4;
+}
+
+header h1 {
+    margin: 0 0 16px;
+    font-size: 22px;
+}
+
+.toolbar,
+.actions,
+.pager {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.toolbar input[type="search"] {
+    flex: 1;
+    min-width: 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 12px 0;
+}
+
+th,
+td {
+    border-bottom: 1px solid #e1e4e4;
+    padding: 10px 8px;
+    text-align: left;
+    vertical-align: top;
+}
+
+th {
+    background: #f1f1f2;
+}
+
+button,
+input,
+textarea {
+    font: inherit;
+}
+
+button {
+    border: 1px solid #b4b6ba;
+    background: #fff;
+    padding: 6px 10px;
+    cursor: pointer;
+}
+
+button.link {
+    border: 0;
+    background: transparent;
+    padding: 0;
+    color: #005686;
+    text-align: left;
+}
+
+button:disabled {
+    cursor: default;
+    opacity: 0.45;
+}
+
+.editor {
+    display: grid;
+    gap: 12px;
+}
+
+.editor label {
+    display: grid;
+    gap: 4px;
+}
+
+.notice {
+    background: #e8f4ea;
+    padding: 8px 12px;
+}
+
+.errors {
+    background: #fdecea;
+    padding: 8px 12px 8px 28px;
+}
+
+.empty,
+.meta,
+.count,
+.content {
+    line-height: 1.5;
+}
+
+i.wux-ui-3ds {
+    margin-right: 4px;
+}
