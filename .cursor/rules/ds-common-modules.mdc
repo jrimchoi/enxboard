@@ -1,0 +1,22 @@
+---
+description: ENXBoard UI는 webapps_2025x의 DS 공통 모듈을 하나씩 가져다 쓴다
+alwaysApply: true
+---
+
+# DS 공통 모듈
+
+ENXBoard 화면을 늘릴 때는 `webapps_2025x`에 있는 DS 공통 모듈을 한 번에 하나씩 가져다 쓴다. 그 위젯을 이 저장소에 다시 만들지 않는다.
+
+- 원본은 `/Users/jrchoi/Documents/GitHub/webapps_2025x`에 둔다. 파일을 이 저장소로 복사하지 않고, `webapps_2025x` 파일도 수정하지 않는다.
+- 모듈 id는 대시보드와 같다. `DS/DataGridView/DataGridView`처럼 `require`한다.
+- 로더는 `webapps_2025x/AmdLoader/AmdLoader.js`다. `DS`는 그 체크아웃 루트, `UWA`는 `UWA2/js`다. `js/loader.js`는 `DS/ENXBoard/`만 읽으므로 DS 공통 모듈을 붙일 때 쓰지 않는다.
+- 이 앱 코드는 `DS/ENXBoard/*`에만 둔다. `Data`의 메서드와 명령 이름(`open`, `search`, `page`, `save` 등)은 유지한다.
+- 한 번에 하나의 공통 모듈만 붙인다. 첫 모듈은 `DS/DataGridView/DataGridView`다. 절차는 `ENXBoard-datagrid-plan.md`를 따른다.
+
+```javascript
+// 공통 모듈을 js/ 아래로 복사하거나 표를 다시 만들지 않는다.
+require(["DS/DataGridView/DataGridView"], function (DataGridView) {
+  var grid = new DataGridView({ treeDocument: doc, columns: columns });
+  grid.inject(host);
+});
+```

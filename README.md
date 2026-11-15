@@ -26,7 +26,9 @@ npm run dev
 
 | 경로 | 역할 |
 |---|---|
-| `index.html` | 진입. `js/loader.js`로 AMD 모듈을 읽는다 |
+| `index.html` | 진입. `AmdLoader`로 AMD 모듈을 읽는다 |
+| `js/grid.js` | 목록을 `DS/DataGridView/DataGridView`로 그린다 |
+| `vendor/webapps` | `webapps_2025x` 링크. DataGrid와 그 로더 |
 | `js/app.js` | 화면 상태와 명령 |
 | `js/view.js` | 문자열 HTML |
 | `js/data.js`, `js/model.js`, `js/collection.js` | 글 저장, 검사, 검색, 쪽 나눔 |

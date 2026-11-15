@@ -1,5 +1,6 @@
 /*
- * 이 페이지 전용 AMD 로더다. require.js가 없고, DS/ENXBoard/ 만 이 폴더의 상대 경로로 바꾼다.
+ * 이전 페이지 전용 AMD 로더다. index.html은 이제 AmdLoader를 읽는다.
+ * require.js가 없고, DS/ENXBoard/ 만 이 폴더의 상대 경로로 바꾼다.
  *
  * define은 반드시 모듈 ID를 받는다. React·Vue 로더와 달리 익명 define을 받지 않는다.
  * 그 두 로더는 react, react-dom, vue UMD가 이름 없는 define을 호출하므로 스크립트를 한 개씩 넣고

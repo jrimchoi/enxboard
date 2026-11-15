@@ -73,31 +73,6 @@ define("DS/ENXBoard/js/view", [], function () {
 
     View.prototype._list = function (state) {
         var list = state.list || { items: [], page: 1, pageCount: 1, total: 0 };
-        var rows = list.items
-            .map(function (post) {
-                return (
-                    "<tr>" +
-                    '<td><button type="button" class="link" data-command="open" data-id="' +
-                    escapeHtml(post.id) +
-                    '">' +
-                    escapeHtml(post.title) +
-                    "</button></td>" +
-                    "<td>" +
-                    escapeHtml(post.author) +
-                    "</td>" +
-                    "<td>" +
-                    escapeHtml(post.date) +
-                    "</td>" +
-                    "<td>" +
-                    post.tags.map(escapeHtml).join(", ") +
-                    "</td>" +
-                    "</tr>"
-                );
-            })
-            .join("");
-        if (!rows) {
-            rows = '<tr><td colspan="4" class="empty">검색 결과가 없습니다.</td></tr>';
-        }
         return (
             this._header("게시판") +
             this._notice(state) +
@@ -118,12 +93,7 @@ define("DS/ENXBoard/js/view", [], function () {
             " / " +
             list.pageCount +
             "쪽</p>" +
-            '<div class="grid-host">' +
-            "<table>" +
-            "<thead><tr><th>제목</th><th>작성자</th><th>날짜</th><th>태그</th></tr></thead>" +
-            "<tbody>" +
-            rows +
-            "</tbody></table></div>" +
+            '<div class="grid-host"></div>' +
             this._pager(list)
         );
     };

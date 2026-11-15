@@ -53,7 +53,8 @@ flowchart LR
 | Data | `js/data.js` | `DS/ENXBoard/js/data` | 목록, 상세, 등록, 수정, 삭제의 호출. 지금은 목 데이터 |
 | Model | `js/model.js` | `DS/ENXBoard/js/model` | 글 하나. 기본값, 검사, JSON |
 | Collection | `js/collection.js` | `DS/ENXBoard/js/collection` | 글 목록. 추가, 삭제, id 찾기, 검색과 쪽 |
-| View | `js/view.js` | `DS/ENXBoard/js/view` | 템플릿에 데이터를 넣어 그리고, 입력을 명령으로 올린다 |
+| View | `js/view.js` | `DS/ENXBoard/js/view` | 템플릿에 데이터를 넣어 그리고, 입력을 명령으로 올린다. 목록 표 자리는 빈 호스트다 |
+| Grid | `js/grid.js` | `DS/ENXBoard/js/grid` | 현재 쪽 `items`로 `DS/DataGridView/DataGridView`를 호스트에 붙인다 |
 
 `Data`만 `Collection`과 `Model`을 만든다. `View`는 `Data`를 부르지 않는다.
 
@@ -65,9 +66,10 @@ flowchart LR
 | `DS/ENXBoard/js/collection` | `DS/ENXBoard/js/model` | `Collection` |
 | `DS/ENXBoard/js/data` | `collection`, `model` | `Data`. `load`, `fetchList`, `fetchDetail`, `createPost`, `updatePost`, `deletePost` |
 | `DS/ENXBoard/js/view` | 없음 | `View`. `render` |
-| `DS/ENXBoard/js/app` | `data`, `view` | `App`. `init`, `showList`, `showDetail` |
+| `DS/ENXBoard/js/grid` | `DS/DataGridView/DataGridView`, `DS/TreeModel/TreeDocument`, `DS/TreeModel/TreeNodeModel` | `Grid`. `attach` |
+| `DS/ENXBoard/js/app` | `data`, `view`, `grid` | `App`. `init`, `showList`, `showDetail` |
 
-`index.html`은 `js/loader.js`를 먼저 읽는다. 이 파일은 `define`과 `require`만 제공한다. `DS/ENXBoard/` 뒤를 이 폴더의 상대 경로로 바꿔 스크립트를 넣고, 의존 모듈이 정의된 뒤에 factory를 호출한다. 외부 CDN은 쓰지 않는다. 페이지는 `require(["DS/ENXBoard/js/app"], ...)`로 `App`을 만들어 `init`한다.
+`index.html`은 `vendor/webapps/AmdLoader/AmdLoader.js`를 먼저 읽는다. `vendor/webapps`는 형제 체크아웃 `webapps_2025x`를 가리킨다. `DS`는 그 루트, `DS/ENXBoard`는 이 폴더다. 페이지는 `require(["DS/ENXBoard/js/app"], ...)`로 `App`을 만들어 `init`한다. `js/loader.js`는 이 페이지가 더 이상 읽지 않는다.
 
 ## 4. 패턴
 
@@ -162,11 +164,11 @@ View  <--state--  App  <--JSON----  Data
 |---|---|---|
 | 아이콘 | `Core/wux-3ds-fonticons.css`의 `DSFontIcon`. 클래스 `wux-ui-3ds`, `wux-ui-3ds-list`, `wux-ui-3ds-search`, `wux-ui-3ds-plus`, `wux-ui-3ds-pencil`, `wux-ui-3ds-trash`, `wux-ui-3ds-left`, `wux-ui-3ds-check` | `index.html`이 이 CSS를 불러 오고 `View`가 `<i>`에 클래스를 붙인다. 글립은 `Core/assets/fonts/3ds_fonticon.*` |
 | 아이콘 위젯 | `ENXScene/docs/readable/common/UIKIT/UIKIT.js`의 `DS/UIKIT/Image`. README에 `DS/UIKIT/Iconbar`가 있다 | 기동하지 않는다. `UWA/Core`, `UWA/Class`가 있어야 하고, 이 폴더의 정적 페이지에는 그 로더가 없다 |
-| 표 그리드 | `DS/ENXNav/views/xNavDataGridView`가 `DS/DataGridView/DataGridView`를 require한다. 구현은 `webapps_2025x/DataGridView/DataGridView.js` | 기동하지 않는다. UWA, TreeModel, Controls, `i18n!` 플러그인, 대시보드 로더가 없다. 그리드 모듈을 새로 만들지 않았다 |
+| 표 그리드 | `DS/DataGridView/DataGridView`. 구현은 `webapps_2025x/DataGridView/DataGridView.js` | `js/grid.js`가 목록 호스트에 붙인다. `xNavDataGridView`는 쓰지 않는다 |
 | 트리 그리기 | `DS/etree/tree` | 표가 아니다. HTML이 올리는 그래프·트리 런타임이라 목록에 쓰지 않는다 |
 | 표 스킨 | `Core/wux.css`의 `.wux-layouts-datagridview` | 위젯이 만든 DOM에 붙는 규칙이다. 정적 표에 클래스만 얹으면 그리드가 되지 않아 링크하지 않았다 |
 
-그래서 목록 표의 행과 칸은 `View`가 그린다. 아이콘만 공통 폰트 CSS를 재사용한다. 대시보드 iframe에서 같은 목록을 `xNavDataGridView`로 바꿀 때는 `Data.fetchList`가 돌려주는 `items`를 열 데이터로 넣으면 된다. 열은 제목, 작성자, 날짜, 태그다.
+목록의 검색, 건수, 쪽 이동은 `View`가 그린다. 행과 칸은 `Grid.attach`가 현재 쪽 `items`로 만든다. 열은 제목, 작성자, 날짜, 태그다. 제목을 누르면 명령 `open`이다. 아이콘은 공통 폰트 CSS를 재사용한다.
 
 ## 8. 목 데이터
 
@@ -201,7 +203,7 @@ View  <--state--  App  <--JSON----  Data
 | 3 데이터 | `Model`, `Collection`, `Data`, `posts.json` | `load` 뒤 `fetchList`가 5건, `김하준` 검색이 2건, `fetchDetail("p01")`이 한 건 |
 | 4 화면 연결 | 명령 바인딩, 상세, 등록, 수정, 삭제, 쪽 | 제목으로 상세, 수정 저장, 삭제 후 목록, 빈 제목은 저장되지 않음 |
 
-`DataGridView`를 이 순서에 넣지 않는다. 7절의 기동 조건이 갖춰진 대시보드에서만 목록 호스트를 그 뷰로 바꾼다.
+목록 호스트는 `DS/DataGridView/DataGridView`다. 가져오는 절차는 `ENXBoard-datagrid-plan.md`에 있다.
 
 ## 10. 나중에 바꾸기 쉬운 경계
 
@@ -211,7 +213,7 @@ View  <--state--  App  <--JSON----  Data
 | `PAGE_SIZE` | `5` | `fetchList`의 `pageSize` |
 | 명령 이름 | `search`, `page`, `open`, `create`, `edit`, `delete`, `save`, `back`, `cancel` | `View`와 `App`이 이 문자열을 공유한다 |
 | 글 필드 | `id`, `title`, `author`, `date`, `content`, `tags` | `Post.toJSON` |
-| 목록 UI | `View`의 표와 `wux-ui-3ds` 아이콘 | 행 클릭은 `open`과 id. 그리드 위젯으로 바꿔도 명령은 같다 |
+| 목록 UI | `Grid`의 `DataGridView`와 `wux-ui-3ds` 아이콘 | 제목 클릭은 `open`과 id. 명령은 같다 |
 
 로컬과 StackBlitz에서는 이 저장소 루트가 서버 루트다. 아이콘은 `vendor/core`에 있다.
 

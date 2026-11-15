@@ -8,7 +8,7 @@
  * 그쪽은 paint 콜백으로 각 프레임워크 렌더에 상태를 넘긴다. ENXBoardNext의 lib/controller.js는
  * 그 공유 컨트롤러를 ES 모듈로 다시 쓴 것이다. 이 App은 대시보드 widget 이벤트를 구독하지 않는다.
  */
-define("DS/ENXBoard/js/app", ["DS/ENXBoard/js/data", "DS/ENXBoard/js/view"], function (Data, View) {
+define("DS/ENXBoard/js/app", ["DS/ENXBoard/js/data", "DS/ENXBoard/js/view", "DS/ENXBoard/js/grid"], function (Data, View, Grid) {
     var PAGE_SIZE = 5;
 
     function App(root) {
@@ -23,6 +23,7 @@ define("DS/ENXBoard/js/app", ["DS/ENXBoard/js/data", "DS/ENXBoard/js/view"], fun
         this.list = null;
         this.errors = [];
         this.notice = "";
+        this.grid = null;
     }
 
     App.prototype.init = function () {
@@ -137,6 +138,7 @@ define("DS/ENXBoard/js/app", ["DS/ENXBoard/js/data", "DS/ENXBoard/js/view"], fun
     };
 
     App.prototype._paint = function () {
+        this._releaseGrid();
         this.view.render({
             screen: this.screen,
             query: this.query,
@@ -145,6 +147,23 @@ define("DS/ENXBoard/js/app", ["DS/ENXBoard/js/data", "DS/ENXBoard/js/view"], fun
             errors: this.errors,
             notice: this.notice,
         });
+        if (this.screen !== "list") {
+            return;
+        }
+        var host = this.root.querySelector(".grid-host");
+        var items = this.list && this.list.items ? this.list.items : [];
+        var self = this;
+        this.grid = Grid.attach(host, items, function (id) {
+            self._onCommand("open", { id: id });
+        });
+    };
+
+    App.prototype._releaseGrid = function () {
+        if (!this.grid) {
+            return;
+        }
+        this.grid.destroy();
+        this.grid = null;
     };
 
     function normalizeFields(fields) {
