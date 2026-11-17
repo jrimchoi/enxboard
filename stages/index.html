@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ENXBoard 단계 데모</title>
+    <link rel="stylesheet" href="./stage.css">
+</head>
+<body>
+    <header class="stage-banner">
+        <h1>ENXBoard 단계 데모</h1>
+        <p>설계서에 API, 화면, 데이터 형식이 있으면 데이터 형식, API 함수, 입구 화면, 조작, 다음 화면 순서로 만든다. 각 폴더의 파일 머리 주석에 그 단계에 두기로 정한 함수가 적혀 있다.</p>
+        <p><a href="../">완성된 게시판</a> · <a href="../ENXBoard-widget-guide.md">작성 가이드</a></p>
+    </header>
+    <table class="checks">
+        <thead><tr><th>단계</th><th>데모</th><th>이 단계에서 만드는 것</th></tr></thead>
+        <tbody>
+            <tr><td>0</td><td><a href="./00-shape/">데이터 형식</a></td><td>Post, validate, toJSON</td></tr>
+            <tr><td>1</td><td><a href="./01-api/">API</a></td><td>load, fetchList, fetchDetail, createPost, updatePost, deletePost</td></tr>
+            <tr><td>2</td><td><a href="./02-entry/">입구 화면</a></td><td>1쪽 목록만 표시</td></tr>
+            <tr><td>3</td><td><a href="./03-search/">검색</a></td><td>검색과 이전, 다음</td></tr>
+            <tr><td>4</td><td><a href="./04-detail/">상세</a></td><td>제목은 상세, 목록으로 복귀</td></tr>
+            <tr><td>5</td><td><a href="./05-save/">등록과 수정</a></td><td>등록, 수정, 삭제와 검사 실패 문구</td></tr>
+            <tr><td>6</td><td><a href="./06-loader/">공통 로더</a></td><td>같은 화면. DataGridView 요청 0건</td></tr>
+            <tr><td>7</td><td><a href="./07-grid/">그리드 모듈</a></td><td>두 건. 제목 클릭은 open</td></tr>
+            <tr><td>8</td><td><a href="./08-board/">목록만 그리드</a></td><td>검색과 저장은 유지하고 목록 행만 교체</td></tr>
+            <tr><td>9</td><td><a href="./09-shell/">목 대시보드</a></td><td>iframe 안의 단계 8</td></tr>
+            <tr><td>10</td><td><a href="./10-widget/">위젯 생명주기</a></td><td>onSearch, onRefresh, setTitle</td></tr>
+        </tbody>
+    </table>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>단계 0. 데이터 형식</title>
+    <link rel="stylesheet" href="../stage.css">
+</head>
+<body>
+    <header class="stage-banner">
+        <h1>단계 0. 데이터 형식</h1>
+        <p>설계서의 필드를 코드로 고정한다. 화면과 API 호출은 아직 만들지 않는다. 둘 다 이 필드 이름을 쓰기 때문이다.</p>
+        <p>정한 함수: Post, validate, toJSON. 예시 한 건으로 빈 제목, 공백, 날짜를 확인한다.</p>
+        <p class="files">파일: js/model.js</p>
+        <p><a href="../">단계 목록</a></p>
+    </header>
+    <main>
+        <table class="checks">
+            <thead><tr><th>확인</th><th>결과</th><th>기대</th></tr></thead>
+            <tbody id="checks"></tbody>
+        </table>
+        <p id="summary">확인하는 중입니다.</p>
+    </main>
+    <script src="./js/loader.js"></script>
+    <script>
+        function paint(rows) {
+            var body = document.getElementById("checks");
+            var failed = 0;
+            rows.forEach(function (row) {
+                var ok = Object.is(row.actual, row.expected);
+                if (!ok) {
+                    failed += 1;
+                }
+                var tr = document.createElement("tr");
+                [row.name, String(row.actual), String(row.expected)].forEach(function (text) {
+                    var cell = document.createElement("td");
+                    cell.textContent = text;
+                    tr.appendChild(cell);
+                });
+                tr.className = ok ? "pass" : "fail";
+                body.appendChild(tr);
+            });
+            document.getElementById("summary").textContent = failed
+                ? failed + "건이 기대와 다르다."
+                : "모두 통과했다.";
+        }
+        require(["DS/ENXBoard/js/model"], function (Post) {
+            var trimmed = new Post({ title: "  가  ", author: "나", content: "다", tags: [" a ", ""] }).toJSON();
+            var emptyTitle = new Post({ title: "", author: "나", content: "다" }).validate();
+            var badDate = new Post({ title: "가", author: "나", content: "다", date: "2026/3/1" }).validate();
+            var emptyDate = new Post({ title: "가", author: "나", content: "다", date: "" }).validate();
+            paint([
+                { name: "공백 제목", actual: trimmed.title, expected: "가" },
+                { name: "태그 공백 제거", actual: trimmed.tags.join(","), expected: "a" },
+                { name: "빈 제목은 실패", actual: emptyTitle.ok, expected: false },
+                { name: "잘못된 날짜는 실패", actual: badDate.ok, expected: false },
+                { name: "빈 날짜는 통과", actual: emptyDate.ok, expected: true },
+            ]);
+        });
+    </script>
+</body>
+</html>

@@ -12,13 +12,17 @@ https://stackblitz.com/fork/github/jrimchoi/enxboard
 
 ```text
 npm install
+npm test
 npm run dev
 ```
+
+`npm test`는 `tdd/steps/`의 검사 순서대로 글 규칙, 쪽, 저장, `fetch`를 실행한다. 화면 확인은 `/stages/`다.
 
 | 주소 | 화면 |
 |---|---|
 | `/` | 게시판 |
 | `/mock-shell.html` | 대시보드 목 셸 |
+| `/stages/` | 단계별 데모. 각 폴더가 그 단계의 코드와 확인 화면이다 |
 
 `file://`로 열면 글 목록을 읽지 못한다.
 

@@ -2,7 +2,8 @@
   "private": true,
   "scripts": {
     "dev": "serve --no-clipboard -l tcp://0.0.0.0:${PORT:-3000} .",
-    "start": "serve --no-clipboard -l tcp://0.0.0.0:${PORT:-3000} ."
+    "start": "serve --no-clipboard -l tcp://0.0.0.0:${PORT:-3000} .",
+    "test": "node --test tdd/run.js"
   },
   "dependencies": {
     "serve": "14.2.4"

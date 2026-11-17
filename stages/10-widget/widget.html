@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ENXBoard</title>
+    <link rel="stylesheet" href="../stage.css">
+    <link rel="stylesheet" href="../../vendor/core/wux-3ds-fonticons.css">
+    <link rel="stylesheet" href="./css/board.css">
+</head>
+<body>
+    <header class="stage-banner">
+        <h1>ENXBoard</h1>
+        <p>onLoad, onRefresh, onSearch를 App 메서드로 연결한다. 부모가 없으면 init으로 목록을 연다.</p>
+        <p class="files">파일: widget.html, js/app.js, js/widget.js, js/view.js, js/grid.js, js/data.js</p>
+        <p><a href="./">목 셸</a></p>
+    </header>
+    <div id="board">게시판을 불러오는 중입니다.</div>
+    <script>
+(function () {
+    var queued = [];
+    function accept(event) {
+        var payload = event.data || {};
+        if (payload.source !== "3DDashboard") {
+            return;
+        }
+        queued.push(payload);
+    }
+    window.addEventListener("message", accept);
+    window.__enxTakeWidgetQueue = function () {
+        var taken = queued.slice();
+        queued = [];
+        window.removeEventListener("message", accept);
+        return taken;
+    };
+})();
+</script>
+<script>
+window.dsDefaultWebappsBaseUrl = new URL("../../vendor/webapps", window.location.href).href.replace(/\/$/, "");
+</script>
+<script src="../../vendor/webapps/AmdLoader/AmdLoader.js"></script>
+<script>
+require.config({
+    paths: {
+        "DS/ENXBoard": new URL(".", window.location.href).href.replace(/\/$/, ""),
+    },
+});
+require(["DS/ENXBoard/js/app", "DS/ENXBoard/js/widget"], function (App, Widget) {
+    var root = document.getElementById("board");
+    if (!root) {
+        return;
+    }
+    var app = new App(root);
+    var widget = Widget.bind(app);
+    if (!widget) {
+        app.init();
+    }
+});
+</script>
+</body>
+</html>

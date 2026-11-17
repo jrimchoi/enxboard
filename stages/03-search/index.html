@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>단계 3. 검색</title>
+    <link rel="stylesheet" href="../stage.css">
+    <link rel="stylesheet" href="./css/board.css">
+</head>
+<body>
+    <header class="stage-banner">
+        <h1>단계 3. 검색</h1>
+        <p>목록이 보인 뒤 첫 조작이다. 검색과 이전, 다음만 명령으로 올리고 fetchList에 넘긴다. 제목을 눌러도 상세로 가지 않는다.</p>
+        <p>정한 함수: View._bind, App._onCommand. 처리하는 명령은 search, page.</p>
+        <p class="files">파일: js/app.js, js/view.js</p>
+        <p><a href="../">단계 목록</a></p>
+    </header>
+    <div id="board">게시판을 불러오는 중입니다.</div>
+    <script src="./js/loader.js"></script>
+    <script>
+        require(["DS/ENXBoard/js/app"], function (App) {
+            new App(document.getElementById("board")).init();
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>단계 8. 목록만 그리드</title>
+    <link rel="stylesheet" href="../stage.css">
+    <link rel="stylesheet" href="../../vendor/core/wux-3ds-fonticons.css">
+    <link rel="stylesheet" href="./css/board.css">
+</head>
+<body>
+    <header class="stage-banner">
+        <h1>단계 8. 목록만 그리드</h1>
+        <p>검색, 상세, 등록, 수정, 삭제는 단계 5와 같다. 목록 행만 Grid.attach가 그린다. 다른 화면으로 가기 전에 destroy한다.</p>
+        <p class="files">파일: index.html, js/app.js, js/view.js, js/grid.js, js/data.js, js/collection.js, js/model.js, data/posts.json</p>
+        <p><a href="../">단계 목록</a></p>
+    </header>
+    <div id="board">게시판을 불러오는 중입니다.</div><p id="net"></p>
+    <script>
+window.dsDefaultWebappsBaseUrl = new URL("../../vendor/webapps", window.location.href).href.replace(/\/$/, "");
+</script>
+<script src="../../vendor/webapps/AmdLoader/AmdLoader.js"></script>
+<script>
+require.config({
+    paths: {
+        "DS/ENXBoard": new URL(".", window.location.href).href.replace(/\/$/, ""),
+    },
+});
+require(["DS/ENXBoard/js/app"], function (App) {
+    var root = document.getElementById("board");
+    if (root) {
+        new App(root).init();
+    }
+});
+window.addEventListener("load", function () {
+    setTimeout(function () {
+        var names = performance.getEntriesByType("resource").map(function (entry) {
+            return entry.name;
+        });
+        var gridCount = names.filter(function (name) {
+            return name.indexOf("DataGridView") !== -1;
+        }).length;
+        var net = document.getElementById("net");
+        if (net) {
+            net.textContent = "DataGridView 요청 " + gridCount + "건.";
+        }
+    }, 800);
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>단계 10. 위젯 생명주기</title>
+    <link rel="stylesheet" href="../stage.css">
+    <style>
+        html, body { height: 100%; background: #e8eaed; }
+        .dashboard { min-height: calc(100% - 72px); display: flex; flex-direction: column; }
+        .stage { flex: 1; display: flex; justify-content: center; padding: 24px 16px 32px; }
+        .panel { width: 800px; background: #fff; border: 1px solid #c8ccd0; box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12); }
+        .titlebar { height: 40px; display: flex; align-items: center; justify-content: space-between; padding: 0 12px; background: #f4f5f6; border-bottom: 1px solid #d5d8dc; }
+        .titlebar h1 { margin: 0; font-size: 14px; font-weight: 600; color: #3d3d3d; }
+        iframe { display: block; width: 800px; height: 600px; border: 0; background: #fff; }
+    </style>
+    <script>
+        (function () {
+            var APP_ID = "ENXBoard";
+            var values = {};
+            var handlers = {};
+            var widget = {
+                id: "widget-enxboard",
+                appId: APP_ID,
+                title: "ENXBoard",
+                getValue: function (key) { return values[key]; },
+                setValue: function (key, value) { values[key] = value; return value; },
+                deleteValue: function (key) { delete values[key]; },
+                addEvent: function (name, handler) {
+                    if (!handlers[name]) { handlers[name] = []; }
+                    handlers[name].push(handler);
+                },
+                setTitle: function (title) {
+                    widget.title = title;
+                    var heading = document.getElementById("shell-title");
+                    if (heading) { heading.textContent = title; }
+                }
+            };
+            function frameWindow() {
+                var frame = document.getElementById("widget-frame");
+                return frame ? frame.contentWindow : null;
+            }
+            function postToWidget(type, data) {
+                var message = {
+                    source: "3DDashboard",
+                    appId: APP_ID,
+                    widgetId: widget.id,
+                    type: type,
+                    data: data || {}
+                };
+                var child = frameWindow();
+                if (child) { child.postMessage(message, "*"); }
+                (handlers[type] || []).forEach(function (handler) { handler(message.data); });
+                return message;
+            }
+            window.appId = APP_ID;
+            window.widget = widget;
+            window.dashboard = { appId: APP_ID, widget: widget, postToWidget: postToWidget };
+            window.addEventListener("message", function (event) {
+                if (event.source !== frameWindow()) { return; }
+                var payload = event.data || {};
+                if (payload.type === "setTitle" && payload.title) { widget.setTitle(payload.title); }
+                (handlers[payload.type] || []).forEach(function (handler) {
+                    handler(payload.data === undefined ? payload : payload.data);
+                });
+            });
+            window.addEventListener("DOMContentLoaded", function () {
+                document.getElementById("widget-frame").addEventListener("load", function () {
+                    postToWidget("onLoad", { appId: APP_ID });
+                });
+                
+                function note(text) {
+                    var log = document.getElementById("shell-log");
+                    if (log) { log.textContent = text; }
+                }
+                document.getElementById("search-kim").addEventListener("click", function () {
+                    postToWidget("onSearch", { query: "김하준" });
+                    note("onSearch 김하준을 보냈다.");
+                });
+                document.getElementById("refresh-board").addEventListener("click", function () {
+                    postToWidget("onRefresh", {});
+                    note("onRefresh를 보냈다.");
+                });
+                document.getElementById("retitle").addEventListener("click", function () {
+                    widget.setTitle("ENXBoard 검색");
+                    note("제목 막대를 바꿨다.");
+                });
+        
+            });
+        })();
+    </script>
+</head>
+<body>
+    <header class="stage-banner">
+        <h1>단계 10. 위젯 생명주기</h1>
+        <p>화면 흐름이 끝난 뒤에 대시보드 이벤트를 연결한다. 검색 김하준은 목록을 2건으로 만들고, 새로고침은 그 검색을 유지한다.</p>
+        <p class="files">파일: index.html, widget.html, js/widget.js, js/app.js, js/view.js, js/grid.js</p>
+        <p><a href="../">단계 목록</a> · <a href="./widget.html">위젯 페이지만</a></p>
+    </header>
+    <div class="dashboard">
+        <div class="shell-tools"><button type="button" id="search-kim">검색 김하준</button><button type="button" id="refresh-board">새로고침</button><button type="button" id="retitle">제목 바꾸기</button><span id="shell-log"></span></div><main class="stage"><section class="panel"><div class="titlebar"><h1 id="shell-title">ENXBoard</h1><span>ENXBoard</span></div><iframe id="widget-frame" title="ENXBoard" src="widget.html"></iframe></section></main>
+    </div>
+</body>
+</html>

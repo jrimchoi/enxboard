@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>단계 7. 그리드 모듈</title>
+    <link rel="stylesheet" href="../stage.css">
+    <link rel="stylesheet" href="../../vendor/core/wux-3ds-fonticons.css">
+    <link rel="stylesheet" href="./css/board.css">
+</head>
+<body>
+    <header class="stage-banner">
+        <h1>단계 7. 그리드 모듈</h1>
+        <p>입구 화면의 조회와 저장이 끝난 뒤에 표 구현만 바꾼다. App에 붙이기 전에 두 건을 호스트에 붙이고, 제목 클릭은 open과 id로 남긴다.</p>
+        <p class="files">파일: index.html, js/grid.js</p>
+        <p><a href="../">단계 목록</a></p>
+    </header>
+    <div id="board"><div class="grid-host"></div></div><p id="opened">아직 제목을 누르지 않았다.</p><p id="net"></p>
+    <script>
+window.dsDefaultWebappsBaseUrl = new URL("../../vendor/webapps", window.location.href).href.replace(/\/$/, "");
+</script>
+<script src="../../vendor/webapps/AmdLoader/AmdLoader.js"></script>
+<script>
+require.config({
+    paths: {
+        "DS/ENXBoard": new URL(".", window.location.href).href.replace(/\/$/, ""),
+    },
+});
+require(["DS/ENXBoard/js/grid"], function (Grid) {
+    Grid.attach(document.querySelector(".grid-host"), [
+        { id: "t1", title: "첫 글", author: "가", date: "2026-03-01", tags: ["보기"] },
+        { id: "t2", title: "둘째", author: "나", date: "2026-03-02", tags: [] },
+    ], function (id) {
+        document.getElementById("opened").textContent = "open " + id;
+    });
+});
+window.addEventListener("load", function () {
+    setTimeout(function () {
+        var count = performance.getEntriesByType("resource").filter(function (entry) {
+            return entry.name.indexOf("DataGridView") !== -1;
+        }).length;
+        document.getElementById("net").textContent = "DataGridView 요청 " + count + "건.";
+    }, 800);
+});
+</script>
+</body>
+</html>

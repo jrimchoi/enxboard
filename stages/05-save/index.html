@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>단계 5. 등록과 수정</title>
+    <link rel="stylesheet" href="../stage.css">
+    <link rel="stylesheet" href="../../vendor/core/wux-3ds-fonticons.css">
+    <link rel="stylesheet" href="./css/board.css">
+</head>
+<body>
+    <header class="stage-banner">
+        <h1>단계 5. 등록과 수정</h1>
+        <p>상세가 열린 뒤에 등록, 수정, 삭제를 붙인다. 빈 제목은 createPost가 거절하고, 그 이유는 입력 화면에 남는다.</p>
+        <p class="files">파일: index.html, js/loader.js, js/app.js, js/view.js, js/data.js, js/collection.js, js/model.js, data/posts.json</p>
+        <p><a href="../">단계 목록</a></p>
+    </header>
+    <div id="board">게시판을 불러오는 중입니다.</div><p id="net"></p>
+    <script src="./js/loader.js"></script>
+<script>
+require(["DS/ENXBoard/js/app"], function (App) {
+    var root = document.getElementById("board");
+    if (root) {
+        new App(root).init();
+    }
+});
+</script>
+</body>
+</html>
